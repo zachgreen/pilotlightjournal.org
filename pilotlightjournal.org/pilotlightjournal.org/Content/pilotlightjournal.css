@@ -109,7 +109,7 @@ a:hover { text-decoration:underline;}
 #content{
     margin:50px 25px 0 25px;
     color:#c8cece;
-    min-height:250px;
+    min-height:200px;
 }
 #footer{
     
@@ -213,7 +213,6 @@ a:hover { text-decoration:underline;}
     display:block; 
     width:100%;
 }
-.entrancetext-nothighlighted{}
 .entrancetext-highlighted{
     color:#ff9900;
     text-shadow: 0 0 5px #ff9900;
@@ -239,106 +238,6 @@ a:hover { text-decoration:underline;}
     color: #ff9900;
     border-bottom: 3px solid #ff9900;
 }
-
-/*-----------------------------------------------
-    Centered Navigation
------------------------------------------------*/    
-#centered-nav{
-    float:left;
-    width: 100%;
-    overflow:hidden; 
-    position:relative;
-    margin: 10px 0 10px 0;  
-    height:75px; 
-}
-#centered-nav ul {
-   clear:left;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   left:50%;
-   text-align:center;
-}
-#centered-nav li {
-    float:left;
-    padding: 0 75px 5px 75px;
-    display:block;
-    list-style:none;
-    margin:0;
-    position:relative;
-    right:50%;    
-}
-#centered-nav a{ 
-    display:block; 
-    text-decoration:none;
-    color: #918b70;
-    font-size: 1.5em;
-}
-#centered-nav a.current{
-    text-decoration:none;
-    color: #fff;
-    border-bottom: 3px solid #fff;
-}
-#centered-nav a:hover{ 
-    color: #ff9900;
-    border-bottom: 3px solid #ff9900;
-}
-
-/*-----------------------------------------------
-    Left Navigation
------------------------------------------------*/    
-#left-nav{
-    float:left;
-    min-height: 300px;
-    position:relative;
-    width:200px;
-    margin: 0 25px 0 0;
-}
-#left-nav ul {
-   clear:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-}
-#left-nav li {
-    margin: 0 25px 25px 25px;
-    display:block;
-    list-style:none;
-    position:relative;
-    text-align:right;
-    /*height:40px; */  
-}
-#left-nav a {
-    text-decoration:none;
-    color: #918b70;
-    font-size: 1.5em;
-}
-#left-nav a.current{
-    text-decoration:none;
-    color: #fff;
-}
-#left-nav a:hover{ 
-    color: #ff9900;
-    border-bottom: 3px solid #ff9900;
-}
-#left-nav-item{
-    display:block;
-    width:100px;
-}
-#left-nav-item-url{
-    float:left;
-    margin-right:10px;
-}
-#left-nav-item-image{
-    float:left;
-}
-
-/*-----------------------------------------------
-    About Page
------------------------------------------------*/ 
 
 /*-----------------------------------------------
     Articles Page
@@ -475,3 +374,10 @@ a:hover { text-decoration:underline;}
 .workscited-links {
     color: #ff9900;    
 }
+
+
+/*-----------------------------------------------
+    Footers
+-----------------------------------------------*/ 
+#issue-cooley-foot1{ top:55px; position:relative; }
+#issue-cooley-foot2{ top:190px; position:relative;}
