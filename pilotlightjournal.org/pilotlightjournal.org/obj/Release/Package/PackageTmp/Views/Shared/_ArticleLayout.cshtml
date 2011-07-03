@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewBag.Title</title>
+        <meta name="description" content="Pilot Light is an on-line journal of 21st century poetics and criticism." />
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab&v1' rel='stylesheet' type='text/css' />
+        <link href="@Url.Content("~/Content/pilotlightjournal.css")" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="entrance-header">
+            <div id="entrance-header-title">Pilot&nbsp;&nbsp;Light</div>
+            <div id="entrance-header-subtitle">A JOURNAL OF 21<span class="superscript">ST</span> CENTURY POETICS AND CRITICISM</div>
+            <div id="entrance-header-line">&nbsp;</div>
+            <div id="entrance-header-right-nav">
+                @Html.NavLink("About", "About", new { area = "", controller = "Home" })&nbsp;|&nbsp;
+                @Html.NavLink("Submissions", "Submissions", new { area = "", controller = "Home" })&nbsp;|&nbsp;
+                @Html.NavLink("Contact", "Contact", new { area = "", controller = "Home" })
+            </div>
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+    </body>
+    <script src="@Url.Content("~/Scripts/jquery-1.5.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/pilotlightjournal.js")" type="text/javascript"></script>
+    @RenderSection("scripts")
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22928619-1']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</html>

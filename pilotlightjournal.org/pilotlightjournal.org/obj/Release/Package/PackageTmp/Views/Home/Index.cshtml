@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Pilot Light Journal";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pilot Light Journal</title>
+        <meta name="description" content="Pilot Light is an on-line journal of 21st century poetics and criticism." />
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab&v1' rel='stylesheet' type='text/css' />
+        <link href="@Url.Content("~/Content/pilotlightjournal.css")" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="entrance-header">
+            <div id="entrance-header-title">Pilot&nbsp;&nbsp;Light</div>
+            <div id="entrance-header-subtitle">A JOURNAL OF 21<span class="superscript">ST</span> CENTURY POETICS AND CRITICISM</div>
+            <div id="entrance-header-line">&nbsp;</div>
+        </div>
+        <div id="entrancetext-container">
+            <div id="entrancetext">
+                    "We just wanted the heart's <span id="entrancetext-special" class="entrancetext-nothightlighted">pilot light</span> to keep on burning.<br /> 
+                    I remember how there, at the edge of the world, there was
+                    <br /> another world." 
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Richard Jackson
+            </div>
+        </div>
+        <div id="footer-right-nav">
+            @Html.NavLink("About", "About", "Home")&nbsp;|&nbsp;
+            @Html.NavLink("Submissions", "Submissions", "Home")&nbsp;|&nbsp;
+            @Html.NavLink("Contact", "Contact", "Home")
+        </div>
+@*        <table width="100%" id="footer-right-nav">
+            <tr>
+                <td style="width:33%;text-align:left;">@Html.NavLink("About", "About", "Home")</td>
+                <td style="width:33%;text-align:center;">@Html.NavLink("Submissions", "Submissions", "Home")</td>
+                <td style="width:33%;text-align:right;">@Html.NavLink("Contact", "Contact", "Home")</td>
+            </tr>
+        </table>*@
+ @*       <div id="centered-nav">
+            <ul>
+                <li class="navlink">@Html.NavLink("About", "About", "Home")</li>
+                <li class="navlink">@Html.NavLink("Submissions", "Submissions", "Home")</li>
+                <li class="navlink">@Html.NavLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>*@
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="http://ui.jquery.com/latest/ui/effects.core.js" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/jquery.color.js")" type="text/javascript"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22928619-1']);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['_trackPageLoadTime']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            //work to change css
+            var count = 0;
+            $(document).ready(function () {
+                $("#entrancetext").mouseover(function () {
+                    if (count == 0) {
+                        $("#entrancetext-special").switchClass("entrancetext-nothighlighted", "entrancetext-highlighted", "slow");
+                        count++;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
