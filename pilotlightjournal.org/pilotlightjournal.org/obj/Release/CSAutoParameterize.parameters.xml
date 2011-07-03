@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="PilotLightJournalContext-Web.config Connection String" description="PilotLightJournalContext Connection String used in web.config by the application to access the database." defaultvalue="Data Source=|DataDirectory|PilotLightJournal.sdf" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="c:\\storage\\docs\\Development\\asp_projects\\pilotlightjournal\.org\\pilotlightjournal\.org\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PilotLightJournalContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\storage\\docs\\Development\\git\\pilotlightjournal\\pilotlightjournal\.org\\pilotlightjournal\.org\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PilotLightJournalContext']/@connectionString" />
   </parameter>
 </parameters>

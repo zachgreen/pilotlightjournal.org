@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "Pilot Light Journal - Issue 1 - Nicole Cooley";
-    Layout = "~/Views/Shared/_ArticleLayout.cshtml";
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileArticleLayout.cshtml"
+        : "~/Views/Shared/_ArticleLayout.cshtml";
     
 }
 <div id="article-container">
