@@ -83,16 +83,30 @@ Pixels     EMs         Percent Points
 body{
     background-color:#000;
     font-family:Georgia;
-    margin: 0 5px 0 5px;
+    color:#c8cece;
+    margin: 0 .10em 0 .10em;
 }
 p {
-    margin: 0 0 1.25em 0;
-    padding: 0 0 1.15em 0;   
+    margin: 0 0 1.30em 0;
+    padding: 0 0 .65em 0;
+    line-height: 1.20em; 
+    font-size:1.25em;
 }
 
-a { color:#c8cece;text-decoration:none;}
+a { 
+    text-decoration:none;
+    color: #c8cece;
+}
 a:visited { }
-a:hover { text-decoration:underline;}
+a.current{
+    text-decoration:none;
+    color: #c8cece;
+    border-bottom: .15em solid #c8cece;
+}
+a:hover{ 
+    color: #ff9900;
+    border-bottom: .15em solid #ff9900;
+}
 
 /*-----------------------------------------------
     Main Body Elements
@@ -161,6 +175,27 @@ a:hover { text-decoration:underline;}
     width:900px; 
     float:right  
 }
+#entrance-header-right-nav{   
+    padding-top:15px;
+    padding-bottom:20px;
+    width:900px; 
+    float:right;
+    text-align:right;
+    font-size: 2.15em;
+}
+#entrance-header-right-nav a{ 
+    text-decoration:none;
+    color: #c8cece;
+}
+#entrance-header-right-nav a.current{
+    text-decoration:none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+#entrance-header-right-nav a:hover{ 
+    color: #ff9900;
+    border-bottom: 3px solid #ff9900;
+}
 
 /*-----------------------------------------------
     Footer Nav Header
@@ -216,7 +251,33 @@ a:hover { text-decoration:underline;}
     color:#ff9900;
     text-shadow: 0 0 5px #ff9900;
 }
-#entrance-header-right-nav{   
+
+
+/*-----------------------------------------------
+    Article Header
+-----------------------------------------------*/
+#article-header{
+    font-family:Georgia;
+    text-align: right;
+    display: block;
+    color:#c8cece;
+    margin-top:50px;
+    padding-bottom:20px; 
+}
+#article-header-title{
+    font-size:7.0em;
+    padding-bottom:10px;
+}
+#article-header-subtitle{
+    font-size:2.05em;
+    font-variant:small-caps;
+}
+#article-header-line{   
+    border-bottom: 2px solid #c8cece;
+    width:900px; 
+    float:right  
+}
+#article-header-right-nav{   
     padding-top:15px;
     padding-bottom:20px;
     width:900px; 
@@ -224,18 +285,18 @@ a:hover { text-decoration:underline;}
     text-align:right;
     font-size: 2.15em;
 }
-#entrance-header-right-nav a{ 
+#article-header-right-nav a{ 
     text-decoration:none;
     color: #c8cece;
 }
-#entrance-header-right-nav a.current{
+#article-header-right-nav a.current{
     text-decoration:none;
     color: #fff;
-    border-bottom: 3px solid #fff;
+    border-bottom: .175em solid #c8cece;
 }
-#entrance-header-right-nav a:hover{ 
+#article-header-right-nav a:hover{ 
     color: #ff9900;
-    border-bottom: 3px solid #ff9900;
+    border-bottom: .175em solid #ff9900;
 }
 
 /*-----------------------------------------------
@@ -325,7 +386,7 @@ a:hover { text-decoration:underline;}
     padding: 0 0 0 0;
 }
 #article-workscited{
-    border-top: 2px solid #c8cece;
+    border-top: .15em solid #c8cece;
     padding: 1em 0 0 0;
     display:block;
     clear:both;
@@ -341,7 +402,7 @@ a:hover { text-decoration:underline;}
     margin: 0 0 1em 0;
 }
 .excerpt-formatting-1{
-    text-indent:0px;
+    text-indent:0;
     font-size:.85em;
     line-height:1.25em;
     margin: 0 0 1.5em 1em;
@@ -355,7 +416,7 @@ a:hover { text-decoration:underline;}
     padding: 0 0 .25em 0;  
 }
 .excerpt-formatting-3{
-    text-indent:0px;
+    text-indent:0;
     font-size:.85em;
     line-height:2.00em;
     margin: 0 0 1.5em 1em;

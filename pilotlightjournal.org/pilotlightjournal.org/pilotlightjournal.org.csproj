@@ -189,7 +189,6 @@
   <ItemGroup>
     <Content Include="App_Data\51Degrees.mobi.config" />
     <None Include="App_Data\wurfl.xml.gz" />
-    <Content Include="Views\Shared\Nicole_Cooley.cshtml" />
     <Content Include="Views\Shared\_ArticleLayout.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
