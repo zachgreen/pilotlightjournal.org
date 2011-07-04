@@ -110,7 +110,7 @@ a:hover{
     border-bottom: .15em solid #ff9900;
 }
 
-#content { min-height:18em; }
+#content { min-height:18em; width:100%;}
 
 /*-----------------------------------------------
     Main Classes
@@ -184,8 +184,9 @@ a:hover{
 }
 #article-header-right-nav{   
     padding: .85em 0 1.85em 0;
-    width:60em;
+    clear:right;
     float:right;
+    width:100%;
     text-align:right;
     font-size: 1.5em;
 }
@@ -212,7 +213,7 @@ a:hover{
 -----------------------------------------------*/   
 #entrancetext-container{
     margin-top:6em;
-    margin-bottom:6em;
+    margin-bottom:1em;
     display:block;
 }
 #entrancetext {
