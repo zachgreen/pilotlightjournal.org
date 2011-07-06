@@ -33,9 +33,15 @@ namespace pilotlightjournal.org {
             );
 
             routes.MapRoute(
-                "Sample1",
-                "Sample1",
-                new { controller = "Home", action = "Sample1", id = UrlParameter.Optional }
+                "Archive",
+                "Archive",
+                new { controller = "Issue", action = "Archive", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                "TestingIndex",
+                "TestingIndex",
+                new { controller = "Home", action = "TestingIndex", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
@@ -47,6 +53,8 @@ namespace pilotlightjournal.org {
         }
 
         protected void Application_Start() {
+            System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<pilotlightjournal.org.Models.PilotLightJournalContext>());
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);

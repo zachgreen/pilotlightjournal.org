@@ -78,9 +78,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\Issue1\Controllers\IssueController.cs" />
+    <Compile Include="Areas\Issue1\Controllers\Issue1Controller.cs" />
     <Compile Include="Areas\Issue1\Issue1AreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IssueController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -92,11 +93,17 @@
     <Compile Include="Mobile\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contributor.cs" />
+    <Compile Include="Models\IndexModel.cs" />
+    <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\IssueRepository.cs" />
     <Compile Include="Models\PilotLightJournalContext.cs" />
+    <Compile Include="Models\Work.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\FiftyOne.Foundation.dll" />
+    <Content Include="App_Data\PilotLightJournal.sdf" />
     <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Content\arrow_down.png" />
     <Content Include="Content\bkgrd_tile.png" />
@@ -161,6 +168,7 @@
   <ItemGroup>
     <Folder Include="Areas\Issue1\Models\" />
     <Folder Include="Areas\Issue1\Views\Shared\" />
+    <Folder Include="Views\Issues\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Submissions.cshtml" />
@@ -172,16 +180,16 @@
     <Content Include="Areas\Issue1\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue\Nicole_Cooley.cshtml" />
+    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue\Nicole_Cooley_1.cshtml" />
+    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue\Nicole_Cooley_2.cshtml" />
+    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue\Nicole_Cooley_3.cshtml" />
+    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
@@ -190,6 +198,9 @@
     <Content Include="App_Data\51Degrees.mobi.config" />
     <None Include="App_Data\wurfl.xml.gz" />
     <Content Include="Views\Shared\_ArticleLayout.cshtml" />
+    <Content Include="Views\Home\TestingIndex.cshtml" />
+    <Content Include="Views\Issue\Archive.cshtml" />
+    <Content Include="Areas\Issue1\Views\Issue1\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

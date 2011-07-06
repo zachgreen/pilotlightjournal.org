@@ -15,7 +15,9 @@ namespace pilotlightjournal.org.Models
         // code to the Application_Start method in your Global.asax file.
         // Note: this will destroy and re-create your database with every model change.
         // 
-        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<pilotlightjournal.org.Models.PilotLightJournalContext>());
 
+        public DbSet<Issue> Issues { get; set; }
+        public DbSet<Contributor> Contributors { get; set; }
+        public DbSet<Work> Works { get; set; }
     }
 }
