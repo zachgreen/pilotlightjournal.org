@@ -10,13 +10,13 @@ namespace pilotlightjournal.org.Areas.Issue1 {
 
         public override void RegisterArea(AreaRegistrationContext context) {
             context.MapRoute(
-                "Nicole_Cooley_test",
-                "Issue1/Nicole_Cooley/{page}",
-                new { controller = "Issue1", action = "Nicole_Cooley", page = 1 }
+                "Nicole_Cooley",
+                "1/{action}/{page}",
+                new { controller = "Issue1", page = 1 }
             );
             context.MapRoute(
-                "Nicole_Cooley",
-                "1/Nicole_Cooley/{page}",
+                "Nicole_Cooley_test",
+                "Issue1/Nicole_Cooley/{page}",
                 new { controller = "Issue1", action = "Nicole_Cooley", page = 1 }
             );
 

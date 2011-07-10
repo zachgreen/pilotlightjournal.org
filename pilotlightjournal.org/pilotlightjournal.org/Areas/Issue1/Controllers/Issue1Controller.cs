@@ -15,7 +15,7 @@ namespace pilotlightjournal.org.Areas.Issue1.Controllers{
         }
 
         public ActionResult Index() {
-            return View(issues.GetIssue(3));
+            return View(issues.GetIssue(1));
         }
 
         public ActionResult Nicole_Cooley(int page){

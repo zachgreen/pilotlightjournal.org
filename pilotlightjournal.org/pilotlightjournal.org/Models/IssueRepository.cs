@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -17,7 +18,7 @@ namespace pilotlightjournal.org.Models {
         }
 
         public Issue GetIssue(int id) {
-            return dbContext.Issues.FirstOrDefault(issue => issue.IssueId == id);
+            return dbContext.Issues.Where(issue => issue.IssueId == id).Include(issue => issue.Works).FirstOrDefault();
         }
 
         public List<Issue> GetIssues() {

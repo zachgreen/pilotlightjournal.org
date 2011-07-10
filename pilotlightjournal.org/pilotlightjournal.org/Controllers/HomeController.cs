@@ -49,10 +49,6 @@ namespace pilotlightjournal.org.Controllers
         /// <returns></returns>
         public ActionResult Submissions() { return View(); }
 
-        /// <summary>
-        /// GET: /Home/Submissions
-        /// </summary>
-        /// <returns></returns>
-        public ActionResult Sample1() { return View(); }
+        public ActionResult Contributors() { return View(); }
     }
 }

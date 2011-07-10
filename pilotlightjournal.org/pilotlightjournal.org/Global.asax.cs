@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+
+using pilotlightjournal.org.Models;
 
 namespace pilotlightjournal.org {
     public class MvcApplication : System.Web.HttpApplication {
@@ -45,6 +48,12 @@ namespace pilotlightjournal.org {
             );
 
             routes.MapRoute(
+                "Contributors",
+                "Contributors",
+                new { controller = "Home", action = "Contributors", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
@@ -53,7 +62,7 @@ namespace pilotlightjournal.org {
         }
 
         protected void Application_Start() {
-            System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<pilotlightjournal.org.Models.PilotLightJournalContext>());
+            Database.SetInitializer<PilotLightJournalContext>(new PilotLightJournalInitializer());
 
             AreaRegistration.RegisterAllAreas();
 

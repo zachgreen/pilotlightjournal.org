@@ -8,13 +8,18 @@ namespace pilotlightjournal.org.Models {
     public class Work {
         [Key]
         public int WorkId { get; set; }
-        [ForeignKey("Issue"), Required]
-        public int IssueId { get; set; }
-        [ForeignKey("Contributor"), Required]
-        public int ContributorId { get; set; }
+
+        //[ForeignKey("Issue"), Required]
+        //public int IssueId { get; set; }
+
+        //[ForeignKey("Contributor"), Required]
+        //public int ContributorId { get; set; }
+
         [Required, MaxLength(100)]
         public string Title { get; set; }
+
         public int Order { get; set; }
+
         [Required, MaxLength(100)]
         public string Url { get; set; }
 

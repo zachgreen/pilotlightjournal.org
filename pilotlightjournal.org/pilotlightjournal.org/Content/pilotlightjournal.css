@@ -370,7 +370,31 @@ a:hover{
 
 
 /*-----------------------------------------------
-    Footers
+    Issue1 - Footers
 -----------------------------------------------*/ 
 #issue1-cooley-foot1{ top:55px; position:relative; }
 #issue1-cooley-foot2{ top:145px; position:relative;}
+
+
+/*-----------------------------------------------
+    Issue1 - Index
+-----------------------------------------------*/
+#issue1-index-title{
+    font-size: 2.00em;
+    font-weight:bold;
+    margin: .85em 0 .55em 0;   
+}
+#issue1-index-works{
+    list-style-type:none;
+}
+#issue1-index-work{
+    font-size: 1.35em;
+    margin: .50em 0 .50em 0;
+}
+#issue1-index-work-title{
+    float:left;
+    margin: 0 0 0 .25em;
+}
+#issue1-index-work-author{
+    float:left;
+}

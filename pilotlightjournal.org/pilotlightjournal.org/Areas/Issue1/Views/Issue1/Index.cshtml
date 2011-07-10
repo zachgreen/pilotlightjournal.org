@@ -1,4 +1,5 @@
 ﻿@model pilotlightjournal.org.Models.Issue
+@using pilotlightjournal.org.Models           
 
 @{
     ViewBag.Title = "Pilot Light Journal - " + Model.Name + " - " + Model.ReleaseDate.ToString("MMMM yyyy");
@@ -7,6 +8,21 @@
         : "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name - @Model.ReleaseDate.ToString("MMMM yyyy")</h2>
+<div id="issue1-index-title">@Model.Name - @Model.ReleaseDate.ToString("MMMM yyyy")</div>
+
+<ul id="issue1-index-works">
+@if (Model.Works != null) {
+    foreach (Work w in Model.Works.OrderBy(w => w.Order)) {
+        <li id="issue1-index-work">
+            <div id="issue1-index-work-title"><a href="@Url.Action(w.Url, Model.Controller)">@Html.Raw(w.Title)</a>&nbsp;-&nbsp;</div>
+            <div id="issue1-index-work-author">@Html.ActionLink(w.Contributor.FirstName + " " +w.Contributor.LastName, 
+                  "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName, 
+                  new { area = "", controller = "Home" }, null)</div>
+        </li>
+
+    }
+}
+</ul>
+
 
 @section Scripts {}
