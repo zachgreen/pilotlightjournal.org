@@ -10,19 +10,22 @@
 
 <div id="issue1-index-title">@Model.Name - @Model.ReleaseDate.ToString("MMMM yyyy")</div>
 
-<ul id="issue1-index-works">
-@if (Model.Works != null) {
-    foreach (Work w in Model.Works.OrderBy(w => w.Order)) {
-        <li id="issue1-index-work">
-            <div id="issue1-index-work-title"><a href="@Url.Action(w.Url, Model.Controller)">@Html.Raw(w.Title)</a>&nbsp;-&nbsp;</div>
-            <div id="issue1-index-work-author">@Html.ActionLink(w.Contributor.FirstName + " " +w.Contributor.LastName, 
-                  "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName, 
-                  new { area = "", controller = "Home" }, null)</div>
-        </li>
+<div id="issue1-index-works">
+    <ul>
+    @if (Model.Works != null) {
+        foreach (Work w in Model.Works.OrderBy(w => w.Order)) {
+            <li>
+                <span class="issue1-index-work-title"><a href="@Url.Action("Issue", Model.Controller, new { workId = w.WorkId , page = 1 })">@Html.Raw(w.Title)</a></span>
+                &nbsp;-&nbsp;
+                <span class="issue1-index-work-author">@Html.ActionLink(w.Contributor.FirstName + " " +w.Contributor.LastName, 
+                      "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName, 
+                      new { area = "", controller = "Home" }, null)</span>
+            </li>
 
+        }
     }
-}
-</ul>
+    </ul>
+</div>
 
 
 @section Scripts {}

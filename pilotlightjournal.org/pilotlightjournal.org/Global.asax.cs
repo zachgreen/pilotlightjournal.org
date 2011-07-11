@@ -69,5 +69,10 @@ namespace pilotlightjournal.org {
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
         }
+
+        protected void Application_Error() {
+            Exception ex = Server.GetLastError();
+            ex.ToString();
+        }
     }
 }

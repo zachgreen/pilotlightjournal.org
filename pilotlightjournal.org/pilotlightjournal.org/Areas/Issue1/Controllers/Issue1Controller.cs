@@ -7,7 +7,8 @@ using System.Web.Mvc;
 using pilotlightjournal.org.Models;
 
 namespace pilotlightjournal.org.Areas.Issue1.Controllers{
-    public class Issue1Controller : Controller{
+    public class Issue1Controller : Controller {
+        private PilotLightJournalContext dbContext = new PilotLightJournalContext();
         private IssueRepository issues = null;
 
         public Issue1Controller() {
@@ -20,6 +21,14 @@ namespace pilotlightjournal.org.Areas.Issue1.Controllers{
 
         public ActionResult Nicole_Cooley(int page){
             return View(page);
+        }
+
+        public ActionResult Issue(int workId, int page) {
+            var mod = new WorkViewModel() {
+                Work = dbContext.Works.FirstOrDefault(w => w.WorkId == workId),
+                Page = page
+            };
+            return View(mod);
         }
 
     }

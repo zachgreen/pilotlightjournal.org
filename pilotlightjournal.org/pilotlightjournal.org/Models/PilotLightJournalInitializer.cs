@@ -14,20 +14,56 @@ namespace pilotlightjournal.org.Models {
                     Name = "Issue 1",
                     ReleaseDate = DateTime.Parse("2011/09/01"),
                     Completed = true,
-                    Url = "/1",
+                    Url = "1",
                     Works = new List<Work>{
                         new Work(){
-                            WorkId = 1,
                             Title = "Writing the Body: Tory Dent’s <i>Black Milk</i>",
                             Order = 0,
                             Url = "Nicole_Cooley",
                             Contributor = new Contributor(){
-                                ContributorId = 0,
                                 FirstName = "Nicole",
                                 LastName = "Cooley",
                                 Bio = "Nicole Cooley's Bio",
                                 ImagePage = ""
+                            },
+                            Pages = new List<Page>(){
+                                new Page{
+                                    Order = 1,
+                                    Url = "Nicole_Cooley_1"
+                                },
+                                new Page{
+                                    Order = 2,
+                                    Url = "Nicole_Cooley_2"
+                                },
+                                new Page{
+                                    Order = 3,
+                                    Url = "Nicole_Cooley_3"
+                                }
                             }
+                        },
+                        new Work(){
+                            Title = "A Third Work",
+                            Order = 2,
+                            Url = "Third_Work",
+                            Contributor = new Contributor(){
+                                FirstName = "Third",
+                                LastName = "Contributor",
+                                Bio = "Third Contributor's Bio",
+                                ImagePage = ""
+                            },
+                            Pages = new List<Page>()
+                        },
+                        new Work(){
+                            Title = "A Second Work",
+                            Order = 1,
+                            Url = "Second_Work",
+                            Contributor = new Contributor(){
+                                FirstName = "Second",
+                                LastName = "Contributor",
+                                Bio = "Second Contributor's Bio",
+                                ImagePage = ""
+                            },
+                            Pages = new List<Page>()
                         }
                     }
                 },
@@ -37,7 +73,42 @@ namespace pilotlightjournal.org.Models {
                     Name = "Issue 2",
                     ReleaseDate = DateTime.Parse("2011/10/01"),
                     Completed = true,
-                    Url = "/2"
+                    Url = "2",
+                    Works = new List<Work>{
+                        new Work(){
+                            Title = "Writing the Body: Tory Dent’s <i>Black Milk</i>",
+                            Order = 0,
+                            Url = "Nicole_Cooley",
+                            Contributor = new Contributor(){
+                                FirstName = "Nicole",
+                                LastName = "Cooley",
+                                Bio = "Nicole Cooley's Bio",
+                                ImagePage = ""
+                            }
+                        },
+                        new Work(){
+                            Title = "A Third Work",
+                            Order = 2,
+                            Url = "Third_Work",
+                            Contributor = new Contributor(){
+                                FirstName = "Third",
+                                LastName = "Contributor",
+                                Bio = "Third Contributor's Bio",
+                                ImagePage = ""
+                            }
+                        },
+                        new Work(){
+                            Title = "A Second Work",
+                            Order = 1,
+                            Url = "Second_Work",
+                            Contributor = new Contributor(){
+                                FirstName = "Second",
+                                LastName = "Contributor",
+                                Bio = "Second Contributor's Bio",
+                                ImagePage = ""
+                            }
+                        }
+                    }
                 },
                 new Issue(){
                     IssueId = 2,

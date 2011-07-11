@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
-using System.Web;
 
 namespace pilotlightjournal.org.Models {
     public class Work {
         [Key]
         public int WorkId { get; set; }
-
-        //[ForeignKey("Issue"), Required]
-        //public int IssueId { get; set; }
-
-        //[ForeignKey("Contributor"), Required]
-        //public int ContributorId { get; set; }
 
         [Required, MaxLength(100)]
         public string Title { get; set; }
@@ -25,5 +19,6 @@ namespace pilotlightjournal.org.Models {
 
         public virtual Issue Issue { get; set; }
         public virtual Contributor Contributor { get; set; }
+        public virtual ICollection<Page> Pages { get; set; }
     }
 }
