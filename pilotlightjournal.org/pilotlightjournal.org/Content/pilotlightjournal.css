@@ -255,6 +255,15 @@ a:hover{
 #article aside{
     display:block; 
 }*/
+.continued{
+    display:block;
+    clear:left;
+    float:left;
+    font-size:1.00em;
+    font-weight:normal;
+    font-style:italic;
+    margin: 0 0 1.00em 0;
+}
 .article-page-container{
     width:100%;
     clear:both;   
@@ -361,10 +370,11 @@ a:hover{
 }
 .article-pages p.excerpt-formatting-3{
     text-indent:0px;
-    font-size:.85em;
-    line-height:24px;
+    font-size:1.05em;
+    line-height:1.10em;
     margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;   
+    padding: 0 0 .5em 0;
+    font-style: italic; 
 }
 .workscited-links {
     color: #ff9900;    

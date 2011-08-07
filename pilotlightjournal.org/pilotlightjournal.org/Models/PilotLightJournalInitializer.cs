@@ -11,39 +11,14 @@ namespace pilotlightjournal.org.Models {
                 new Issue(){
                     IssueId = 0,
                     Controller = "Issue1",
-                    Name = "Issue 1",
+                    Name = "September 2011",
                     ReleaseDate = DateTime.Parse("2011/09/01"),
                     Completed = true,
                     Url = "1",
                     Works = new List<Work>{
                         new Work(){
-                            Title = "Writing the Body: Tory Dent’s <i>Black Milk</i>",
-                            Order = 0,
-                            Url = "Nicole_Cooley",
-                            Contributor = new Contributor(){
-                                FirstName = "Nicole",
-                                LastName = "Cooley",
-                                Bio = "Nicole Cooley's Bio",
-                                ImagePage = ""
-                            },
-                            Pages = new List<Page>(){
-                                new Page{
-                                    Order = 1,
-                                    Url = "Nicole_Cooley_1"
-                                },
-                                new Page{
-                                    Order = 2,
-                                    Url = "Nicole_Cooley_2"
-                                },
-                                new Page{
-                                    Order = 3,
-                                    Url = "Nicole_Cooley_3"
-                                }
-                            }
-                        },
-                        new Work(){
                             Title = "The Art of Poetry",
-                            Order = 0,
+                            Order = 2,
                             Url = "Marianne_Boruch",
                             Contributor = new Contributor(){
                                 FirstName = "Marianne",
@@ -55,7 +30,7 @@ namespace pilotlightjournal.org.Models {
                         },
                         new Work(){
                             Title = "Instable Grammar",
-                            Order = 2,
+                            Order = 3,
                             Url = "Bill_Olsen",
                             Contributor = new Contributor(){
                                 FirstName = "Bill",
@@ -92,7 +67,7 @@ namespace pilotlightjournal.org.Models {
                         },
                         new Work(){
                             Title = "Poetry and the Difficulty of Documentation",
-                            Order = 1,
+                            Order = 0,
                             Url = "Nancy_Eimers",
                             Contributor = new Contributor(){
                                 FirstName = "Nancy",
@@ -116,69 +91,10 @@ namespace pilotlightjournal.org.Models {
                                 new Page{
                                     Order = 4,
                                     Url = "Nancy_Eimers_4"
-                                },
-                                new Page{
-                                    Order = 5,
-                                    Url = "Nancy_Eimers_5"
-                                },
-                                new Page{
-                                    Order = 6,
-                                    Url = "Nancy_Eimers_6"
                                 }
                             }
                         }
                     }
-                },
-                new Issue(){
-                    IssueId = 1,
-                    Controller = "Issue2",
-                    Name = "Issue 2",
-                    ReleaseDate = DateTime.Parse("2011/10/01"),
-                    Completed = true,
-                    Url = "2",
-                    Works = new List<Work>{
-                        new Work(){
-                            Title = "Writing the Body: Tory Dent’s <i>Black Milk</i>",
-                            Order = 0,
-                            Url = "Nicole_Cooley",
-                            Contributor = new Contributor(){
-                                FirstName = "Nicole",
-                                LastName = "Cooley",
-                                Bio = "Nicole Cooley's Bio",
-                                ImagePage = ""
-                            }
-                        },
-                        new Work(){
-                            Title = "A Third Work",
-                            Order = 2,
-                            Url = "Third_Work",
-                            Contributor = new Contributor(){
-                                FirstName = "Third",
-                                LastName = "Contributor",
-                                Bio = "Third Contributor's Bio",
-                                ImagePage = ""
-                            }
-                        },
-                        new Work(){
-                            Title = "A Second Work",
-                            Order = 1,
-                            Url = "Second_Work",
-                            Contributor = new Contributor(){
-                                FirstName = "Second",
-                                LastName = "Contributor",
-                                Bio = "Second Contributor's Bio",
-                                ImagePage = ""
-                            }
-                        }
-                    }
-                },
-                new Issue(){
-                    IssueId = 2,
-                    Controller = "Issue3",
-                    Name = "Issue 3",
-                    ReleaseDate = DateTime.Parse("2011/11/01"),
-                    Completed = false,
-                    Url = "/3"
                 }
             };
 
