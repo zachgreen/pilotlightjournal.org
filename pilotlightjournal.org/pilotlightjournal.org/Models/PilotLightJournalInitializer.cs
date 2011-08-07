@@ -42,28 +42,90 @@ namespace pilotlightjournal.org.Models {
                             }
                         },
                         new Work(){
-                            Title = "A Third Work",
-                            Order = 2,
-                            Url = "Third_Work",
+                            Title = "The Art of Poetry",
+                            Order = 0,
+                            Url = "Marianne_Boruch",
                             Contributor = new Contributor(){
-                                FirstName = "Third",
-                                LastName = "Contributor",
-                                Bio = "Third Contributor's Bio",
+                                FirstName = "Marianne",
+                                LastName = "Boruch",
+                                Bio = "Bio",
                                 ImagePage = ""
                             },
-                            Pages = new List<Page>()
+                            Pages = new List<Page>(){}
                         },
                         new Work(){
-                            Title = "A Second Work",
-                            Order = 1,
-                            Url = "Second_Work",
+                            Title = "Instable Grammar",
+                            Order = 2,
+                            Url = "Bill_Olsen",
                             Contributor = new Contributor(){
-                                FirstName = "Second",
-                                LastName = "Contributor",
+                                FirstName = "Bill",
+                                LastName = "Olsen",
+                                Bio = "Third Contributor's Bio",
+                                ImagePage = ""
+                            },                            
+                            Pages = new List<Page>(){
+                                new Page{
+                                    Order = 1,
+                                    Url = "Bill_Olsen_1"
+                                },
+                                new Page{
+                                    Order = 2,
+                                    Url = "Bill_Olsen_2"
+                                },
+                                new Page{
+                                    Order = 3,
+                                    Url = "Bill_Olsen_3"
+                                },
+                                new Page{
+                                    Order = 4,
+                                    Url = "Bill_Olsen_4"
+                                },
+                                new Page{
+                                    Order = 5,
+                                    Url = "Bill_Olsen_5"
+                                },
+                                new Page{
+                                    Order = 6,
+                                    Url = "Bill_Olsen_6"
+                                }
+                            }
+                        },
+                        new Work(){
+                            Title = "Poetry and the Difficulty of Documentation",
+                            Order = 1,
+                            Url = "Nancy_Eimers",
+                            Contributor = new Contributor(){
+                                FirstName = "Nancy",
+                                LastName = "Eimers",
                                 Bio = "Second Contributor's Bio",
                                 ImagePage = ""
                             },
-                            Pages = new List<Page>()
+                            Pages = new List<Page>(){
+                                new Page{
+                                    Order = 1,
+                                    Url = "Nancy_Eimers_1"
+                                },
+                                new Page{
+                                    Order = 2,
+                                    Url = "Nancy_Eimers_2"
+                                },
+                                new Page{
+                                    Order = 3,
+                                    Url = "Nancy_Eimers_3"
+                                },
+                                new Page{
+                                    Order = 4,
+                                    Url = "Nancy_Eimers_4"
+                                },
+                                new Page{
+                                    Order = 5,
+                                    Url = "Nancy_Eimers_5"
+                                },
+                                new Page{
+                                    Order = 6,
+                                    Url = "Nancy_Eimers_6"
+                                }
+                            }
                         }
                     }
                 },

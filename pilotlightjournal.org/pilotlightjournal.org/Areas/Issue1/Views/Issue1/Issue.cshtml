@@ -19,8 +19,8 @@
                 <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
             </ul>
         </div>
-        <div id="article-title">Writing the Body: Tory Dent’s <i>Black Milk</i></div>
-        <div id="article-author">Nicole Cooley</div>
+        <div id="article-title">@Model.Work.Title</div>
+        <div id="article-author">@Model.Work.Contributor.FirstName @Model.Work.Contributor.LastName</div>
         @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
             if (Model.Page == 0 || Model.Page == p.Order) {
                 Html.RenderPartial(p.Url); 
