@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileLayout.cshtml"
+        : "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="contact-default" class="clear">
+    <p><span>email:</span>&nbsp;<a href="mailto:editor@pilotlightjournal.org">editor@pilotlightjournal.org</a></p>
+</div>
+@section Scripts{}

@@ -62,7 +62,7 @@ namespace pilotlightjournal.org {
         }
 
         protected void Application_Start() {
-            Database.SetInitializer<PilotLightJournalContext>(new PilotLightJournalInitializer());
+            //Database.SetInitializer<PilotLightJournalContext>(new PilotLightJournalInitializer());
 
             AreaRegistration.RegisterAllAreas();
 
