@@ -1,7 +1,18 @@
-﻿@{
+﻿@using pilotlightjournal.org.Models
+@model List<Contributor>
+@{
     ViewBag.Title = "Contributors";
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileLayout.cshtml"
+        : "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Contributors</h2>
-
-@section Scripts {}
+<div id="contributors-title">Contributors</div>
+<div id="contributors-container">
+    @foreach (Contributor c in Model) {
+        <div class="contributor">
+            <div class="contributor-name">@c.FirstName @c.LastName</div>
+        </div>
+    }
+</div>
+@section Scripts{}

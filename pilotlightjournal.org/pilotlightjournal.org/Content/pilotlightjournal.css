@@ -409,3 +409,17 @@ a:hover{
 }
 .issue1-index-work-author{
 }
+
+
+/*-----------------------------------------------
+    Contributors Page
+-----------------------------------------------*/
+#contributors-container{ }
+#contributors-title{
+    display:block;
+    clear:both;
+    float:left;
+    font-size:2.15em;
+    font-weight:bold;
+    margin: 0 0 .85em 0;    
+}

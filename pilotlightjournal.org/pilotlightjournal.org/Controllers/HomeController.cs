@@ -19,19 +19,6 @@ namespace pilotlightjournal.org.Controllers
         public ActionResult Index() { return View(); }
 
         /// <summary>
-        /// GET: /TestingIndex
-        /// </summary>
-        /// <returns></returns>
-        public ActionResult TestingIndex(){
-            Issue i = issues.GetMostRecent();
-            IndexModel model = new IndexModel();
-            model.IssueTitle = i.Name;
-            model.IssueReleaseDate = i.ReleaseDate;
-            
-            return View(model); 
-        }
-
-        /// <summary>
         /// GET: /Home/AboutUs
         /// </summary>
         /// <returns></returns>
@@ -49,6 +36,6 @@ namespace pilotlightjournal.org.Controllers
         /// <returns></returns>
         public ActionResult Submissions() { return View(); }
 
-        public ActionResult Contributors() { return View(); }
+        public ActionResult Contributors() { return View(issues.GetContributors()); }
     }
 }

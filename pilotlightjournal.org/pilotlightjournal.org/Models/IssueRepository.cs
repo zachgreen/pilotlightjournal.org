@@ -27,5 +27,19 @@ namespace pilotlightjournal.org.Models {
                    orderby i.ReleaseDate ascending
                    select i).ToList();
         }
+
+        public List<Contributor> GetContributors() {
+            return (from i in dbContext.Contributors
+                    orderby i.LastName, i.FirstName ascending
+                    select i).ToList();
+        }
+
+        public List<Contributor> GetContributors(int id) {
+            return (from w in dbContext.Works
+                    join c in dbContext.Contributors on w.Contributor.ContributorId equals c.ContributorId
+                    where w.Issue.IssueId == id
+                    orderby c.LastName, c.FirstName ascending
+                    select c).ToList();
+        }
     }
 }
