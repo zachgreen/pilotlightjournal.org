@@ -12,6 +12,8 @@
             <div id="article-header-subtitle">A Journal of 21<span class="superscript">st</span> Century Poetics and Criticism</div>
             <div id="article-header-line">&nbsp;</div>
             <div id="article-header-right-nav">
+                @Html.NavLink("Current Issue", "Index", new { area = "Issue1", controller = "Issue1" })&nbsp;|&nbsp;
+                @Html.NavLink("Contributors", "Contributors", new { area = "", controller = "Home" })&nbsp;|&nbsp;
                 @Html.NavLink("About", "About", new { area = "", controller = "Home" })&nbsp;|&nbsp;
                 @Html.NavLink("Submissions", "Submissions", new { area = "", controller = "Home" })&nbsp;|&nbsp;
                 @Html.NavLink("Contact", "Contact", new { area = "", controller = "Home" })

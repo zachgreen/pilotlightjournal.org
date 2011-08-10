@@ -84,7 +84,7 @@ body{
     background-color:#000;
     font-family:Georgia;
     color:#c8cece;
-    margin: 0 .10em 0 .10em;
+    margin: 0 4.00em 0 4.00em;
 }
 p {
     margin: 0 0 1.30em 0;
@@ -108,148 +108,50 @@ a:hover{
     border-bottom: .15em solid #ff9900;
 }
 
-/*-----------------------------------------------
-    Main Body Elements
------------------------------------------------*/   
-#header{
-    font-size:2.5em;
-    font-weight:bold;
-    font-variant:small-caps;
-    color:#fff;
-    margin:50px 0 25px 225px;    
-}
-#content{
-    margin:50px 25px 0 25px;
-    color:#c8cece;
-    min-height:250px;
-}
-#footer{
-    
-}
+#content { min-height:18em; width:100%;}
 
 /*-----------------------------------------------
     Main Classes
 -----------------------------------------------*/   
-.section-title{
-    color: #fff;
-}
-.copy{
-    font-size:2.25em;
-    color: #c8cece;
-    line-height: 2em;
-}
 .superscript{
     font-size: 65%;
     vertical-align: super;   
 }
-.lit{
-    color: #ff9900;   
-}
-.book-title{
-    font-style:italic;  
-}
-.italic{
-    font-style:italic;  
-}
+.lit{ color: #ff9900; }
+.book-title{ font-style:italic; }
+.italic{ font-style:italic; }
+.clear{ clear:both; }
 
 /*-----------------------------------------------
     Entrance Header
 -----------------------------------------------*/
 #entrance-header{
-    font-family:Georgia;
     text-align: right;
     display: block;
-    color:#c8cece;
-    margin-top:50px;
-    padding-bottom:20px; 
+    margin-top:3.10em;
+    padding-bottom:1.5em; 
 }
 #entrance-header-title{
-    font-size:7.0em;
-    padding-bottom:10px;
+    font-size:5.00em;
+    padding-bottom:.10em;
+    letter-spacing:.15em;
 }
 #entrance-header-subtitle{
-    font-size:2.05em;
+    font-size:1.75em;
+    letter-spacing:.15em;
 }
-#entrance-header-line{   
-    border-bottom: 2px solid #c8cece;
-    width:900px; 
+#entrance-header-line{
+    margin: 0 0 1.5em 0; 
+    border-bottom: .15em solid #c8cece;
+    width:90%; 
     float:right  
 }
-#entrance-header-right-nav{   
-    padding-top:15px;
-    padding-bottom:20px;
-    width:900px; 
+#entrance-header-right-nav{
+    padding: .85em 0 1.85em 0;
+    width:90%; 
     float:right;
     text-align:right;
-    font-size: 2.15em;
-}
-#entrance-header-right-nav a{ 
-    text-decoration:none;
-    color: #c8cece;
-}
-#entrance-header-right-nav a.current{
-    text-decoration:none;
-    color: #fff;
-    border-bottom: 3px solid #fff;
-}
-#entrance-header-right-nav a:hover{ 
-    color: #ff9900;
-    border-bottom: 3px solid #ff9900;
-}
-
-/*-----------------------------------------------
-    Footer Nav Header
------------------------------------------------*/
-#footer-right-nav{
-    font-family:Georgia;
-    border-top: 2px solid #c8cece;
-    padding-top:10px;
-    padding-bottom:20px;
-    width:900px; 
-    float:right;
-    text-align:right;
-    text-decoration:none;
-    color: #c8cece;
-    font-size: 2.15em;
-    clear:both;
-}
-#footer-right-nav a{ 
-    text-decoration:none;
-    color: #c8cece;
-}
-#footer-right-nav a.current{
-    text-decoration:none;
-    color: #fff;
-    border-bottom: 3px solid #fff;
-}
-#footer-right-nav a:hover{ 
-    color: #ff9900;
-    border-bottom: 3px solid #ff9900;
-}
-
-
-/*-----------------------------------------------
-    Entrance Text
------------------------------------------------*/   
-#entrancetext-container{
-    margin-top:100px;
-    margin-bottom:100px;
-    display:block;
-}
-#entrancetext { 
-    font-family:Georgia;
-    font-size:2.00em;
-    color:#c8cece;
-    margin-left: auto;
-    margin-right:auto;
-    text-align:left; 
-    display:block; 
-    width:100%;
-}
-.entrancetext-nothighlighted{}
-.entrancetext-highlighted{
-    color:#ff9900;
-    text-shadow: 0 0 5px #ff9900;
+    font-size: 1.5em;
 }
 
 
@@ -257,102 +159,162 @@ a:hover{
     Article Header
 -----------------------------------------------*/
 #article-header{
-    font-family:Georgia;
     text-align: right;
     display: block;
-    color:#c8cece;
-    margin-top:50px;
-    padding-bottom:20px; 
+    margin-top:1.65em;
+    padding-bottom:1.20em; 
 }
 #article-header-title{
-    font-size:7.0em;
-    padding-bottom:10px;
+    font-size:3.50em;
+    padding-bottom:.25em;
+    letter-spacing:.15em;
 }
 #article-header-subtitle{
-    font-size:2.05em;
+    font-size:1.35em;
     font-variant:small-caps;
+    letter-spacing:.15em;
 }
-#article-header-line{   
-    border-bottom: 2px solid #c8cece;
-    width:900px; 
+#article-header-line{
+    border-bottom: .15em solid #c8cece;
+    width:90%; 
     float:right  
 }
 #article-header-right-nav{   
-    padding-top:15px;
-    padding-bottom:20px;
-    width:900px; 
+    padding: .85em 0 1.85em 0;
+    clear:right;
     float:right;
+    width:100%;
     text-align:right;
-    font-size: 2.15em;
+    font-size: 1.5em;
 }
-#article-header-right-nav a{ 
-    text-decoration:none;
-    color: #c8cece;
+
+/*-----------------------------------------------
+    Footer Nav Header
+-----------------------------------------------*/
+#footer-right-nav{    
+    border-top: .15em solid #c8cece;
+    width:90%; 
+    float:right;
+    padding: .85em 0 1.25em 0;
+    
+    text-align:right;
+    clear:both;
 }
-#article-header-right-nav a.current{
-    text-decoration:none;
-    color: #fff;
-    border-bottom: .175em solid #c8cece;
+#footer-right-nav a{
+    font-size: 1.5em;
+} 
+
+
+/*-----------------------------------------------
+    Entrance Text
+-----------------------------------------------*/   
+#entrancetext-container{
+    margin-top:6em;
+    margin-bottom:1em;
+    display:block;
 }
-#article-header-right-nav a:hover{ 
-    color: #ff9900;
-    border-bottom: .175em solid #ff9900;
+#entrancetext {
+    font-size:2.00em;
+    text-align:left; 
+    display:block; 
+    width:100%;
 }
+.entrancetext-highlighted{
+    color:#ff9900;
+    text-shadow: 0 0 .15em #ff9900;
+}
+
 
 /*-----------------------------------------------
     Articles Page
 -----------------------------------------------*/ 
-#article-container{
-    font-size:2.25em;
-}
+#article-container{ }
+#article{  }
 #article-title{
-    clear:both;
     display:block;
-    font-size:2.45em;
+    clear:both;
+    float:left;
+    font-size:2.15em;
     font-weight:bold;
-    margin: 0 0 .5em 0;    
+    margin: 0 0 .85em 0;    
 }
 #article-author{
     display:block;
-    font-size:2.25em;
+    clear:left;
+    float:left;
+    font-size:1.65em;
     font-weight:normal;
-    margin: 0 0 1.0em 0;
+    margin: 0 0 1.55em 0;
 }
-#article{    
-}
-#article p{
-    line-height:1.45em;
-    text-indent: 20px;
-}
-#article aside{
-    display:block; 
+.continued{
+    display:block;
+    clear:left;
+    float:left;
+    font-size:1.00em;
+    font-weight:normal;
+    font-style:italic;
+    margin: 0 0 1.00em 0;
 }
 .article-page-container{
     width:100%;
+    clear:both;   
 }
 .article-sidebar{
-    padding: 0 0 0 0;
+    clear:both;
+    float:right;
+    width:100%;
+    padding: 0 0 0 .10em;
 }
+
 .article-pages{
+    clear:both;
+    float:left;
     display:block;
     text-align:justify;
+    width:100%;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
-.article-pages p{
-    text-indent: 20px;   
+.article-pages p.normal{
+    text-indent: 1.25em;   
 }
+.article-pages p.resume{    
+    text-indent: 0px; 
+}
+.article-pages p.excerpt-formatting-1{
+    text-indent:0;
+    font-size:1.05em;
+    line-height:1.95em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;  
+}
+.article-pages p.excerpt-formatting-2{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.10em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;    
+}
+.article-pages p.excerpt-formatting-3{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.10em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;
+    font-style: italic; 
+}
+
 .article-paging{
+    clear:both;
     float:right;
-    margin: 1.5em 0 1.5em 0;    
-    font-size:1.5em;
+    margin: 0 0 1.5em 0;    
 }
 .article-paging ul{
    display:inline;
    list-style:none;  
 }
 .article-paging ul li{
-    margin: 0 .35em 0 .35em;
+    margin: 0 .10em 0 .10em;
     display:inline;
     list-style:none;
     text-align:right;
@@ -360,17 +322,20 @@ a:hover{
 }
 .article-paging ul li a{
     color: #ff9900; 
-    text-decoration:none;  
+    text-decoration:none;
+    font-size: 1.15em;
 }
 .article-paging ul li a:hover{
-    text-decoration:underline;  
 }
 .article-paging ul li a.current{
-    color: #c8cece;  
+    color: #c8cece;
+    border: 0 none;
 }
+
+
 #article-footnotes{
-    line-height:1.5em;
-    font-size:.90em;
+    line-height:1.0em;
+    font-size:.75em;
 }
 #article-footnotes ol{
     list-style-type:decimal;
@@ -380,14 +345,16 @@ a:hover{
     color: #ff9900;
 }
 #article-footnotes ol li p{
-    color: #c8cece;
-    text-indent:0px;
-    margin: 0 0 1em 0;
+    margin:0 0 0 0;
     padding: 0 0 0 0;
+    color: #c8cece;
+    text-indent:0;
 }
+
+
 #article-workscited{
     border-top: .15em solid #c8cece;
-    padding: 1em 0 0 0;
+    padding: 1.0em 0 0 0;
     display:block;
     clear:both;
 }
@@ -399,28 +366,7 @@ a:hover{
     font-size:1.25em;
     font-weight:bold;   
     display:block;
-    margin: 0 0 1em 0;
-}
-.excerpt-formatting-1{
-    text-indent:0;
-    font-size:.85em;
-    line-height:1.25em;
-    margin: 0 0 1.5em 1em;
-    padding: 0 0 .25em 0;  
-}
-.excerpt-formatting-2{
-    text-indent: 0em;
-    font-size:.85em;
-    line-height:2.00em;
-    margin: 0 0 1.5em 1em;
-    padding: 0 0 .25em 0;  
-}
-.excerpt-formatting-3{
-    text-indent:0;
-    font-size:.85em;
-    line-height:2.00em;
-    margin: 0 0 1.5em 1em;
-    padding: 0 0 .25em 0;       
+    margin: 0 0 1.0em 0;
 }
 .workscited-links {
     color: #ff9900;    
@@ -428,7 +374,74 @@ a:hover{
 
 
 /*-----------------------------------------------
-    Footers
+    Issue1 - Footers
 -----------------------------------------------*/ 
-#issue1-cooley-foot1{ }
-#issue1-cooley-foot2{ }
+#issue1-cooley-foot1{ top:55px; position:relative; }
+#issue1-cooley-foot2{ top:145px; position:relative;}
+
+
+/*-----------------------------------------------
+    Issue1 - Index
+-----------------------------------------------*/
+#issue1-index-title{
+    font-size: 2.00em;
+    font-weight:bold;
+    margin: .85em 0 .55em 0;   
+}
+#issue1-index-works ul{
+    list-style-type:none;
+}
+#issue1-index-works ul li{
+    clear:both;
+    font-size: 1.35em;
+    display:block;
+    margin: 1.50em 0 0 0;
+}
+.issue1-index-work-title{
+}
+.issue1-index-work-author{
+}
+
+
+/*-----------------------------------------------
+    Contributors Page
+-----------------------------------------------*/
+#contributors-container{ }
+#contributors-title{
+    display:block;
+    clear:both;
+    float:left;
+    font-size:2.15em;
+    font-weight:bold;
+    margin: 0 0 1.0em 0;    
+}
+.contributor{
+    display:block;
+    clear:both;
+    width:100%;
+    font-size:1.50em;
+    margin: 2.00em 0 0 0; 
+    border-bottom: 1px solid #c8cece;   
+}
+.contributor-info{
+    display:block;
+    width:66%;
+    float:left;
+    margin: .50em 0 1.50em 0; 
+}
+.contributor-name{
+    display:block;
+    font-size:1.25em;
+    margin: 0 0 1em 0; 
+}
+.contributor-bio{
+    display:block;
+    font-size:1.00em;
+    margin: 0 0 .50em 1em; 
+}
+.contributor-image{
+    display:block;
+    float:right;
+    width:33%;
+    margin: .50em 0em .50em 1em; 
+}

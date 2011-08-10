@@ -6,13 +6,6 @@ c:\storage\docs\Development\asp_projects\pilotlightjournal.org\pilotlightjournal
 c:\storage\docs\Development\asp_projects\pilotlightjournal.org\pilotlightjournal.org\obj\Release\ResolveAssemblyReference.cache
 c:\storage\docs\Development\asp_projects\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.dll
 c:\storage\docs\Development\asp_projects\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.pdb
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlceca40.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlcecompact40.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlceer40EN.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlceme40.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlceoledb40.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlceqp40.dll
-C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\sqlcese40.dll
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\pilotlightjournal.org.dll
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\pilotlightjournal.org.pdb
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\EntityFramework.dll
@@ -22,3 +15,4 @@ C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlig
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\ResolveAssemblyReference.cache
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.dll
 C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.pdb
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.g.resources

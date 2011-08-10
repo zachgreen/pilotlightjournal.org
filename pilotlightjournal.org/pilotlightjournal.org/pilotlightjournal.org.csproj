@@ -125,27 +125,6 @@
     <Content Include="Scripts\jquery-1.5.2.min.js" />
     <Content Include="Scripts\jquery.color.js" />
     <Content Include="Scripts\pilotlightjournal.js" />
-    <Content Include="sqlceca40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlcecompact40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlceer40EN.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlceme40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlceoledb40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlceqp40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sqlcese40.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -220,9 +199,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\51Degrees.mobi.config" />
-    <None Include="App_Data\wurfl.xml.gz" />
+    <Resource Include="App_Data\wurfl.xml.gz" />
     <Content Include="Views\Shared\_ArticleLayout.cshtml" />
-    <Content Include="Views\Home\TestingIndex.cshtml" />
     <Content Include="Views\Issue\Archive.cshtml" />
     <Content Include="Areas\Issue1\Views\Issue1\Index.cshtml" />
     <Content Include="Views\Home\Contributors.cshtml" />

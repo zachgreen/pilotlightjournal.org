@@ -198,7 +198,7 @@ a:hover{
     border-top: .15em solid #c8cece;
     width:90%; 
     float:right;
-    padding: .85em 0 .25em 0;
+    padding: .85em 0 1.25em 0;
     
     text-align:right;
     clear:both;
@@ -249,12 +249,6 @@ a:hover{
     font-weight:normal;
     margin: 0 0 1.55em 0;
 }
-/*#article p{
-    text-indent: .65em;
-}
-#article aside{
-    display:block; 
-}*/
 .continued{
     display:block;
     clear:left;
@@ -274,6 +268,7 @@ a:hover{
     float:right;
     padding: 0 0 0 .10em;
 }
+
 .article-pages{
     clear:both;
     float:left;
@@ -288,6 +283,28 @@ a:hover{
 }
 .article-pages p.resume{    
     text-indent: 0px; 
+}
+.article-pages p.excerpt-formatting-1{
+    text-indent:0;
+    font-size:1.05em;
+    line-height:1.95em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;  
+}
+.article-pages p.excerpt-formatting-2{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.10em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;    
+}
+.article-pages p.excerpt-formatting-3{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.10em;
+    margin: 0 0 .85em 3.1em;
+    padding: 0 0 .5em 0;
+    font-style: italic; 
 }
 
 .article-paging{
@@ -354,28 +371,6 @@ a:hover{
     display:block;
     margin: 0 0 1.0em 0;
 }
-.article-pages p.excerpt-formatting-1{
-    text-indent:0;
-    font-size:1.05em;
-    line-height:1.95em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;  
-}
-.article-pages p.excerpt-formatting-2{
-    text-indent:0px;
-    font-size:1.05em;
-    line-height:1.10em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;    
-}
-.article-pages p.excerpt-formatting-3{
-    text-indent:0px;
-    font-size:1.05em;
-    line-height:1.10em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;
-    font-style: italic; 
-}
 .workscited-links {
     color: #ff9900;    
 }
@@ -408,4 +403,48 @@ a:hover{
 .issue1-index-work-title{
 }
 .issue1-index-work-author{
+}
+
+
+/*-----------------------------------------------
+    Contributors Page
+-----------------------------------------------*/
+#contributors-container{ }
+#contributors-title{
+    display:block;
+    clear:both;
+    float:left;
+    font-size:2.15em;
+    font-weight:bold;
+    margin: 0 0 1.0em 0;    
+}
+.contributor{
+    display:block;
+    clear:both;
+    width:100%;
+    font-size:1.50em;
+    margin: 2.00em 0 0 0; 
+    border-bottom: 1px solid #c8cece;   
+}
+.contributor-info{
+    display:block;
+    width:66%;
+    float:left;
+    margin: .50em 0 1.50em 0; 
+}
+.contributor-name{
+    display:block;
+    font-size:1.25em;
+    margin: 0 0 1em 0; 
+}
+.contributor-bio{
+    display:block;
+    font-size:1.00em;
+    margin: 0 0 .50em 1em; 
+}
+.contributor-image{
+    display:block;
+    float:right;
+    width:33%;
+    margin: .50em 0em .50em 1em; 
 }

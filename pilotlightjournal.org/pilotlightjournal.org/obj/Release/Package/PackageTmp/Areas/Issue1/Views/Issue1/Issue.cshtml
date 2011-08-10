@@ -11,15 +11,17 @@
 <div id="article-container">
     <article id="article">
         @* Add top of the page paging links *@
-        <div class="article-paging">
-            <ul>
-                @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
-                    <li>@Html.NavLink(p.Order.ToString(), "Issue",
-                         new { workId = Model.Work.WorkId, page = p.Order })</li>
-                }   
-                <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
-            </ul>
-        </div>
+        @if (Model.Work.Pages.Count > 1) {
+            <div class="article-paging">
+                <ul>
+                    @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
+                        <li>@Html.NavLink(p.Order.ToString(), "Issue",
+                             new { workId = Model.Work.WorkId, page = p.Order })</li>
+                    }   
+                    <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
+                </ul>
+            </div>
+        }
         <div id="article-title">@Model.Work.Title</div>
         <div id="article-author">@Model.Work.Contributor.FirstName @Model.Work.Contributor.LastName</div>
        
@@ -41,15 +43,17 @@
         } 
         
         @* Add bottom of the page paging links *@
-        <div class="article-paging">
-            <ul>
-                @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
-                    <li>@Html.NavLink(p.Order.ToString(), "Issue", 
-                        new { workId = Model.Work.WorkId, page = p.Order })</li>
-                }   
-                <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
-            </ul>
-        </div>
+        @if (Model.Work.Pages.Count > 1) {
+            <div class="article-paging">
+                <ul>
+                    @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
+                        <li>@Html.NavLink(p.Order.ToString(), "Issue",
+                            new { workId = Model.Work.WorkId, page = p.Order })</li>
+                    }   
+                    <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
+                </ul>
+            </div>
+        }            
     </article>
 </div>
 
