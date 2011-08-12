@@ -113,6 +113,8 @@
     <Content Include="Content\bkgrd_tile.png" />
     <Content Include="Content\bkgrd_tile2.png" />
     <Content Include="Content\bkgrd_tile3.png" />
+    <Content Include="Content\industrial_texture.jpg" />
+    <Content Include="Content\contributors\marianne_boruch.jpg" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
     <Content Include="Content\plj_unused.css" />

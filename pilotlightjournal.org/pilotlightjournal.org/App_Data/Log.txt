@@ -1912,3 +1912,4 @@
 2011-08-10T01:33:48.5922260Z - 1248 - Debug - Initialising redirection module
 2011-08-10T01:33:48.5942261Z - 1248 - Debug - Initialising redirection module event handlers
 2011-08-10T01:35:32.1301480Z - 1248 - Debug - Disposing Redirection Module
+2011-08-12T00:46:53.8147830Z - 1248 - Debug - Disposing Redirection Module
