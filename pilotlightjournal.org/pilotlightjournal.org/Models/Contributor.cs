@@ -18,6 +18,9 @@ namespace pilotlightjournal.org.Models {
         [MaxLength(255)]
         public string ImagePage { get; set; }
 
+        [MaxLength(50)]
+        public string ImageCredit { get; set; }
+
         public string Bio { get; set; }
     }
 }

@@ -172,6 +172,16 @@ a:hover{
     padding-bottom:.25em;
     letter-spacing:.15em;
 }
+#article-header-title a.current{
+    text-decoration:none;
+    color: #c8cece;
+    border-bottom: 0px none;
+}
+#article-header-title a:hover{ 
+    text-decoration:none;
+    color: #ff9900;
+    border-bottom: 0px none;
+}
 #article-header-subtitle{
     font-size:1.35em;
     font-variant:small-caps;
@@ -389,7 +399,8 @@ a:hover{
 #issue1-index-title{
     font-size: 2.00em;
     font-weight:bold;
-    margin: .85em 0 .55em 0;   
+    margin: .85em 0 .25em 0;   
+    float:left;
 }
 #issue1-index-works{ float:left;}
 #issue1-index-works ul{
@@ -399,7 +410,7 @@ a:hover{
     clear:both;
     font-size: 1.35em;
     display:block;
-    margin: 1.50em 0 0 0;
+    margin: 1.50em 0 0 1.0em;
 }
 .issue1-index-work-title{}
 .issue1-index-work-author{}
@@ -447,4 +458,8 @@ a:hover{
     float:right;
     width:40%;
     margin: .50em 0em .50em 1em; 
+}
+.contributor-image-credit{
+    font-style:italic;
+    font-size:.65em;
 }

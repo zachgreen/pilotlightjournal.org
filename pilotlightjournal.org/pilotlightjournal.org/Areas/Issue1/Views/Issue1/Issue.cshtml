@@ -23,7 +23,9 @@
             </div>
         }
         <div id="article-title">@Model.Work.Title</div>
-        <div id="article-author">@Model.Work.Contributor.FirstName @Model.Work.Contributor.LastName</div>
+        <div id="article-author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
+                "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
+                new { area = "", controller = "Home" }, null)</div>
        
         @* Add continued from link *@
         @if (Model.Page > 1) {

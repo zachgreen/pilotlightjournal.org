@@ -170,6 +170,16 @@ a:hover{
     padding-bottom:.25em;
     letter-spacing:.15em;
 }
+#article-header-title a.current{
+    text-decoration:none;
+    color: #c8cece;
+    border-bottom: 0px none;
+}
+#article-header-title a:hover{ 
+    text-decoration:none;
+    color: #ff9900;
+    border-bottom: 0px none;
+}
 #article-header-subtitle{
     font-size:1.35em;
     font-variant:small-caps;
@@ -445,4 +455,8 @@ a:hover{
     float:right;
     width:40%;
     margin: .10em 0em .1em 0em; 
+}
+.contributor-image-credit{
+    font-style:italic;
+    font-size:.65em;
 }

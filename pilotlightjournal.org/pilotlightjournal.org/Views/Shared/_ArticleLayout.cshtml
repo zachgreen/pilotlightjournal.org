@@ -8,12 +8,12 @@
     </head>
     <body>
         <div id="article-header">
-            <div id="article-header-title">Pilot&nbsp;Light</div>
+            <div id="article-header-title">@Html.ActionLink("Pilot Light", "Index")</div>
             <div id="article-header-subtitle">A Journal of 21<span class="superscript">st</span> Century Poetics and Criticism</div>
             <div id="article-header-line">&nbsp;</div>
             <div id="article-header-right-nav">
-                @Html.NavLink("Current Issue", "Index", new { area = "Issue1", controller = "Issue1" })&nbsp;|&nbsp;
-                @Html.NavLink("Contributors", "Contributors", new { area = "", controller = "Home" })&nbsp;|&nbsp;
+               @* @Html.NavLink("Current Issue", "Index", new { area = "Issue1", controller = "Issue1" })&nbsp;|&nbsp;
+                @Html.NavLink("Contributors", "Contributors", new { area = "", controller = "Home" })&nbsp;|&nbsp;*@
                 @Html.NavLink("About", "About", new { area = "", controller = "Home" })
             </div>
         </div>
