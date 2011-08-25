@@ -1,0 +1,29 @@
+﻿@using pilotlightjournal.org.Models
+@model List<Contributor>
+@{
+    ViewBag.Title = "Contributors";
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileArticleLayout.cshtml"
+        : "~/Views/Shared/_ArticleLayout.cshtml";
+}
+
+<div id="contributors-title">Contributors</div>
+<div id="contributors-container">
+    @foreach (Contributor c in Model) {
+        <div class="contributor">
+            <div class="contributor-info">
+                <div class="contributor-name">@c.FirstName @c.LastName</div>
+                <div class="contributor-bio">@Html.Raw(c.Bio)</div>
+            </div>
+            @if (!String.IsNullOrEmpty(c.ImagePage)) {
+                <div class="contributor-image">
+                    <img alt="@c.FirstName @c.LastName" src="@Url.Content(c.ImagePage)" width="400px" /><br />
+                    <span class="contributor-image-credit">Photo credit: @c.ImageCredit</span>
+                </div>
+                
+            }
+            <div style="clear:both; height:0px;">&nbsp;</div>
+        </div>
+    }
+</div>
+@section Scripts{}
