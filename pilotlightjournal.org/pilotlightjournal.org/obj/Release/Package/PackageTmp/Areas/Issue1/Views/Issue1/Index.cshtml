@@ -4,12 +4,12 @@
 @{
     ViewBag.Title = "Pilot Light Journal - " + Model.Name + " - " + Model.ReleaseDate.ToString("MMMM yyyy");
     Layout = Request.Browser.IsMobileDevice
-        ? "~/Views/Shared/_MobileLayout.cshtml"
-        : "~/Views/Shared/_Layout.cshtml";
+        ? "~/Views/Shared/_MobileArticleLayout.cshtml"
+        : "~/Views/Shared/_ArticleLayout.cshtml";
 }
 
+<div id="issue1-index-image"><img alt="" src="@Url.Content("~/Content/Industrial_Texture.jpg")" width="500" /></div>
 <div id="issue1-index-title">@Model.Name</div>
-
 <div id="issue1-index-works">
     <ul>
     @if (Model.Works != null) {
@@ -17,7 +17,7 @@
             <li>
                 <span class="issue1-index-work-title"><a href="@Url.Action("Issue", Model.Controller, new { workId = w.WorkId , page = 1 })">@Html.Raw(w.Title)</a></span>
                 &nbsp;-&nbsp;
-                <span class="issue1-index-work-author">@Html.ActionLink(w.Contributor.FirstName + " " +w.Contributor.LastName, 
+                <span class="issue1-index-work-author">@Html.ActionLink(w.Contributor.FirstName + " " +w.Contributor.LastName,
                       "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName, 
                       new { area = "", controller = "Home" }, null)</span>
             </li>
@@ -26,6 +26,7 @@
     }
     </ul>
 </div>
+
 
 
 @section Scripts {}

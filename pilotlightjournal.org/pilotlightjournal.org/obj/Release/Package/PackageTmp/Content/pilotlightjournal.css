@@ -89,8 +89,8 @@ body{
     margin: 0 4.00em 0 4.00em;
 }
 p {
-    margin: 0 0 1.30em 0;
-    padding: 0 0 .65em 0;
+    margin: 0 0 1.00em 0;
+    padding: 0 0 .45em 0;
     line-height: 1.20em; 
     font-size:1.25em;
 }
@@ -123,7 +123,7 @@ a:hover{
 .book-title{ font-style:italic; }
 .italic{ font-style:italic; }
 .clear{ clear:both; }
-
+.section-title { font-size:2em; margin: 1.00em 0 .25em 0; font-weight:bold; }
 
 /*-----------------------------------------------
     Entrance Header
@@ -171,6 +171,16 @@ a:hover{
     font-size:3.50em;
     padding-bottom:.25em;
     letter-spacing:.15em;
+}
+#article-header-title a.current{
+    text-decoration:none;
+    color: #c8cece;
+    border-bottom: 0px none;
+}
+#article-header-title a:hover{ 
+    text-decoration:none;
+    color: #ff9900;
+    border-bottom: 0px none;
 }
 #article-header-subtitle{
     font-size:1.35em;
@@ -256,7 +266,7 @@ a:hover{
     font-size:1.00em;
     font-weight:normal;
     font-style:italic;
-    margin: 0 0 1.00em 0;
+    margin: 0 0 2.00em 0;
 }
 .article-page-container{
     width:100%;
@@ -278,6 +288,12 @@ a:hover{
     margin: 0;
     padding: 0;
 }
+.article-pages p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    line-height: 1.65em; 
+    font-size:1.25em;
+}
 .article-pages p.normal{
     text-indent: 1.25em;   
 }
@@ -288,22 +304,37 @@ a:hover{
     text-indent:0;
     font-size:1.05em;
     line-height:1.95em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;  
+    margin: .85em 0 .85em 3.1em;
+    padding: .5em 0 .5em 0;     
 }
 .article-pages p.excerpt-formatting-2{
     text-indent:0px;
     font-size:1.05em;
     line-height:1.10em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;    
+    margin: .85em 0 .85em 3.1em;
+    padding: .5em 0 .5em 0;    
 }
 .article-pages p.excerpt-formatting-3{
     text-indent:0px;
     font-size:1.05em;
     line-height:1.10em;
-    margin: 0 0 .85em 3.1em;
-    padding: 0 0 .5em 0;
+    margin: .85em 0 .85em 3.1em;
+    padding: .5em 0 .5em 0;   
+    font-style: italic; 
+}
+.article-pages p.excerpt-formatting-4{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.75em;
+    margin: .85em 0 .85em 3.1em;
+    padding: .5em 0 .5em 0;
+}
+.article-pages p.additional-note{
+    text-indent:0px;
+    font-size:1.05em;
+    line-height:1.10em;
+    margin: .85em 0 .85em 0;
+    padding: .5em 0 .5em 0;   
     font-style: italic; 
 }
 
@@ -362,6 +393,8 @@ a:hover{
     clear:both;
 }
 #article-workscited p{
+    margin: 0 0 1.00em 0;
+    padding: 0 0 .45em 0;
     padding-left: 2em ;
     text-indent: -2em ;
 }
@@ -389,8 +422,10 @@ a:hover{
 #issue1-index-title{
     font-size: 2.00em;
     font-weight:bold;
-    margin: .85em 0 .55em 0;   
+    margin: .85em 0 .25em 0;   
+    float:left;
 }
+#issue1-index-works{ float:left;}
 #issue1-index-works ul{
     list-style-type:none;
 }
@@ -398,12 +433,11 @@ a:hover{
     clear:both;
     font-size: 1.35em;
     display:block;
-    margin: 1.50em 0 0 0;
+    margin: 1.50em 0 0 1.0em;
 }
-.issue1-index-work-title{
-}
-.issue1-index-work-author{
-}
+.issue1-index-work-title{}
+.issue1-index-work-author{}
+#issue1-index-image {float: right;}
 
 
 /*-----------------------------------------------
@@ -428,7 +462,7 @@ a:hover{
 }
 .contributor-info{
     display:block;
-    width:66%;
+    width:55%;
     float:left;
     margin: .50em 0 1.50em 0; 
 }
@@ -445,6 +479,10 @@ a:hover{
 .contributor-image{
     display:block;
     float:right;
-    width:33%;
+    width:40%;
     margin: .50em 0em .50em 1em; 
+}
+.contributor-image-credit{
+    font-style:italic;
+    font-size:.65em;
 }
