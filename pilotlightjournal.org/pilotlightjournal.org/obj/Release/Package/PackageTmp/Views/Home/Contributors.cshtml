@@ -11,6 +11,7 @@
 <div id="contributors-container">
     @foreach (Contributor c in Model) {
         <div class="contributor">
+            <a name="@c.FirstName-@c.LastName"></a>
             <div class="contributor-info">
                 <div class="contributor-name">@c.FirstName @c.LastName</div>
                 <div class="contributor-bio">@Html.Raw(c.Bio)</div>

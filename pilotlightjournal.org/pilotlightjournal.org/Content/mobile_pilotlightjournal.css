@@ -474,6 +474,7 @@ a:hover{
 .contributor-bio{
     display:block;
     font-size:1.00em;
+    line-height:1.30em;
     margin: 0 0 .50em 1em; 
 }
 .contributor-image{
