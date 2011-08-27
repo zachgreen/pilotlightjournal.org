@@ -22,5 +22,7 @@ namespace pilotlightjournal.org.Models {
         public string ImageCredit { get; set; }
 
         public string Bio { get; set; }
+
+        public virtual ICollection<Work> Works { get; set; }
     }
 }

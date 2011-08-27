@@ -2267,3 +2267,140 @@
 2011-08-26T00:36:15.5716678Z - 2928 - Debug - Disposing Redirection Module
 2011-08-26T00:36:18.2978237Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
 2011-08-26T00:36:18.3018239Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T00:37:56.9054637Z - 2928 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T00:37:56.9124641Z - 2928 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T00:37:56.9464661Z - 2928 - Debug - Initialising redirection module
+2011-08-26T00:37:56.9544665Z - 2928 - Debug - Initialising redirection module static fields.
+2011-08-26T00:37:56.9554666Z - 2928 - Debug - Initialising redirection module event handlers
+2011-08-26T00:37:56.9574667Z - 2928 - Debug - Initialising redirection module
+2011-08-26T00:37:56.9584668Z - 2928 - Debug - Initialising redirection module event handlers
+2011-08-26T00:37:57.5164987Z - 2928 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T00:37:59.8866343Z - 2928 - Info - Loaded 13925 devices using 11787 strings in 313ms
+2011-08-26T00:40:27.9451027Z - 2928 - Debug - Disposing Redirection Module
+2011-08-26T00:42:50.9302810Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T00:42:50.9342812Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T00:47:57.5818205Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T00:47:57.5858207Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T00:47:58.2168568Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T00:47:58.2198570Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:03:06.2037907Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:03:06.2087910Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:03:13.9742351Z - 1672 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:03:13.9912361Z - 1672 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:03:15.1703035Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:03:15.1793040Z - 1672 - Debug - Initialising redirection module static fields.
+2011-08-26T01:03:15.1813042Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:03:15.1843043Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:03:15.1843043Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:03:21.3036543Z - 1672 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:03:24.1218155Z - 1672 - Info - Loaded 13925 devices using 11787 strings in 657ms
+2011-08-26T01:03:29.2281076Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:03:29.2281076Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:04:12.4985825Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:07:48.4869363Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:07:50.9200755Z - 1672 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:07:50.9290760Z - 1672 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:07:50.9710784Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:07:50.9810790Z - 1672 - Debug - Initialising redirection module static fields.
+2011-08-26T01:07:50.9820791Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:07:50.9840792Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:07:50.9840792Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:07:52.0801419Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:07:52.0871423Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:07:53.7262360Z - 1672 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:07:56.3253847Z - 1672 - Info - Loaded 13925 devices using 11787 strings in 537ms
+2011-08-26T01:07:56.5073951Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:07:56.5073951Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:08:23.6779492Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:08:23.6779492Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:09:20.9132228Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:09:25.5014853Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:09:25.5014853Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:12:21.0005232Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:13:51.0436734Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:16:20.6112282Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:16:20.6112282Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:17:51.1604073Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:18:01.0839749Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:18:01.0839749Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:18:57.3281919Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:18:57.3281919Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:24:48.8612984Z - 1672 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:24:48.8692989Z - 1672 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T01:24:49.2103184Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:24:49.2173188Z - 1672 - Debug - Initialising redirection module static fields.
+2011-08-26T01:24:49.2183188Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:24:49.2203190Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:24:49.2203190Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:24:51.8854714Z - 1672 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T01:24:54.4576185Z - 1672 - Info - Loaded 13925 devices using 11787 strings in 515ms
+2011-08-26T01:24:55.4366745Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:24:55.4366745Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:24:55.4376746Z - 1672 - Debug - Initialising redirection module
+2011-08-26T01:24:55.4376746Z - 1672 - Debug - Initialising redirection module event handlers
+2011-08-26T01:25:48.7577243Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:26:18.7724410Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T01:45:13.0993208Z - 1672 - Debug - Disposing Redirection Module
+2011-08-26T22:26:47.0538645Z - 5696 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:26:47.0698654Z - 5696 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:26:47.1358692Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:26:47.1478698Z - 5696 - Debug - Initialising redirection module static fields.
+2011-08-26T22:26:47.1498700Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:26:47.1538702Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:26:47.1538702Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:26:51.0220914Z - 5696 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:26:53.6982445Z - 5696 - Info - Loaded 13925 devices using 11787 strings in 614ms
+2011-08-26T22:26:53.9462587Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:26:53.9462587Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:26:53.9462587Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:26:53.9462587Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:28:17.0250105Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:28:47.0397273Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:29:51.3324046Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:29:51.3324046Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:31:47.1270277Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:41:19.4397621Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:41:19.4397621Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:42:17.4330791Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:46:58.9051784Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:46:58.9091786Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:47:18.1272778Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:47:18.1282779Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:48:17.6086800Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:48:42.5451063Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:48:49.3734968Z - 5696 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:48:49.3844974Z - 5696 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:48:49.4234997Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:48:49.4305001Z - 5696 - Debug - Initialising redirection module static fields.
+2011-08-26T22:48:49.4315001Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:48:49.4345003Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:48:49.4345003Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:48:50.5105619Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:48:50.5175623Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:48:51.6286258Z - 5696 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:48:54.2217741Z - 5696 - Info - Loaded 13925 devices using 11787 strings in 523ms
+2011-08-26T22:48:55.0048189Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:48:55.0048189Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:48:55.0048189Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:48:55.0048189Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:49:24.9835336Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:49:24.9835336Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:49:24.9835336Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:49:27.9917057Z - 4616 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:49:27.9957059Z - 4616 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:49:30.7218618Z - 5696 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:49:30.7288622Z - 5696 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-08-26T22:49:30.7668644Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:49:30.7738648Z - 5696 - Debug - Initialising redirection module static fields.
+2011-08-26T22:49:30.7758649Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:49:30.7778650Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:49:30.7778650Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:49:33.1239992Z - 5696 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-08-26T22:49:35.6871458Z - 5696 - Info - Loaded 13925 devices using 11787 strings in 503ms
+2011-08-26T22:49:36.3681848Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:49:36.3681848Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:49:36.3701849Z - 5696 - Debug - Initialising redirection module
+2011-08-26T22:49:36.3701849Z - 5696 - Debug - Initialising redirection module event handlers
+2011-08-26T22:50:30.7082928Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T22:51:00.7230096Z - 5696 - Debug - Disposing Redirection Module
+2011-08-26T23:18:47.7833600Z - 5696 - Debug - Disposing Redirection Module

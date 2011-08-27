@@ -122,6 +122,19 @@ a:hover{
 .italic{ font-style:italic; }
 .clear{ clear:both; }
 .section-title { font-size:2em; margin: 1.00em 0 .25em 0; font-weight:bold;}
+.dividing-line-container{
+    margin: 2em 0 2em 0;
+}
+.dividing-line{
+    width:10em;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom:1px solid #c8cece;
+}
+.image-credit{
+    font-style:italic;
+    font-size:.85em;
+}
 
 /*-----------------------------------------------
     Entrance Header
@@ -444,10 +457,13 @@ a:hover{
 }
 .issue1-index-work-title{}
 .issue1-index-work-author{}
-#issue1-index-image {
+#issue1-index-image-container {
     float: right;
     width:38%;
-    text-align:right;
+    text-align:left;
+}
+#issue1-index-image {
+    padding-bottom:.25em;
 }
 
 
@@ -477,16 +493,22 @@ a:hover{
     float:left;
     margin: .50em 0 1.50em 0; 
 }
-.contributor-name{
+.contributor-name-issues{
     display:block;
-    font-size:1.25em;
     margin: 0 0 1em 0; 
+}
+.contributor-name{
+    font-size:1.25em;
+}
+.contributor-issues{
+    font-size:1.00em;
 }
 .contributor-bio{
     display:block;
     font-size:1.00em;
     line-height:1.30em;
     margin: 0 0 .50em 1em; 
+    text-align: justify;
 }
 .contributor-image{
     display:block;

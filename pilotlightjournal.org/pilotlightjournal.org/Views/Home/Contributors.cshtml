@@ -1,5 +1,5 @@
 ﻿@using pilotlightjournal.org.Models
-@model List<Contributor>
+@model List<ContributorViewModel>
 @{
     ViewBag.Title = "Contributors";
     Layout = Request.Browser.IsMobileDevice
@@ -9,17 +9,31 @@
 
 <div id="contributors-title">Contributors</div>
 <div id="contributors-container">
-    @foreach (Contributor c in Model) {
+    @foreach (ContributorViewModel cvm in Model) {
         <div class="contributor">
-            <a name="@c.FirstName-@c.LastName"></a>
+            <a name="@cvm.Contributor.FirstName-@cvm.Contributor.LastName"></a>
             <div class="contributor-info">
-                <div class="contributor-name">@c.FirstName @c.LastName</div>
-                <div class="contributor-bio">@Html.Raw(c.Bio)</div>
+                <div class="contributor-name-issues">
+                    <span class="contributor-name">@cvm.Contributor.FirstName @cvm.Contributor.LastName</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="contributor-issues">
+                       @{
+                           var issueText = "( ";
+                           for(int i=0; i < cvm.Issues.Count; i++){
+                               if(i != 0) {issueText += ", ";}
+                               issueText += Html.NavLink(cvm.Issues[i].Name, "Index", new { area = cvm.Issues[i].Controller, controller = cvm.Issues[i].Controller });
+                           }
+                           issueText += " )";
+                       }
+                       @Html.Raw(issueText)                       
+                    </span>
+                </div>
+                <div class="contributor-bio">@Html.Raw(cvm.Contributor.Bio)</div>
             </div>
-            @if (!String.IsNullOrEmpty(c.ImagePage)) {
+            @if (!String.IsNullOrEmpty(cvm.Contributor.ImagePage)) {
                 <div class="contributor-image">
-                    <img alt="@c.FirstName @c.LastName" src="@Url.Content(c.ImagePage)" width="400px" /><br />
-                    <span class="contributor-image-credit">Photo credit: @c.ImageCredit</span>
+                    <img alt="@cvm.Contributor.FirstName @cvm.Contributor.LastName" src="@Url.Content(cvm.Contributor.ImagePage)" width="400px" /><br />
+                    <span class="contributor-image-credit">Photo by: @cvm.Contributor.ImageCredit</span>
                 </div>
                 
             }
