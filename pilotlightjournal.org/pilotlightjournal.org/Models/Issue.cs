@@ -24,6 +24,6 @@ namespace pilotlightjournal.org.Models {
         [Required, MaxLength(100)]
         public string Url { get; set; }
 
-        public ICollection<Work> Works { get; set; }
+        public virtual ICollection<Work> Works { get; set; }
     }
 }

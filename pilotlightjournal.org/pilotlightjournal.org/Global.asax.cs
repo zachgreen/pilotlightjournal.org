@@ -42,15 +42,15 @@ namespace pilotlightjournal.org {
             );
 
             routes.MapRoute(
-                "TestingIndex",
-                "TestingIndex",
-                new { controller = "Home", action = "TestingIndex", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
                 "Contributors",
                 "Contributors",
                 new { controller = "Home", action = "Contributors", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                "RssFeed",
+                "RssFeed",
+                new { controller = "Home", action = "RssFeed", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(

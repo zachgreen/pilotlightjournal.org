@@ -115,7 +115,7 @@ a:hover{
     border-bottom: .15em solid #ff9900;
 }
 
-#content { min-height:18em; width:100%;}
+#content { min-height:18em; width:100%; }
 
 /*-----------------------------------------------
     Main Classes
@@ -292,7 +292,7 @@ a:hover{
 }
 .article-sidebar{
     clear:right;
-    width:25%;
+    width:18%;
     float:right;
     padding: 0 0 0 .10em;
 }
@@ -302,7 +302,7 @@ a:hover{
     float:left;
     display:block;
     text-align:justify;
-    width:70%;
+    width:80%;
     margin: 0;
     padding: 0;
 }
@@ -467,10 +467,7 @@ a:hover{
     width:34%;
     text-align:left;
 }
-#issue1-index-image {
-    padding-bottom:.25em;
-}
-
+#issue1-index-image { padding-bottom:.25em; }
 
 /*-----------------------------------------------
     Contributors Page
@@ -524,4 +521,34 @@ a:hover{
 .contributor-image-credit{
     font-style:italic;
     font-size:.65em;
+}
+
+
+/*-----------------------------------------------
+    Plug-ins floater
+-----------------------------------------------*/
+#plugins{
+    background-color:#111;
+    position:fixed;
+    bottom:0em;
+    right:5em !important;
+    border-top: .095em solid #fff;
+    border-left: .095em solid #fff;
+    border-right: .095em solid #fff;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    width:9.5em;    
+}
+#plugins-rss{
+    float:left;
+    text-align:center;
+    width:35%;
+    padding: .35em 0 .05em 0;
+}
+#plugins-rss a:hover{ border-bottom: 0; }
+#plugins-facebook{
+    float:right;
+    text-align:center;
+    width:65%;
+    padding: .65em 0 .05em 0;
 }

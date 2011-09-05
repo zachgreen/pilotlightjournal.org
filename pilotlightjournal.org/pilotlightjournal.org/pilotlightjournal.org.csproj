@@ -55,6 +55,7 @@
       <Private>True</Private>
       <HintPath>..\packages\SqlServerCompact.4.0.8482.1\lib\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages" />
     <Reference Include="System.Web.Helpers" />
@@ -96,6 +97,7 @@
     </Compile>
     <Compile Include="Models\Contributor.cs" />
     <Compile Include="Models\ContributorViewModel.cs" />
+    <Compile Include="Models\FeedResult.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PilotLightJournalInitializer.cs" />
     <Compile Include="Models\IndexModel.cs" />
@@ -118,11 +120,14 @@
     <Content Include="Content\bkgrd_tile4.png" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
+    <Content Include="Content\favicon.ico" />
     <Content Include="Content\industrial_texture.jpg" />
     <Content Include="Content\contributors\marianne_boruch.jpg" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
     <Content Include="Content\plj_unused.css" />
+    <Content Include="Content\rss.png" />
+    <Content Include="Content\rss_orange.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Mobile\Default.aspx" />

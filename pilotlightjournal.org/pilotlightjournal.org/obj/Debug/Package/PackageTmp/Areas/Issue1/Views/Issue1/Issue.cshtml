@@ -1,0 +1,64 @@
+﻿@using pilotlightjournal.org.Models
+@model WorkViewModel
+@{
+    ViewBag.Title = "Pilot Light Journal - " + Model.Work.Issue.Name + " - " +
+        Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName + " - " + Model.Work.Title;
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileArticleLayout.cshtml"
+        : "~/Views/Shared/_ArticleLayout.cshtml";
+    
+}
+<div id="article-container">
+    <article id="article">
+        @* Add top of the page paging links *@
+        @if (Model.Work.Pages.Count > 1) {
+            <div class="article-paging">
+                <ul>
+                    @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
+                        <li>@Html.NavLink(p.Order.ToString(), "Issue",
+                             new { workId = Model.Work.WorkId, page = p.Order })</li>
+                    }   
+                    <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
+                </ul>
+            </div>
+        }
+        <div id="article-title">@Model.Work.Title</div>
+        <div id="article-author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
+                "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
+                new { area = "", controller = "Home" }, null)</div>
+       
+        @* Add continued from link *@
+        @if (Model.Page > 1) {
+            <div class="continued">(Continued from @Html.NavLink("Page " + (Model.Page - 1).ToString(), "Issue", 
+                                                        new { workId = Model.Work.WorkId, page = Model.Page - 1 }))</div>
+        }
+        @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
+            if (Model.Page == 0 || Model.Page == p.Order) {
+                Html.RenderPartial(p.Url); 
+            }
+        }
+
+        @* Add continue to link *@
+        @if (Model.Page != 0 && Model.Page < Model.Work.Pages.Count) {
+            <div class="continued">(Continue to @Html.NavLink("Page " + (Model.Page + 1).ToString(), "Issue", 
+                                                        new { workId = Model.Work.WorkId, page = Model.Page + 1 }))</div>
+        } 
+        
+        @* Add bottom of the page paging links *@
+        @if (Model.Work.Pages.Count > 1) {
+            <div class="article-paging">
+                <ul>
+                    @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
+                        <li>@Html.NavLink(p.Order.ToString(), "Issue",
+                            new { workId = Model.Work.WorkId, page = p.Order })</li>
+                    }   
+                    <li>@Html.NavLink("View All", "Issue", new { workId = Model.Work.WorkId, page = 0 })</li>
+                </ul>
+            </div>
+        }            
+    </article>
+</div>
+
+@section scripts{
+
+}
