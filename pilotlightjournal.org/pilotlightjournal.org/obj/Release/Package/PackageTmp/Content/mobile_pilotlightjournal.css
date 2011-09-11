@@ -84,11 +84,7 @@ body{
     background-color:#000;
     font-family:Georgia;
     color:#c8cece;
-    margin: 0 1.25em 0 1.25em;
-    
-    /*max-width:1100px;
-    margin-left:auto;
-    margin-right:auto;*/
+    margin: 0 0em 0 0em;
 }
 p {
     margin: 0 0 1.00em 0;
@@ -112,7 +108,9 @@ a:hover{
     border-bottom: .15em solid #ff9900;
 }
 
-#content { min-height:18em; width:100%;}
+#content {
+    margin: 0 1.25em 0 1.25em;
+    min-height:18em; width:100%;}
 
 /*-----------------------------------------------
     Main Classes
@@ -146,8 +144,8 @@ a:hover{
 #entrance-header{
     text-align: right;
     display: block;
-    margin-top:3.10em;
-    padding-bottom:1.5em; 
+    padding-bottom:1.5em;
+    margin: 3.10em 1.25em 0 1.25em;
 }
 #entrance-header-title{
     font-size:5.00em;
@@ -155,7 +153,7 @@ a:hover{
     letter-spacing:.15em;
 }
 #entrance-header-subtitle{
-    font-size:1.75em;
+    font-size:1.65em;
     letter-spacing:.15em;
 }
 #entrance-header-line{
@@ -179,11 +177,10 @@ a:hover{
 #article-header{
     text-align: left;
     display: block;
-    margin-top:1.65em;
-    padding-bottom:1.20em; 
+    margin: 3.10em 1.25em 0 1.25em;
 }
 #article-header-title{
-    font-size:2.50em;
+    font-size:3.50em;
     padding-bottom:.25em;
     letter-spacing:.15em;
 }
@@ -198,7 +195,7 @@ a:hover{
     border-bottom: 0em none;
 }
 #article-header-subtitle{
-    font-size:1.35em;
+    font-size:1.65em;
     font-variant:small-caps;
     letter-spacing:.15em;
 }
@@ -220,28 +217,29 @@ a:hover{
     width:90%; 
     float:right;
     padding: .85em 0 1.25em 0;
-    
+    margin: 0 1.25em 0 1.25em;    
     text-align:right;
     clear:both;
 }
-#footer-right-nav a{
-    font-size: 1.5em;
-} 
+#footer-right-nav a{ font-size: 1.5em;}
 
 
 /*-----------------------------------------------
     Entrance Text
 -----------------------------------------------*/   
 #entrancetext-container{
-    margin-top:6em;
-    margin-bottom:1em;
     display:block;
+    margin: 6em 1.25em 1em 1.25em;
 }
 #entrancetext {
-    font-size:2.00em;
+    font-size:1.65em;
     text-align:left; 
     display:block; 
     width:100%;
+}
+.entrancetext-nothighlighted{
+    color:#ff9900;
+    text-shadow: 0 0 .15em #ff9900;
 }
 .entrancetext-highlighted{
     color:#ff9900;
@@ -429,32 +427,24 @@ a:hover{
     Issue1 - Index
 -----------------------------------------------*/
 #issue1-index-title{
-    font-size: 2.00em;
+    font-size: 2.50em;
     font-weight:bold;
-    margin: .85em 0 .55em 0;   
+    margin: 0 0 .55em 0;   
 }
-#issue1-index{    
-    width:90%;
-}
-#issue1-index-info{
-    float:left; 
-    width:65%;
-}
+#issue1-index{ }
+#issue1-index-info{ }
 #issue1-index-works{ }
-#issue1-index-works ul{
-    list-style-type:none;
-}
+#issue1-index-works ul{ list-style-type:none; }
 #issue1-index-works ul li{
     clear:both;
-    font-size: 1.35em;
+    font-size: 1.60em;
     display:block;
-    margin: 1.50em 0 0 1.0em;
+    margin: 1.50em 0 0 0;
 }
-.issue1-index-work-title{}
-.issue1-index-work-author{}
+.issue1-index-work-title{ }
+.issue1-index-work-author{ }
 #issue1-index-image-container {
-    float: right;
-    width:34%;
+    margin: 2em 0 0 0;
     text-align:left;
 }
 #issue1-index-image {padding-bottom:.25em;}
@@ -463,7 +453,7 @@ a:hover{
 /*-----------------------------------------------
     Contributors Page
 -----------------------------------------------*/
-#contributors-container{ }
+#contributors-container{  }
 #contributors-title{
     display:block;
     clear:both;
@@ -518,15 +508,31 @@ a:hover{
 /*-----------------------------------------------
     Plug-ins floater
 -----------------------------------------------*/
-#plugins{}
+#plugins{
+    background-color:#343434;
+    height:6em;
+    width:100%;
+    border-top: .095em solid #fff;
+}
+#plugins-top{
+    background-color:#343434;
+    height:6em;
+    width:100%;
+    border-bottom: .095em solid #fff;
+    position:fixed;
+    top:0em;
+}
 #plugins-rss{
     float:left;
     text-align:center;
     width:35%;
     padding: .35em 0 1.05em 0;
 }
+#plugins-rss .rssimage{
+    width: 5em;
+}
 #plugins-rss a:hover{ border-bottom: 0; }
-#plugins-facebook{
+#plugins-facebook{    
     float:right;
     text-align:center;
     width:65%;

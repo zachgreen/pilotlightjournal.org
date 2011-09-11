@@ -14,14 +14,15 @@
             <div id="article-header-subtitle">A Journal of 21<span class="superscript">st</span> Century Poetics and Criticism</div>
             <div id="article-header-line">&nbsp;</div>
             <div id="article-header-right-nav">
-               @* @Html.NavLink("Current Issue", "Index", new { area = "Issue1", controller = "Issue1" })&nbsp;|&nbsp;
-                @Html.NavLink("Contributors", "Contributors", new { area = "", controller = "Home" })&nbsp;|&nbsp;*@
+                @Html.NavLink("Current Issue", "Index", new { area = "Issue1", controller = "Issue1" })&nbsp;|&nbsp;
+                @Html.NavLink("Contributors", "Contributors", new { area = "", controller = "Home" })&nbsp;|&nbsp;
                 @Html.NavLink("About", "About", new { area = "", controller = "Home" })
             </div>
         </div>
         <div id="content">
             @RenderBody()
-        </div><div style="clear:both;"><br /><br /><br /></div>
+        </div>
+        <div style="clear:both;"><br /><br /><br /></div>
         <div id="plugins">
             <div id="plugins-rss">@Html.Raw(Html.ActionLink("[replacethis]", "RssFeed", new { area = "", controller = "Home" }).ToString().Replace("[replacethis]", "<img src=\"/content/rss_orange.png\" width=\"30\" />"))</div>
             <div id="plugins-facebook">

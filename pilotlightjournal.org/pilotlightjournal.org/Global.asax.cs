@@ -16,49 +16,15 @@ namespace pilotlightjournal.org {
 
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            
-            routes.MapRoute(
-                "About",
-                "About",
-                new { controller = "Home", action = "About", id = UrlParameter.Optional }
-            );
 
-            routes.MapRoute(
-                "Contact",
-                "Contact", 
-                new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
-            );
+            routes.MapRoute("About", "About", new { controller = "Home", action = "About", id = UrlParameter.Optional });
+            routes.MapRoute("Contact", "Contact", new { controller = "Home", action = "About", id = UrlParameter.Optional });
+            routes.MapRoute("Submissions", "Submissions", new { controller = "Home", action = "About", id = UrlParameter.Optional });
 
-            routes.MapRoute(
-                "Submissions",
-                "Submissions",
-                new { controller = "Home", action = "Submissions", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
-                "Archive",
-                "Archive",
-                new { controller = "Issue", action = "Archive", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
-                "Contributors",
-                "Contributors",
-                new { controller = "Home", action = "Contributors", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
-                "RssFeed",
-                "RssFeed",
-                new { controller = "Home", action = "RssFeed", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
-                "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
-            );
-
+            routes.MapRoute("Archive", "Archive", new { controller = "Issue", action = "Archive", id = UrlParameter.Optional });
+            routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors", id = UrlParameter.Optional });
+            routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed", id = UrlParameter.Optional });
+            routes.MapRoute("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
 
         protected void Application_Start() {

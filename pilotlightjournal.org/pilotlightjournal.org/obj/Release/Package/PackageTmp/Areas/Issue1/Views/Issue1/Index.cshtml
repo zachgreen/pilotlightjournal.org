@@ -2,7 +2,7 @@
 @using pilotlightjournal.org.Models           
 
 @{
-    ViewBag.Title = "Pilot Light Journal - " + Model.Name + " - " + Model.ReleaseDate.ToString("MMMM yyyy");
+    ViewBag.Title = "Pilot Light Journal - " + Model.Name;
     Layout = Request.Browser.IsMobileDevice
         ? "~/Views/Shared/_MobileArticleLayout.cshtml"
         : "~/Views/Shared/_ArticleLayout.cshtml";
