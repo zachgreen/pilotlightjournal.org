@@ -8,40 +8,15 @@ using System.Web.Mvc.Html;
 
 using pilotlightjournal.org.Models;
 
-namespace pilotlightjournal.org.Controllers
-{
-    public class HomeController : Controller
-    {
+namespace pilotlightjournal.org.Controllers{
+    public class HomeController : Controller{
+        private PilotLightJournalContext dbContext = new PilotLightJournalContext();
         private IssueRepository issues = new IssueRepository();
 
-        /// <summary>
-        /// GET: /Index
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Index() { return View(); }
-
-        /// <summary>
-        /// GET: /Home/AboutUs
-        /// </summary>
-        /// <returns></returns>
         public ActionResult About() { return View(); }
-
-        /// <summary>
-        /// GET: /Home/Contact
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Contact() { return View(); }
-
-        /// <summary>
-        /// GET: /Home/Submissions
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Submissions() { return View(); }
-
-        /// <summary>
-        /// GET: /Contributors
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Contributors() {
             List<ContributorViewModel> models = new List<ContributorViewModel>();
             ContributorViewModel model = null;
@@ -64,7 +39,6 @@ namespace pilotlightjournal.org.Controllers
                         
             return View(models);         
         }
-
         public ActionResult RssFeed() {
             var synFeed = new SyndicationFeed();
             var items = new List<SyndicationItem>();
