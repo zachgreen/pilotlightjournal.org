@@ -3368,3 +3368,18 @@
 2011-09-20T00:48:14.8189836Z - 5084 - Debug - Disposing Redirection Module
 2011-09-24T14:45:49.5218359Z - 5748 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
 2011-09-24T14:45:49.5308364Z - 5748 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-09-24T14:47:39.8741477Z - 5252 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-09-24T14:47:39.8901486Z - 5252 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-09-24T14:47:55.7870579Z - 5528 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-09-24T14:47:55.8020587Z - 5528 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-09-24T14:48:00.9023504Z - 5528 - Debug - Initialising redirection module
+2011-09-24T14:48:00.9163512Z - 5528 - Debug - Initialising redirection module static fields.
+2011-09-24T14:48:00.9183514Z - 5528 - Debug - Initialising redirection module event handlers
+2011-09-24T14:48:00.9553535Z - 5528 - Debug - Initialising redirection module
+2011-09-24T14:48:00.9553535Z - 5528 - Debug - Initialising redirection module event handlers
+2011-09-24T14:48:03.4154942Z - 5528 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-09-24T14:48:06.1266492Z - 5528 - Info - Loaded 13925 devices using 11787 strings in 522ms
+2011-09-24T14:48:07.1647086Z - 5528 - Debug - Initialising redirection module
+2011-09-24T14:48:07.1647086Z - 5528 - Debug - Initialising redirection module event handlers
+2011-09-24T14:48:07.1687089Z - 5528 - Debug - Initialising redirection module
+2011-09-24T14:48:07.1687089Z - 5528 - Debug - Initialising redirection module event handlers
