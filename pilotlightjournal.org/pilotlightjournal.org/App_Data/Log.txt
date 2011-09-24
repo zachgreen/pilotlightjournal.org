@@ -3366,3 +3366,5 @@
 2011-09-20T00:45:52.8928658Z - 5084 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
 2011-09-20T00:45:55.2089983Z - 5084 - Info - Loaded 13925 devices using 11787 strings in 264ms
 2011-09-20T00:48:14.8189836Z - 5084 - Debug - Disposing Redirection Module
+2011-09-24T14:45:49.5218359Z - 5748 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-09-24T14:45:49.5308364Z - 5748 - Debug - Constructing MobileCapabilitiesProvider - Default
