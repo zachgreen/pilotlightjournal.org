@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="Areas\Issue1\Controllers\Issue1Controller.cs" />
     <Compile Include="Areas\Issue1\Issue1AreaRegistration.cs" />
+    <Compile Include="Controllers\ATestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IssueController.cs" />
     <Compile Include="Global.asax.cs">

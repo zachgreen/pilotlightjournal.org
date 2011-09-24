@@ -1,0 +1,10 @@
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\ResolveAssemblyReference.cache
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.g.resources
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\pilotlightjournal.org.dll
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\pilotlightjournal.org.pdb
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\EntityFramework.dll
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\FiftyOne.Foundation.dll
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\System.Data.SqlServerCe.dll
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\bin\EntityFramework.xml
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.dll
+C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\obj\Release\pilotlightjournal.org.pdb

@@ -3390,3 +3390,5 @@
 2011-09-24T14:50:09.0136780Z - 5528 - Debug - Disposing Redirection Module
 2011-09-24T14:50:27.1267140Z - 5252 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
 2011-09-24T14:50:27.1307142Z - 5252 - Debug - Constructing MobileCapabilitiesProvider - Default
+2011-09-24T14:58:02.2847475Z - 5252 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\App_Data\51Degrees.mobi.config'.
+2011-09-24T14:58:02.2877477Z - 5252 - Debug - Constructing MobileCapabilitiesProvider - Default
