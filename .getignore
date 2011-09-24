@@ -1,6 +1,6 @@
 $ cat .gitignore
 
 # Can also ignore all directories and files in a directory.
-pilotlightjournal.org/pilotlightjournal.org/obj/*
-pilotlightjournal.org/pilotlightjournal.org/bin/*
-pilotlightjournal.org/packages/*
+pilotlightjournal.org/pilotlightjournal.org/obj/
+pilotlightjournal.org/pilotlightjournal.org/bin/
+pilotlightjournal.org/packages/
