@@ -12,11 +12,11 @@
     @foreach (ContributorViewModel cvm in Model) {
         <div class="contributor">
             <a name="@cvm.Contributor.FirstName-@cvm.Contributor.LastName"></a>
-            <div class="contributor-info">
-                <div class="contributor-name-issues">
-                    <span class="contributor-name">@cvm.Contributor.FirstName @cvm.Contributor.LastName</span>
+            <div class="info">
+                <div class="name-and-issues">
+                    <span class="name">@cvm.Contributor.FirstName @cvm.Contributor.LastName</span>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="contributor-issues">
+                    <span class="issues">
                        @{
                            var issueText = "( ";
                            for(int i=0; i < cvm.Issues.Count; i++){
@@ -28,12 +28,12 @@
                        @Html.Raw(issueText)                       
                     </span>
                 </div>
-                <div class="contributor-bio">@Html.Raw(cvm.Contributor.Bio)</div>
+                <div class="bio">@Html.Raw(cvm.Contributor.Bio)</div>
             </div>
             @if (!String.IsNullOrEmpty(cvm.Contributor.ImagePage)) {
-                <div class="contributor-image">
+                <div class="image">
                     <img alt="@cvm.Contributor.FirstName @cvm.Contributor.LastName" src="@Url.Content(cvm.Contributor.ImagePage)" width="400px" /><br />
-                    <span class="contributor-image-credit">Photo by: @cvm.Contributor.ImageCredit</span>
+                    <span class="credit">Photo by: @cvm.Contributor.ImageCredit</span>
                 </div>
                 
             }

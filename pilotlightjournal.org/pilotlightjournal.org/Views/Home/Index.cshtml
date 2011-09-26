@@ -5,13 +5,11 @@
         : "~/Views/Shared/_Layout.cshtml";
 }
 
-<div id="entrancetext-container">
-    <div id="entrancetext">
-            “We just wanted the heart’s <span id="entrancetext-special" class="entrancetext-nothighlighted">pilot light</span> to keep on burning.<br /> 
-            I remember how there, at the edge of the world, there was
-            <br /> another world.” 
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Richard Jackson
-    </div>
+<div id="entrancetext">
+        “We just wanted the heart’s <span id="highlightable" class="nothighlighted">pilot light</span> to keep on burning.<br /> 
+        I remember how there, at the edge of the world, there was
+        <br /> another world.” 
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Richard Jackson
 </div>
 
 @section Scripts{
@@ -22,7 +20,7 @@
         $(document).ready(function () {
             $("#entrancetext").mouseover(function () {
                 if (count == 0) {
-                    $("#entrancetext-special").switchClass("entrancetext-nothighlighted", "entrancetext-highlighted", "slow");
+                    $("#highlightable").switchClass("nothighlighted", "highlighted", "slow");
                     count++;
                 }
             });

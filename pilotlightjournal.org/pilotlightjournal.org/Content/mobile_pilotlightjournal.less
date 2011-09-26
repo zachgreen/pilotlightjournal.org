@@ -68,18 +68,11 @@ Pixels     EMs         Percent Points
 24px     1.846em     184.6%     18pt
 */
 
-body{
+body {
     background-color:#000;
-    background-image:url('../content/bkgrd_tile4.jpg');
-    background-repeat:repeat;
-    font-family: 'Josefin Slab', arial, serif;
+    font-family:Georgia;
     color:@textColor;
-    /*margin: 0 4em 0 4em;*/
-    
-    max-width:1100px;
-    min-width:1024px;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 0 0em 0 0em;
 }
 p {
     margin: 0 0 1.00em 0;
@@ -93,17 +86,20 @@ a {
     color: @textColor;
 }
 a:visited { }
-a.current{
+a.current {
     text-decoration:none;
     color: @textColor;
     border-bottom: .15em solid @textColor;
 }
-a:hover{ 
+a:hover { 
     color: @linkTextColor;
     border-bottom: .15em solid @linkTextColor;
 }
 
-#content { min-height:18em; width:100%; }
+#content { 
+    margin: 0 1.25em 0 1.25em;
+    min-height:18em; width:100%;
+}
 
 /*-----------------------------------------------
     Main Classes
@@ -124,7 +120,7 @@ a:hover{
     width:10em;
     margin-left:auto;
     margin-right:auto;
-    border-bottom:.125em solid @textColor;
+    border-bottom:.15em solid @textColor;
 }
 .image-credit{
     font-style:italic;
@@ -137,8 +133,8 @@ a:hover{
 #entrance-header{
     text-align: right;
     display: block;
-    margin-top:3.10em;
     padding-bottom:1.5em; 
+    margin: 3.10em 1.25em 0 1.25em;
 
 	.title{
 		font-size:5.00em;
@@ -146,12 +142,12 @@ a:hover{
 		letter-spacing:.15em;
 	}
 	.subtitle{
-		font-size:1.75em;
+		font-size:1.65em;
 		letter-spacing:.15em;
 	}
 	.line{
 		margin: 0 0 1.5em 0; 
-		border-bottom: .125em solid @textColor;
+		border-bottom: .15em solid @textColor;
 		width:90%; 
 		float:right  
 	}
@@ -168,10 +164,9 @@ a:hover{
     Article Header
 -----------------------------------------------*/
 #article-header{
-    text-align: right;
+    text-align: left;
     display: block;
-    margin-top:1.65em;
-    padding-bottom:1.20em; 
+    margin: 3.10em 1.25em 0 1.25em;
 
 	.title{
 		font-size:3.50em;
@@ -190,21 +185,17 @@ a:hover{
 		}
 	}
 	.subtitle{
-		font-size:1.35em;
+		font-size:1.65em;
 		font-variant:small-caps;
 		letter-spacing:.15em;
 	}
 	.line{
 		border-bottom: .15em solid @textColor;
 		width:90%; 
-		float:right;  
 	}
 	.right-nav{   
 		padding: .85em 0 1.85em 0;
-		clear:right;
-		float:right;
-		width:100%;
-		text-align:right;
+		text-align:left;
 		font-size: 1.5em;
 	}
 }
@@ -218,6 +209,7 @@ a:hover{
     width:90%; 
     float:right;
     padding: .85em 0 1.25em 0;
+    margin: 0 1.25em 0 1.25em;   
     text-align:right;
     clear:both;
 
@@ -229,10 +221,9 @@ a:hover{
     Entrance Text
 -----------------------------------------------*/   
 #entrancetext{
-    margin-top:3.0em;
-    margin-bottom:0.5em;
+    margin: 6em 1.25em 1em 1.25em;
     display:block;
-    font-size:2.00em;
+    font-size:1.65em;
     text-align:left; 
     width:100%;
 	
@@ -250,16 +241,12 @@ a:hover{
 	#article{  	
 		.title{
 			display:block;
-			clear:both;
-			float:left;
 			font-size:2.15em;
 			font-weight:bold;
-			margin: 0 0 .85em 0;    
+			margin: 0 0 .85em 0;     
 		}
 		.author{
 			display:block;
-			clear:left;
-			float:left;
 			font-size:1.65em;
 			font-weight:normal;
 			margin: 0 0 1.55em 0;
@@ -274,18 +261,16 @@ a:hover{
 			margin: 0 0 2.00em 0;
 		}
 	}
-
 }
-
 
 .article-page-container{
     width:100%;
     clear:both; 
 		
 	.article-sidebar{
-		clear:right;
-		width:18%;
+		clear:both;
 		float:right;
+		width:100%;
 		padding: 0 0 0 .10em;
 	}  
 	.article-pages{
@@ -293,7 +278,7 @@ a:hover{
 		float:left;
 		display:block;
 		text-align:justify;
-		width:80%;
+		width:100%;
 		margin: 0;
 		padding: 0;
 
@@ -310,30 +295,30 @@ a:hover{
 			text-indent: 0em; 
 		}
 		p.excerpt-formatting-1{
-			text-indent:0em;
-			font-size:1.25em;
-			line-height:1.75em;
+			text-indent:0;
+			font-size:1.05em;
+			line-height:1.95em;
 			margin: .85em 0 .85em 3.1em;
 			padding: .5em 0 .5em 0;     
 		}
 		p.excerpt-formatting-2{
 			text-indent:0em;
-			font-size:1.25em;
-			line-height:1.75em;
+			font-size:1.05em;
+			line-height:1.50em;
 			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;    
+			padding: .5em 0 .5em 0;     
 		}
 		p.excerpt-formatting-3{
 			text-indent:0em;
-			font-size:1.25em;
-			line-height:1.75em;
+			font-size:1.05em;
+			line-height:1.50em;
 			margin: .85em 0 .85em 3.1em;
 			padding: .5em 0 .5em 0;   
 			font-style: italic; 
 		}
 		p.excerpt-formatting-4{
 			text-indent:0em;
-			font-size:1.25em;
+			font-size:1.05em;
 			line-height:1.75em;
 			margin: .85em 0 .85em 3.1em;
 			padding: .5em 0 .5em 0;
@@ -349,10 +334,11 @@ a:hover{
 
 	}
 }
-
+.poem-special{
+    margin-left:5em;   
+}
 .article-paging{
     clear:both;
-    float:right;
     margin: 0 0 1.5em 0;   
 	
 	ul{
@@ -380,10 +366,7 @@ a:hover{
 	} 
 }
 
-
-
-
-#article-footnotes{
+#article-footnotes {
     line-height:1.0em;
     font-size:.75em;
 	ol {
@@ -403,7 +386,7 @@ a:hover{
 	}
 }
 
-#article-workscited{
+#article-workscited {
     border-top: .15em solid @textColor;
     padding: 1.0em 0 0 0;
     display:block;
@@ -439,18 +422,12 @@ a:hover{
 /*-----------------------------------------------
     Issue1 - Index
 -----------------------------------------------*/
-#issue1-index {    
-    width:90%;
-
+#issue1-index {
 	.info {
-		float:left; 
-		width:65%;
-
 		.title {
 			font-size: 2.00em;
 			font-weight:bold;
-			margin: .85em 0 1.25em 0;   
-			float:left;
+		    margin: 0 0 .55em 0;   
 		}
 		.works{ 
 			ul {
@@ -458,21 +435,19 @@ a:hover{
 
 				li {
 					clear:both;
-					font-size: 1.35em;
+					font-size: 1.60em;
 					display:block;
-					margin: 1.50em 0 0 1.0em;
+					margin: 1.50em 0 0 0em;
 
-					.work-title { margin: 0; }
-					.author { margin: 0; }
+					.work-title { }
+					.author { }
 				}
 			}
 		}
 	}
 	.image-container {
-		float: right;
-		width:34%;
+		margin: 2em 0 0 0;
 		text-align:left;
-
 		.image { padding-bottom:.25em; }
 	}
 }
@@ -496,7 +471,7 @@ a:hover{
 		width:100%;
 		font-size:1.50em;
 		margin: 2.00em 0 0 0; 
-		border-bottom: .125em solid @textColor; 
+		border-bottom: .15em solid @textColor; 
 		
 		.info {
 			display:block;
@@ -516,14 +491,14 @@ a:hover{
 				font-size:1.00em;
 				line-height:1.30em;
 				margin: 0 0 .50em 1em; 
-				text-align: justify;
+				text-align: left;
 			}
 		}
 		.image {
 			display:block;
 			float:right;
 			width:40%;
-			margin: .50em 0em .50em 1em; 
+			margin: .10em 0em .1em 0em;
 
 			.credit{
 				font-style:italic;
@@ -538,22 +513,16 @@ a:hover{
     Plug-ins floater
 -----------------------------------------------*/
 #plugins{
-    background-color:#111;
-    position:fixed;
-    bottom:0em;
-    right:5em !important;
+    background-color:#343434;
+    height:6em;
+    width:100%;
     border-top: .095em solid #fff;
-    border-left: .095em solid #fff;
-    border-right: .095em solid #fff;
-    border-top-left-radius: .4em;
-    border-top-right-radius: .4em;
-    width:9.5em;
 		
 	.rss{
 		float:left;
 		text-align:center;
 		width:35%;
-		padding: .35em 0 .05em 0;
+		padding: .35em 0 1.05em 0;
 
 		a:hover{ border-bottom: 0; }
 	}

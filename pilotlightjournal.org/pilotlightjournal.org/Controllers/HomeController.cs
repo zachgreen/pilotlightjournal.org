@@ -62,5 +62,6 @@ namespace pilotlightjournal.org.Controllers{
 
             return new FeedResult(new Rss20FeedFormatter(synFeed));
         }
+        public ActionResult Blank() { return View(); }
     }
 }

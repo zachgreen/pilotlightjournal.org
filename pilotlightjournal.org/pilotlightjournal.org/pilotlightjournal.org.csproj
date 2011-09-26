@@ -43,7 +43,13 @@
     </PublishDatabaseSettings>
     <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.2.1.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
@@ -113,21 +119,22 @@
     <Content Include="App_Data\PilotLightJournal.sdf" />
     <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Content\arrow_down.png" />
-    <Content Include="Content\bkgrd_tile.png" />
-    <Content Include="Content\bkgrd_tile2.png" />
-    <Content Include="Content\bkgrd_tile3.png" />
+    <Content Include="Content\unused\bkgrd_tile.png" />
+    <Content Include="Content\unused\bkgrd_tile2.png" />
+    <Content Include="Content\unused\bkgrd_tile3.png" />
     <Content Include="Content\bkgrd_tile4.jpg" />
-    <Content Include="Content\bkgrd_tile4.png" />
+    <Content Include="Content\unused\bkgrd_tile4.png" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
+    <None Include="Content\mobile_pilotlightjournal.less" />
     <None Include="Content\pilotlightjournal.less" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\industrial_texture.jpg" />
     <Content Include="Content\contributors\marianne_boruch.jpg" />
-    <Content Include="Content\mobile_pilotlightjournal.css" />
-    <Content Include="Content\pilotlightjournal.css" />
-    <Content Include="Content\plj_unused.css" />
-    <Content Include="Content\rss.png" />
+    <Content Include="Content\unused\mobile_pilotlightjournal.css" />
+    <Content Include="Content\unused\pilotlightjournal.css" />
+    <Content Include="Content\unused\plj_unused.css" />
+    <Content Include="Content\unused\rss.png" />
     <Content Include="Content\rss_orange.png" />
     <Content Include="Content\printer-friendly.css" />
     <Content Include="Global.asax" />
@@ -166,6 +173,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Blank.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
@@ -230,9 +238,6 @@
     <Content Include="Areas\Issue1\Views\Issue1\Bill_Olsen_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Bill_Olsen_4.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\Contributors.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -272,9 +277,9 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>
-if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
-xcopy /s /y "$(SolutionDir)packages\SqlServerCompact.4.0.8482.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
-if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
-xcopy /s /y "$(SolutionDir)packages\SqlServerCompact.4.0.8482.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>$(SolutionDir)\packages\dotless.1.2.1.0\Tool\dotless.Compiler.exe -m "$(ProjectDir)\content\*.less" "$(ProjectDir)\content\*.css"</PreBuildEvent>
   </PropertyGroup>
 </Project>

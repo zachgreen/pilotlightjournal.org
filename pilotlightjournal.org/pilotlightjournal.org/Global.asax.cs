@@ -23,6 +23,7 @@ namespace pilotlightjournal.org {
             routes.MapRoute("Archive", "Archive", new { controller = "Issue", action = "Archive", id = UrlParameter.Optional });
             routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors", id = UrlParameter.Optional });
             routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed", id = UrlParameter.Optional });
+            routes.MapRoute("Blank", "Blank", new { controller = "Home", action = "Blank", id = UrlParameter.Optional });
             routes.MapRoute("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
 
