@@ -6,13 +6,17 @@ using System.Web.Mvc;
 
 using pilotlightjournal.org.Models;
 
-namespace pilotlightjournal.org.Areas.Issue1.Controllers{
-    public class Issue1Controller : Controller {
+namespace pilotlightjournal.org.Areas.Issue2.Controllers{
+    public class Issue2Controller : Controller {
         private PilotLightJournalContext dbContext = new PilotLightJournalContext();
         private IssueRepository issues = new IssueRepository();
 
-        public Issue1Controller() {}
-        public ActionResult Index() { return View(issues.GetIssue(1)); }
+        public Issue2Controller() {}
+        public ActionResult Index() {
+            Issue i = issues.GetIssue(2);
+            if (i.Completed) return View(i);
+            else return RedirectToRoute(new { action = "Index",  area = "", controller = "Home" });
+        }
         public ActionResult Issue(int workId, int page) {
             var mod = new WorkViewModel() {
                 Work = dbContext.Works.FirstOrDefault(w => w.WorkId == workId),

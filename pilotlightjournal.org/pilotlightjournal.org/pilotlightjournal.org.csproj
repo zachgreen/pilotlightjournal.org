@@ -88,6 +88,11 @@
   <ItemGroup>
     <Compile Include="Areas\Issue1\Controllers\Issue1Controller.cs" />
     <Compile Include="Areas\Issue1\Issue1AreaRegistration.cs" />
+    <Compile Include="Areas\Issue2\Controllers\Issue2Controller.cs" />
+    <Compile Include="Areas\Issue2\Issue2AreaRegistration.cs" />
+    <Compile Include="Areas\Issue3\Controllers\Issue3Controller.cs" />
+    <Compile Include="Areas\Issue3\Issue3AreaRegistration.cs" />
+    <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IssueController.cs" />
     <Compile Include="Global.asax.cs">
@@ -124,6 +129,10 @@
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
+    <Content Include="Areas\Issue2\Views\Web.config" />
+    <Content Include="Areas\Issue3\Views\Web.config" />
+    <Content Include="Areas\Issue2\Views\Issue2\Index.cshtml" />
+    <Content Include="Areas\Issue3\Views\Issue3\Index.cshtml" />
     <None Include="Content\mobile_pilotlightjournal.less" />
     <None Include="Content\pilotlightjournal.less" />
     <Content Include="Content\favicon.ico" />
@@ -168,6 +177,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Blank.cshtml" />
+    <Content Include="Views\Shared\Issue.cshtml" />
+    <Content Include="Views\Errors\Exception.cshtml" />
+    <Content Include="Views\Errors\Http404.cshtml" />
+    <Content Include="Views\Errors\Http403.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
@@ -184,6 +197,10 @@
   <ItemGroup>
     <Folder Include="Areas\Issue1\Models\" />
     <Folder Include="Areas\Issue1\Views\Shared\" />
+    <Folder Include="Areas\Issue2\Models\" />
+    <Folder Include="Areas\Issue2\Views\Shared\" />
+    <Folder Include="Areas\Issue3\Models\" />
+    <Folder Include="Areas\Issue3\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Submissions.cshtml" />
@@ -215,7 +232,6 @@
     <Content Include="Views\Shared\_ArticleLayout.cshtml" />
     <Content Include="Views\Issue\Archive.cshtml" />
     <Content Include="Areas\Issue1\Views\Issue1\Index.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Issue.cshtml" />
     <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_1.cshtml" />
     <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_2.cshtml" />
     <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_3.cshtml" />
