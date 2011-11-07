@@ -21,7 +21,7 @@
                            var issueText = "( ";
                            for(int i=0; i < cvm.Issues.Count; i++){
                                if(i != 0) {issueText += ", ";}
-                               issueText += Html.NavLink(cvm.Issues[i].Name, "Index", new { area = cvm.Issues[i].Controller, controller = cvm.Issues[i].Controller });
+                               issueText += Html.NavLink(cvm.Issues[i].Name, "Index", new { controller = "Issue", issueId = cvm.Issues[i].IssueId });
                            }
                            issueText += " )";
                        }

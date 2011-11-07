@@ -17,23 +17,39 @@ namespace pilotlightjournal.org {
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("About", "About", new { controller = "Home", action = "About", id = UrlParameter.Optional });
-            routes.MapRoute("Contact", "Contact", new { controller = "Home", action = "About", id = UrlParameter.Optional });
-            routes.MapRoute("Submissions", "Submissions", new { controller = "Home", action = "About", id = UrlParameter.Optional });
-            routes.MapRoute("Archive", "Archive", new { controller = "Issue", action = "Archive", id = UrlParameter.Optional });
-            routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors", id = UrlParameter.Optional });
-            routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed", id = UrlParameter.Optional });
-            routes.MapRoute("Blank", "Blank", new { controller = "Home", action = "Blank", id = UrlParameter.Optional });
-            routes.MapRoute("Default", 
-                "{controller}/{action}/{id}", 
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+            routes.MapRoute("About", "About", new { controller = "Home", action = "About" });
+            routes.MapRoute("Contact", "Contact", new { controller = "Home", action = "About" });
+            routes.MapRoute("Submissions", "Submissions", new { controller = "Home", action = "About" });
+            routes.MapRoute("Archive", "Archive", new { controller = "Issue", action = "Archive" });
+            routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors" });
+            routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed"});
+            routes.MapRoute("Blank", "Blank", new { controller = "Home", action = "Blank" });
+            routes.MapRoute("Home", "", new { controller = "Home", action = "Index" });
+            routes.MapRoute("Issue",
+                "{issueId}",
+                new { controller = "Issue", action = "Index"},
+                new { controller = @"[^\.]*" });
+            routes.MapRoute("Work", 
+                "{issueId}/{workId}/{page}", 
+                new { controller = "Issue", action = "Work", page = UrlParameter.Optional },
                 new { controller = @"[^\.]*" });
         }
         protected void Application_Start() {
-            AreaRegistration.RegisterAllAreas();
+            //AreaRegistration.RegisterAllAreas();
+
+            IssueRepository issues = new IssueRepository();
+            int count = issues.GetCount();
+
+            //change to my custom view engines
+            ViewEngines.Engines.Clear();
+            ViewEngines.Engines.Add(new pilotlightjournal.org.Models.ViewEngines.PilotLightRazorViewEngine(count));
+            ViewEngines.Engines.Add(new pilotlightjournal.org.Models.ViewEngines.PilotLightWebFormViewEngine(count));
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            //check if we are in debug mode. if so, we want to have access to future issues.
+            AppConfig.InDebug = HttpContext.Current.IsDebuggingEnabled;
         }
         protected void Application_Error() {
             var exception = Server.GetLastError();

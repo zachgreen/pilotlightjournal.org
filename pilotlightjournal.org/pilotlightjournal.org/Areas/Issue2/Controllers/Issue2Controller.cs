@@ -14,7 +14,7 @@ namespace pilotlightjournal.org.Areas.Issue2.Controllers{
         public Issue2Controller() {}
         public ActionResult Index() {
             Issue i = issues.GetIssue(2);
-            if (i.Completed) return View(i);
+            if (i.Completed || AppConfig.InDebug) return View(i);
             else return RedirectToRoute(new { action = "Index",  area = "", controller = "Home" });
         }
         public ActionResult Issue(int workId, int page) {

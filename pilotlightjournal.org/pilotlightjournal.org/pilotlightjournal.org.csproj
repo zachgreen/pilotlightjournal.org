@@ -86,12 +86,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\Issue1\Controllers\Issue1Controller.cs" />
-    <Compile Include="Areas\Issue1\Issue1AreaRegistration.cs" />
-    <Compile Include="Areas\Issue2\Controllers\Issue2Controller.cs" />
-    <Compile Include="Areas\Issue2\Issue2AreaRegistration.cs" />
-    <Compile Include="Areas\Issue3\Controllers\Issue3Controller.cs" />
-    <Compile Include="Areas\Issue3\Issue3AreaRegistration.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IssueController.cs" />
@@ -106,6 +100,7 @@
     <Compile Include="Mobile\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\AppConfig.cs" />
     <Compile Include="Models\Contributor.cs" />
     <Compile Include="Models\ContributorViewModel.cs" />
     <Compile Include="Models\FeedResult.cs" />
@@ -115,6 +110,8 @@
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\IssueRepository.cs" />
     <Compile Include="Models\PilotLightJournalContext.cs" />
+    <Compile Include="Models\ViewEngines\PilotLightRazorViewEngine.cs" />
+    <Compile Include="Models\ViewEngines\PilotLightWebFormViewEngine.cs" />
     <Compile Include="Models\Work.cs" />
     <Compile Include="Models\WorkViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,10 +126,6 @@
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
-    <Content Include="Areas\Issue2\Views\Web.config" />
-    <Content Include="Areas\Issue3\Views\Web.config" />
-    <Content Include="Areas\Issue2\Views\Issue2\Index.cshtml" />
-    <Content Include="Areas\Issue3\Views\Issue3\Index.cshtml" />
     <None Include="Content\mobile_pilotlightjournal.less" />
     <None Include="Content\pilotlightjournal.less" />
     <Content Include="Content\favicon.ico" />
@@ -181,6 +174,17 @@
     <Content Include="Views\Errors\Exception.cshtml" />
     <Content Include="Views\Errors\Http404.cshtml" />
     <Content Include="Views\Errors\Http403.cshtml" />
+    <Content Include="Views\Issue\Index.cshtml" />
+    <Content Include="Views\Issue\Work.cshtml" />
+    <Content Include="Views\Pages\1\Bill_Olsen_1.cshtml" />
+    <Content Include="Views\Pages\1\Bill_Olsen_2.cshtml" />
+    <Content Include="Views\Pages\1\Bill_Olsen_3.cshtml" />
+    <Content Include="Views\Pages\1\Marianne_Boruch_1.cshtml" />
+    <Content Include="Views\Pages\1\Nancy_Eimers_1.cshtml" />
+    <Content Include="Views\Pages\1\Nancy_Eimers_2.cshtml" />
+    <Content Include="Views\Pages\1\Nancy_Eimers_3.cshtml" />
+    <Content Include="Views\Pages\1\Nancy_Eimers_4.cshtml" />
+    <Content Include="Views\Pages\3\Bruce_Bond_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
@@ -195,33 +199,13 @@
     <Content Include="Views\Shared\EmailSubscription.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Issue1\Models\" />
-    <Folder Include="Areas\Issue1\Views\Shared\" />
-    <Folder Include="Areas\Issue2\Models\" />
-    <Folder Include="Areas\Issue2\Views\Shared\" />
-    <Folder Include="Areas\Issue3\Models\" />
-    <Folder Include="Areas\Issue3\Views\Shared\" />
+    <Folder Include="Views\Pages\2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Submissions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_MobileArticleLayout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_1.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_2.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Nicole_Cooley_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
@@ -231,27 +215,9 @@
     <Resource Include="App_Data\wurfl.xml.gz" />
     <Content Include="Views\Shared\_ArticleLayout.cshtml" />
     <Content Include="Views\Issue\Archive.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Index.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_1.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_2.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_3.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Nancy_Eimers_4.cshtml" />
-    <Content Include="Areas\Issue1\Views\Issue1\Marianne_Boruch_1.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Bill_Olsen_1.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Bill_Olsen_2.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\Bill_Olsen_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Contributors.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Areas\Issue1\Views\Issue1\PrintView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_PrintLayout.cshtml" />
