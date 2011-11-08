@@ -15,8 +15,6 @@ namespace pilotlightjournal.org.Controllers{
 
         public ActionResult Index() { return View(); }
         public ActionResult About() { return View(); }
-        public ActionResult Contact() { return View(); }
-        public ActionResult Submissions() { return View(); }
         public ActionResult Contributors() {
             List<ContributorViewModel> models = new List<ContributorViewModel>();
             ContributorViewModel model = null;
@@ -48,7 +46,7 @@ namespace pilotlightjournal.org.Controllers{
                     summary += "<a href=\"" + Url.Action("Issue", i.Controller, new { area = i.Controller, workId = w.WorkId, page = 1 }, "http")
                         + "\">" + w.Title + "</a> - " + w.Contributor.FirstName + " " + w.Contributor.LastName + "<br /><br />";
                 }
-                var item = new SyndicationItem(i.Name, null, new Uri(Url.Action("Index", null, new { area = i.Controller, controller = i.Controller }, "http")));
+                var item = new SyndicationItem(i.Name, null, new Uri(Url.Action("Index", "Issue", new { issueId = i.IssueId }, "http")));
                 item.Summary = SyndicationContent.CreateHtmlContent(summary);
                 //item.PublishDate = i.ReleaseDate;
                 items.Add(item);

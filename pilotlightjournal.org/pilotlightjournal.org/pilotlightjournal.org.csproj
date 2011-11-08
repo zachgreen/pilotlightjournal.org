@@ -105,8 +105,6 @@
     <Compile Include="Models\ContributorViewModel.cs" />
     <Compile Include="Models\FeedResult.cs" />
     <Compile Include="Models\Page.cs" />
-    <Compile Include="Models\PilotLightJournalInitializer.cs" />
-    <Compile Include="Models\IndexModel.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\IssueRepository.cs" />
     <Compile Include="Models\PilotLightJournalContext.cs" />
@@ -185,6 +183,9 @@
     <Content Include="Views\Pages\1\Nancy_Eimers_3.cshtml" />
     <Content Include="Views\Pages\1\Nancy_Eimers_4.cshtml" />
     <Content Include="Views\Pages\3\Bruce_Bond_1.cshtml" />
+    <Content Include="Views\Pages\1\Issue_1_Index.cshtml" />
+    <Content Include="Views\Pages\2\Issue_2_Index.cshtml" />
+    <Content Include="Views\Pages\3\Issue_3_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
@@ -198,9 +199,7 @@
   <ItemGroup>
     <Content Include="Views\Shared\EmailSubscription.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Pages\2\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Home\Submissions.cshtml" />
   </ItemGroup>

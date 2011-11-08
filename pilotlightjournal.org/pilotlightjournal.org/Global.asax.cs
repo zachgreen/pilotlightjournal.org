@@ -24,6 +24,8 @@ namespace pilotlightjournal.org {
             routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors" });
             routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed"});
             routes.MapRoute("Blank", "Blank", new { controller = "Home", action = "Blank" });
+            routes.MapRoute("Http404", "Http404", new { controller = "Errors", action = "Http404" });
+            routes.MapRoute("Http403", "Http403", new { controller = "Errors", action = "Http403" });
             routes.MapRoute("Home", "", new { controller = "Home", action = "Index" });
             routes.MapRoute("Issue",
                 "{issueId}",
@@ -73,6 +75,7 @@ namespace pilotlightjournal.org {
                         break;
                 }
             }
+
             // Avoid IIS7 getting in the middle
             Response.TrySkipIisCustomErrors = true;
             IController errorsController = new ErrorsController();

@@ -23,8 +23,8 @@ namespace pilotlightjournal.org.Controllers{
         public ActionResult Index(int issueId) {
             //verfiy that either the issue is completed or that we are in debug mode to prevent showing a future issue to users.
             Issue i = issues.GetIssue(issueId);
-            if (i.Completed || AppConfig.InDebug) return View(i);
-            else return RedirectToRoute(new { action = "Index", area = "", controller = "Home" });
+            if (i != null && (i.Completed || AppConfig.InDebug)) return View(i);
+            else return RedirectToRoute(new { action = "Http404", controller = "Errors" });
         }
         public ActionResult Work(int workId, int page) {
             var mod = new WorkViewModel() {

@@ -16,7 +16,7 @@
             <div class="right-nav">
                 @Html.NavLink("Current Issue", "Index", new { controller = "Issue", issueId = "1" })&nbsp;|&nbsp;
                 @Html.NavLink("Contributors", "Contributors", new { controller = "Home" })&nbsp;|&nbsp;
-                @Html.NavLink("About", "About", "Home")
+                @Html.NavLink("About", "About", new { controller = "Home" })
             </div>
         </div>
         <div id="content">
@@ -24,7 +24,7 @@
         </div>
         <div style="clear:both;"><br /><br /><br /></div>
         <div id="plugins">
-            <div class="rss">@Html.Raw(Html.ActionLink("[replacethis]", "RssFeed", new { area = "", controller = "Home" }).ToString().Replace("[replacethis]", "<img src=\"/content/rss_orange.png\" width=\"30\" />"))</div>
+            <div class="rss">@Html.Raw(Html.ActionLink("[replacethis]", "RssFeed", new { controller = "Home" }).ToString().Replace("[replacethis]", "<img src=\"/content/rss_orange.png\" width=\"30\" />"))</div>
             <div class="facebook">
                 <div id="fb-root"></div>
                 <script src="http://connect.facebook.net/en_US/all.js#appId=151583114929158&amp;xfbml=1"></script>

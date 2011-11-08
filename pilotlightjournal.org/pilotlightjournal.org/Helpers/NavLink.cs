@@ -6,19 +6,15 @@ namespace System.Web.Mvc{
         public static MvcHtmlString NavLink(this HtmlHelper htmlHelper, string linkText, string actionName) {
             return NavLink(htmlHelper, linkText, actionName, new RouteValueDictionary(), null);
         }
-
         public static MvcHtmlString NavLink(this HtmlHelper htmlHelper, string linkText, string actionName, object routeValues) {
             return NavLink(htmlHelper, linkText, actionName, new RouteValueDictionary(routeValues), new RouteValueDictionary());
         }
-
         public static MvcHtmlString NavLink(this HtmlHelper htmlHelper, string linkText, string actionName, object routeValues, object htmlAttributes) {
             return NavLink(htmlHelper, linkText, actionName, new RouteValueDictionary(routeValues), HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
-
         public static MvcHtmlString NavLink(this HtmlHelper htmlHelper, string linkText, string actionName, RouteValueDictionary routeValues) {
             return NavLink(htmlHelper, linkText, actionName, routeValues, new RouteValueDictionary());
         }
-
         public static MvcHtmlString NavLink(this HtmlHelper htmlHelper, string linkText, string actionName, RouteValueDictionary routeValues, IDictionary<string, object> htmlAttributes) {
             if (String.IsNullOrEmpty(linkText)) {
                 throw new ArgumentException("linkText");
@@ -49,7 +45,7 @@ namespace System.Web.Mvc{
             //check additional parameters
             foreach (string key in htmlHelper.ViewContext.RouteData.Values.Keys) {
                 if (key != "controller" && key != "area" && key != "action") {
-                    if (!routeValues.ContainsKey(key) || (string)routeValues[key] != (string)htmlHelper.ViewContext.RouteData.Values[key]) return false;
+                    if (!routeValues.ContainsKey(key) || Convert.ToString(routeValues[key]) != Convert.ToString(htmlHelper.ViewContext.RouteData.Values[key])) return false;
                 }
             }
 
