@@ -74,6 +74,7 @@ body {
     color:@textColor;
     margin: 0 0em 0 0em;
 }
+em { font-style:italic; }
 p {
     margin: 0 0 1.00em 0;
     padding: 0 0 .45em 0;
@@ -130,6 +131,8 @@ h2 {
     font-style:italic;
     font-size:.85em;
 }
+.preformatted-font{ font-size: 1.25em; }
+.extra-spacing { line-height: 1.45em; }
 
 /*-----------------------------------------------
     Entrance Header
@@ -295,6 +298,10 @@ h2 {
 		p.normal{
 			text-indent: 1.25em;   
 		}
+		p.centered-title{
+			text-align:center;
+			font-weight:bold; 
+		}
 		p.resume{    
 			text-indent: 0em; 
 		}
@@ -417,16 +424,9 @@ h2 {
 
 
 /*-----------------------------------------------
-    Issue1 - Footers
------------------------------------------------*/ 
-#issue1-cooley-foot1{ top:55px; position:relative; }
-#issue1-cooley-foot2{ top:145px; position:relative;}
-
-
-/*-----------------------------------------------
     Issue1 - Index
 -----------------------------------------------*/
-#issue1-index {
+#issue-index {
 	.info {
 		.title {
 			font-size: 2.00em;

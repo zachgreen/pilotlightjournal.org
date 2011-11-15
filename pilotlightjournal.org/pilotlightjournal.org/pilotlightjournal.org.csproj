@@ -186,6 +186,10 @@
     <Content Include="Views\Pages\1\Issue_1_Index.cshtml" />
     <Content Include="Views\Pages\2\Issue_2_Index.cshtml" />
     <Content Include="Views\Pages\3\Issue_3_Index.cshtml" />
+    <Content Include="Views\Pages\2\James_Adam_York_1.cshtml" />
+    <Content Include="Views\Pages\2\Jennifer_Perrine_1.cshtml" />
+    <Content Include="Views\Pages\2\James_Adam_York_2.cshtml" />
+    <Content Include="Views\Pages\2\James_Adam_York_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
