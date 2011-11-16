@@ -42,6 +42,17 @@ namespace pilotlightjournal.org.Models {
         }
 
         /// <summary>
+        /// Public method to get all issues from the database
+        /// </summary>
+        /// <returns>A list of all issues</returns>
+        public List<Issue> GetAllIssues() {
+            //get all issues that have been completed and order them by ascending release date
+            return (from i in dbContext.Issues
+                    orderby i.ReleaseDate ascending
+                    select i).ToList();
+        }
+
+        /// <summary>
         /// Public method to get all contributors from the database for active issues (returns all if debug is set to true)
         /// </summary>
         /// <returns>A list of active contributors</returns>
