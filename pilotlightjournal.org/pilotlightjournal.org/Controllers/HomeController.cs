@@ -37,6 +37,28 @@ namespace pilotlightjournal.org.Controllers{
                         
             return View(models);         
         }
+        public ActionResult BetaContributors() {
+            List<ContributorViewModel> models = new List<ContributorViewModel>();
+            ContributorViewModel model = null;
+
+            //first get the contributors
+            List<Contributor> contributors = issues.GetAllContributors();
+
+            //for each contributor, find the issues they are in
+            foreach (Contributor c in contributors) {
+                model = new ContributorViewModel();
+                model.Contributor = c;
+                model.Issues = new List<Issue>();
+
+                foreach (Work w in c.Works) {
+                    if (!model.Issues.Contains(w.Issue)) model.Issues.Add(w.Issue); 
+                }
+
+                models.Add(model);
+            }
+
+            return View("Contributors", models);
+        }
         public ActionResult RssFeed() {
             var synFeed = new SyndicationFeed();
             var items = new List<SyndicationItem>();

@@ -67,6 +67,17 @@ namespace pilotlightjournal.org.Models {
         }
 
         /// <summary>
+        /// Public method to get all contributors from the database
+        /// </summary>
+        /// <returns>A list of all contributors</returns>
+        public List<Contributor> GetAllContributors() {
+            //get all contributers from finished issues (or all if in debug mode) and order them by name
+            return (from c in dbContext.Contributors
+                    orderby c.LastName, c.FirstName ascending
+                    select c).ToList();
+        }
+
+        /// <summary>
         /// Public method to get all contributors for a particular issue from the database
         /// </summary>
         /// <param name="id">The id of an issue</param>

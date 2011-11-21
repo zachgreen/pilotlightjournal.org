@@ -19,7 +19,7 @@ namespace pilotlightjournal.org.Controllers{
         #endregion
 
         #region Action Methods
-        public ActionResult Archive(){ return View(issues.GetIssues()); }
+        public ActionResult Archive(){ return View(issues.GetIssues().OrderByDescending(x => x.ReleaseDate).ToList()); }
         public ActionResult Index(int issueId) {
             //adding in special clause to redirect issueid 42 to the next issue
             if (issueId != 42) {

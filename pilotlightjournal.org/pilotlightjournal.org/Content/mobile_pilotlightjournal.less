@@ -119,7 +119,7 @@ h2 {
 .clear{ clear:both; }
 .section-title { font-size:2em; margin: 1.00em 0 .25em 0; font-weight:bold; }
 .dividing-line-container{
-    margin: 3em 0 3em 0;
+    margin: 4em 0 4em 0;
 }
 .dividing-line{
     width:10em;
@@ -131,8 +131,13 @@ h2 {
     font-style:italic;
     font-size:.85em;
 }
-.preformatted-font{ font-size: 1.25em; }
-.extra-spacing { line-height: 1.45em; }
+
+.preformatted-spacing { margin: 3em 0 2em 0; }
+.preformatted-font { font-size: 1.25em; }
+.extra-line-height { line-height: 1.45em; }
+.top-border { border-top: .15em solid @textColor; padding: .5em 0 0 0; }
+.center { text-align: center; }
+.bold { font-weight: bold; }
 
 /*-----------------------------------------------
     Entrance Header
@@ -150,6 +155,7 @@ h2 {
 	}
 	.subtitle{
 		font-size:1.65em;
+		font-variant:small-caps;
 		letter-spacing:.15em;
 	}
 	.line{
@@ -250,6 +256,7 @@ h2 {
 			display:block;
 			font-size:2.15em;
 			font-weight:bold;
+			line-height: 1.50em;
 			margin: 0 0 .85em 0;     
 		}
 		.author{
@@ -288,68 +295,21 @@ h2 {
 		width:100%;
 		margin: 0;
 		padding: 0;
-
+		
 		p {
 			margin: 0 0 0 0;
 			padding: 0 0 0 0;
 			line-height: 1.65em; 
 			font-size:1.25em;
 		}
-		p.normal{
-			text-indent: 1.25em;   
-		}
-		p.centered-title{
-			text-align:center;
-			font-weight:bold; 
-		}
-		p.resume{    
-			text-indent: 0em; 
-		}
-		p.excerpt-formatting-1{
-			text-indent:0;
-			font-size:1.05em;
-			line-height:1.95em;
-			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;     
-		}
-		p.excerpt-formatting-2{
-			text-indent:0em;
-			font-size:1.05em;
-			line-height:1.50em;
-			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;     
-		}
-		p.excerpt-formatting-3{
-			text-indent:0em;
-			font-size:1.05em;
-			line-height:1.50em;
-			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;   
-			font-style: italic; 
-		}
-		p.excerpt-formatting-4{
-			text-indent:0em;
-			font-size:1.05em;
-			line-height:1.75em;
-			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;
-		}
-		p.excerpt-formatting-5{
-			text-indent:0em;
-			font-size:1.05em;
-			line-height:1.25em;
-			margin: .85em 0 .85em 3.1em;
-			padding: .5em 0 .5em 0;
-		}
-		p.additional-note{
-			text-indent:0em;
-			font-size:1.05em;
-			line-height:1.10em;
-			margin: 2.0em 0 .85em 0;
-			padding: .5em 0 .5em 0;   
-			font-style: italic; 
-		}
 
+		p.indented { text-indent: 1.75em; }
+		p.not-indented { text-indent: 0em; }
+		p.with-spacing { margin: 2em 0 0 0; }
+		p.excerpt-spacing { margin: 3em 4em 3em 4em; }
+		p.end { margin-bottom: 4em; }
+		p.smaller-font { font-size: 1.10em; }
+		p.workscited-links { color: @linkTextColor; }
 	}
 }
 .poem-special{
@@ -427,10 +387,6 @@ h2 {
 		display:block;
 		margin: 0 0 1.0em 0;
 	}
-	
-	.workscited-links {
-		color: @linkTextColor;    
-	}
 }
 
 
@@ -465,7 +421,7 @@ h2 {
 		text-align:left;
 		.image { padding-bottom:.25em; }
 	}
-	.issn{ clear: both; margin-top: 2em; }
+	.issn{ clear: both; padding-top: 2em; }
 }
 
 
@@ -529,7 +485,7 @@ h2 {
     Archive Page
 -----------------------------------------------*/
 .archive-issue{
-	margin: 0 0 3.0em 0;
+	margin: 3.00em 0 0 0;
 	.name {
 		font-size: 2.00em;
 		font-weight:bold;

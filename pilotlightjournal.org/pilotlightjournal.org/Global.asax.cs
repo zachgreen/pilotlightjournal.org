@@ -22,6 +22,7 @@ namespace pilotlightjournal.org {
             routes.MapRoute("Submissions", "Submissions", new { controller = "Home", action = "About" });
             routes.MapRoute("Archive", "Archive", new { controller = "Issue", action = "Archive" });
             routes.MapRoute("Contributors", "Contributors", new { controller = "Home", action = "Contributors" });
+            routes.MapRoute("BetaContributors", "BetaContributors", new { controller = "Home", action = "BetaContributors" });
             routes.MapRoute("RssFeed", "RssFeed", new { controller = "Home", action = "RssFeed"});
             routes.MapRoute("Blank", "Blank", new { controller = "Home", action = "Blank" });
             routes.MapRoute("Http404", "Http404", new { controller = "Errors", action = "Http404" });

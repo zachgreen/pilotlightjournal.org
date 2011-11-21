@@ -119,6 +119,8 @@
     <Content Include="App_Data\PilotLightJournal.sdf" />
     <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Content\arrow_down.png" />
+    <Content Include="Content\contributors\jennifer_perrine.jpg" />
+    <Content Include="Content\contributors\nicole_cooley.jpg" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
     <Content Include="Content\bkgrd_tile4.jpg" />
@@ -186,12 +188,15 @@
     <Content Include="Views\Pages\1\Issue_1_Index.cshtml" />
     <Content Include="Views\Pages\2\Issue_2_Index.cshtml" />
     <Content Include="Views\Pages\3\Issue_3_Index.cshtml" />
-    <Content Include="Views\Pages\2\James_Adam_York_1.cshtml" />
+    <Content Include="Views\Pages\2\Jake_Adam_York_1.cshtml" />
     <Content Include="Views\Pages\2\Jennifer_Perrine_1.cshtml" />
-    <Content Include="Views\Pages\2\James_Adam_York_2.cshtml" />
-    <Content Include="Views\Pages\2\James_Adam_York_3.cshtml" />
-    <Content Include="Views\Pages\2\James_Adam_York_4.cshtml" />
-    <Content Include="Views\Pages\2\James_Adam_York_5.cshtml" />
+    <Content Include="Views\Pages\2\Jake_Adam_York_2.cshtml" />
+    <Content Include="Views\Pages\2\Jake_Adam_York_3.cshtml" />
+    <Content Include="Views\Pages\2\Jake_Adam_York_4.cshtml" />
+    <Content Include="Views\Pages\2\Jake_Adam_York_5.cshtml" />
+    <Content Include="Views\Pages\2\Jennifer_Perrine_2.cshtml" />
+    <Content Include="Views\Pages\2\Nicole_Cooley_1.cshtml" />
+    <Content Include="Views\Pages\2\Nicole_Cooley_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
