@@ -22,16 +22,21 @@
                 </ul>
             </div>
         }
-        <div class="title">@Model.Work.Title</div>
-        <div class="author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
-                "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
-                new { area = "", controller = "Home" }, null)</div>
+        <div id="article-information">
+            <div class="title">@Model.Work.Title</div>
+            <div class="author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
+                    "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
+                    new { area = "", controller = "Home" }, null)</div>
        
-        @* Add continued from link *@
-        @if (Model.Page > 1) {
-            <div class="continued">(Continued from @Html.NavLink("Page " + (Model.Page - 1).ToString(), "Work", 
-                                                        new { issueId = Model.Work.Issue.IssueId,  workId = Model.Work.WorkId, page = Model.Page - 1 }))</div>
-        }
+            @* Add continued from link *@
+            @if (Model.Page > 1) {
+                <div class="continued">(Continued from @Html.NavLink("Page " + (Model.Page - 1).ToString(), "Work", 
+                                                            new { issueId = Model.Work.Issue.IssueId,  workId = Model.Work.WorkId, page = Model.Page - 1 }))</div>
+            }
+        </div>
+        <div id="article-top-sidebar">
+            @if(Model.Work.Partials.Count(x => x.Type == "WorkSideBar") > 0) {Html.RenderPartial(Model.Work.Partials.FirstOrDefault().Name);}
+        </div>
         @foreach (pilotlightjournal.org.Models.Page p in Model.Work.Pages) {
             if (Model.Page == 0 || Model.Page == p.Order) {
                 Html.RenderPartial(p.Url); 
@@ -42,7 +47,7 @@
         @if (Model.Page != 0 && Model.Page < Model.Work.Pages.Count) {
             <div class="continued">(Continue to @Html.NavLink("Page " + (Model.Page + 1).ToString(), "Work", 
                                                         new { issueId = Model.Work.Issue.IssueId,  workId = Model.Work.WorkId, page = Model.Page + 1 }))</div>
-        } 
+        }
         
         @* Add bottom of the page paging links *@
         @if (Model.Work.Pages.Count > 1) {

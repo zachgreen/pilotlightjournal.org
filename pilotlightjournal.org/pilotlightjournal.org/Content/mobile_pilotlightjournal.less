@@ -90,11 +90,11 @@ a:visited { }
 a.current {
     text-decoration:none;
     color: @textColor;
-    border-bottom: .15em solid @textColor;
+    border-bottom: .10em solid @textColor;
 }
 a:hover { 
     color: @linkTextColor;
-    border-bottom: .15em solid @linkTextColor;
+    border-bottom: .10em solid @linkTextColor;
 }
 h2 {
 	font-size: 2.25em;
@@ -114,8 +114,6 @@ h2 {
     vertical-align: super;   
 }
 .lit{ color: @linkTextColor; }
-.book-title{ font-style:italic; }
-.italic{ font-style:italic; }
 .clear{ clear:both; }
 .section-title { font-size:2em; margin: 1.00em 0 .25em 0; font-weight:bold; }
 .dividing-line-container{
@@ -252,43 +250,69 @@ h2 {
 -----------------------------------------------*/ 
 #article-container{ 
 	#article{  	
-		.title{
-			display:block;
-			font-size:2.15em;
-			font-weight:bold;
-			line-height: 1.50em;
-			margin: 0 0 .85em 0;     
-		}
-		.author{
-			display:block;
-			font-size:1.65em;
-			font-weight:normal;
-			margin: 0 0 1.55em 0;
-		}
+		a { color: @linkTextColor; }
+		a.current { color: @textColor; }
 		.continued{
-			display:block;
-			clear:left;
 			float:left;
+			clear:left;
 			font-size:1.00em;
 			font-weight:normal;
 			font-style:italic;
 			margin: 0 0 2.00em 0;
+		}
+
+		#article-information{
+			width: 80%;
+			float:left;
+
+			.title{
+				float:left;
+				clear: both;
+				font-size:2.15em;
+				font-weight:bold;
+				line-height: 1.50em;
+				margin: 0 0 .85em 0;    
+			}
+			.author{
+				float:left;
+				clear: left;
+				font-size:1.65em;
+				font-weight:normal;
+				margin: 0 0 1.55em 0;
+
+				a { color: @textColor; }
+				a:hover { color: @linkTextColor; }
+			}
+		}
+		#article-top-sidebar{
+			width:18%;
+			float:right;
+			padding: 0 0 0 .10em;
+		}
+	}
+}
+
+.article-sidelinks {
+	font-size: 1.25em;
+	line-height: 1.35em;
+
+	.heading { font-size: 1.10em; }
+	ul {
+		li {
+			margin: 1em 0 0 0;
 		}
 	}
 }
 
 .article-page-container{
     width:100%;
-    clear:both; 
+    clear:left; 
 		
 	.article-sidebar{
-		clear:both;
-		float:right;
-		width:100%;
 		padding: 0 0 0 .10em;
-	}  
+	} 
 	.article-pages{
-		clear:both;
+		clear:left;
 		float:left;
 		display:block;
 		text-align:justify;
@@ -309,7 +333,7 @@ h2 {
 		p.excerpt-spacing { margin: 3em 4em 3em 4em; }
 		p.end { margin-bottom: 4em; }
 		p.smaller-font { font-size: 1.10em; }
-		p.workscited-links { color: @linkTextColor; }
+		.workscited-links { color: @linkTextColor; }
 	}
 }
 .poem-special{

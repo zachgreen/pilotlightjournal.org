@@ -103,6 +103,7 @@
     <Compile Include="Models\AppConfig.cs" />
     <Compile Include="Models\Contributor.cs" />
     <Compile Include="Models\ContributorViewModel.cs" />
+    <Compile Include="Models\Partial.cs" />
     <Compile Include="Models\FeedResult.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Issue.cs" />
@@ -197,6 +198,7 @@
     <Content Include="Views\Pages\2\Jennifer_Perrine_2.cshtml" />
     <Content Include="Views\Pages\2\Nicole_Cooley_1.cshtml" />
     <Content Include="Views\Pages\2\Nicole_Cooley_2.cshtml" />
+    <Content Include="Views\Pages\2\Jennifer_Perrine_Partial_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />

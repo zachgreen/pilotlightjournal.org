@@ -20,5 +20,6 @@ namespace pilotlightjournal.org.Models {
         public virtual Issue Issue { get; set; }
         public virtual Contributor Contributor { get; set; }
         public virtual ICollection<Page> Pages { get; set; }
+        public virtual ICollection<Partial> Partials { get; set; }
     }
 }
