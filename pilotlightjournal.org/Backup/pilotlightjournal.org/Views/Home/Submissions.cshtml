@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Submissions";
+    Layout = Request.Browser.IsMobileDevice
+        ? "~/Views/Shared/_MobileLayout.cshtml"
+        : "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="submissions" class="clear">
+    <p>Pilot Light publishes original scholarship that considers, as its central focus, poetry published since 2000. 
+        We welcome traditional essays along with more lyric approaches, manifestos, interviews, round-tables, 
+        poems--suffice it to say that we are interested in formal variety and ingenuity. 
+        We are not interested, however, in book reviews or craft essays. 
+        We ask that all prose submissions be at least 1,000 words.</p>
+
+    <p>However, we do not accept unsolicited submissions at this time.</p>
+</div>
+@section Scripts{}

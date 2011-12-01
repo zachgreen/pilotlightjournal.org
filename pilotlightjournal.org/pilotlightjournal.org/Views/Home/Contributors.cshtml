@@ -33,7 +33,7 @@
             @if (!String.IsNullOrEmpty(cvm.Contributor.ImagePage)) {
                 <div class="image">
                     <img alt="@cvm.Contributor.FirstName @cvm.Contributor.LastName" src="@Url.Content(cvm.Contributor.ImagePage)" width="400px" /><br />
-                    <span class="credit">Photo by: @cvm.Contributor.ImageCredit</span>
+                    @if (!String.IsNullOrEmpty(cvm.Contributor.ImageCredit)) {<span class="credit">Photo by: @cvm.Contributor.ImageCredit</span>}
                 </div>
                 
             }
