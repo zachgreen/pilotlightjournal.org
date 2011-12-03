@@ -9,7 +9,7 @@
 
 <div id="contributors-title">Contributors</div>
 <div id="contributors-container">
-    @foreach (ContributorViewModel cvm in Model) {
+    @foreach (ContributorViewModel cvm in Model.Where(x => x.Contributor.Bio != null)) {
         <div class="contributor">
             <a name="@cvm.Contributor.FirstName-@cvm.Contributor.LastName"></a>
             <div class="info">
@@ -32,7 +32,7 @@
             </div>
             @if (!String.IsNullOrEmpty(cvm.Contributor.ImagePage)) {
                 <div class="image">
-                    <img alt="@cvm.Contributor.FirstName @cvm.Contributor.LastName" src="@Url.Content(cvm.Contributor.ImagePage)" width="400px" /><br />
+                    <img alt="@cvm.Contributor.FirstName @cvm.Contributor.LastName" src="@Url.Content(cvm.Contributor.ImagePage)" /><br />
                     @if (!String.IsNullOrEmpty(cvm.Contributor.ImageCredit)) {<span class="credit">Photo by: @cvm.Contributor.ImageCredit</span>}
                 </div>
                 

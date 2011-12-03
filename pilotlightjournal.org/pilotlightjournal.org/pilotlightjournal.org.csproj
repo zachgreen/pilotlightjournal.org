@@ -17,7 +17,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\Backup1\pilotlightjournal.org\</UpgradeBackupLocation>
+    <UpgradeBackupLocation>C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\Backup\pilotlightjournal.org\</UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -124,6 +124,7 @@
     <Content Include="App_Data\PilotLightJournal.sdf" />
     <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Content\arrow_down.png" />
+    <Content Include="Content\contributors\jake_adam_york.jpg" />
     <Content Include="Content\contributors\jennifer_perrine.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
