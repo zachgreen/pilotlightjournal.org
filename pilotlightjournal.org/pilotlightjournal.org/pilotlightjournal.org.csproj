@@ -17,7 +17,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\Backup\pilotlightjournal.org\</UpgradeBackupLocation>
+    <UpgradeBackupLocation>C:\storage\docs\development\git\pilotlightjournal\pilotlightjournal.org\Backup\pilotlightjournal.org\</UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -127,18 +127,25 @@
     <Content Include="Content\contributors\jake_adam_york.jpg" />
     <Content Include="Content\contributors\jennifer_perrine.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
+    <Content Include="Content\december_2011.css" />
+    <Content Include="Content\march_2012.css" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
+    <None Include="Content\march_2012.less" />
+    <None Include="Content\september_2011.less" />
+    <None Include="Content\december_2011.less" />
     <None Include="Content\mobile_pilotlightjournal.less" />
     <None Include="Content\pilotlightjournal.less" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\industrial_texture.jpg" />
     <Content Include="Content\contributors\marianne_boruch.jpg" />
+    <Content Include="Content\pl_dec_2011_gina_franco.jpg" />
     <Content Include="Content\rss_orange.png" />
     <Content Include="Content\printer-friendly.css" />
+    <Content Include="Content\september_2011.css" />
     <Content Include="Global.asax" />
     <Content Include="Mobile\Default.aspx" />
     <Content Include="robots.txt" />

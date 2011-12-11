@@ -7,6 +7,7 @@
         ? "~/Views/Shared/_MobileArticleLayout.cshtml"
         : "~/Views/Shared/_ArticleLayout.cshtml";
 }
+@if (!Request.Browser.IsMobileDevice) { <link href="@Url.Content("~/Content/" + Model.StyleSheet)" rel="stylesheet" type="text/css" />}
 <div id="issue-index">
     <div class="info">
         <div class="title">@Model.Name</div>

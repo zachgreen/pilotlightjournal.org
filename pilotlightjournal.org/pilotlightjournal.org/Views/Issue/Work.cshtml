@@ -8,6 +8,7 @@
         : "~/Views/Shared/_ArticleLayout.cshtml";
     
 }
+@if (!Request.Browser.IsMobileDevice) { <link href="@Url.Content("~/Content/" + Model.Work.Issue.StyleSheet)" rel="stylesheet" type="text/css" />}
 <div id="article-container">
     <div id="article">
         @* Add top of the page paging links *@

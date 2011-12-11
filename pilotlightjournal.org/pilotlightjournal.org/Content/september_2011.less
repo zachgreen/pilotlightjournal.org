@@ -1,0 +1,58 @@
+﻿//Author: Zach Green
+@backgroundColor: #000;
+@textColor: #c8cece;
+@linkTextColor: #ff9900;
+
+/*-----------------------------------------------
+    Article Layout Overrides
+-----------------------------------------------*/
+.article-page-container .article-pages{ width:80%; }
+.article-page-container .article-sidebar{ width:18%; }
+
+/*-----------------------------------------------
+    Issue - Index
+-----------------------------------------------*/
+#issue-index {    
+    width:97%;
+
+	.info {
+		float:left; 
+		min-height:15em;
+		width:56%;
+
+		a { color: @textColor; border-bottom: 0 none; }
+		a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+
+		.title {
+			font-size: 2.00em;
+			font-weight:bold;
+			margin: .85em 0 1.25em 0;   
+			float:left;
+		}
+		.works{ 
+			ul {
+				list-style-type:none;
+
+				li {
+					clear:both;
+					font-size: 1.35em;
+					display:block;
+					margin: 0.90em 0 0 0.90em;
+					line-height: 1.55em;
+
+					.work-title { margin: 0; }
+					.author { margin: 0; }
+				}
+			}
+		}
+	}
+	.image-container {
+		float: right;
+		margin: 1.30em 0 0 0;
+		width:43%;
+		text-align:left;
+
+		.image { padding-bottom:.25em; }
+	}
+	.issn{ clear: both; padding-top: .5em; float:left; }
+}

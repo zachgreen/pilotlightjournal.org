@@ -91,13 +91,13 @@ p {
 
 a { 
     text-decoration:none;
-    color: @textColor;
+    color: @linkTextColor;
 }
 a:visited { }
 a.current{
     text-decoration:none;
-    color: @textColor;
-    border-bottom: .10em solid @textColor;
+    color: @linkTextColor;
+    border-bottom: .10em solid @linkTextColor;
 }
 a:hover{ 
     color: @linkTextColor;
@@ -108,7 +108,7 @@ h2 {
 	font-weight: bold;
     color: @linkTextColor;
 }
-#content { min-height:18em; width:100%; }
+#content { min-height:18em; width:100%; clear:both; }
 
 /*-----------------------------------------------
     Main Classes
@@ -189,6 +189,7 @@ h2 {
 		padding-bottom:.25em;
 		letter-spacing:.15em;
 	
+		a { color: @textColor; }
 		a.current{
 			text-decoration:none;
 			color: @textColor;
@@ -226,15 +227,17 @@ h2 {
 -----------------------------------------------*/
 #footer-right-nav{    
     border-top: .15em solid @textColor;
+	font-size: 1.5em;
     width:90%; 
     float:right;
     padding: .85em 0 1.25em 0;
     text-align:right;
     clear:both;
-
-	a { font-size: 1.5em; } 
+	
+	/*a { color: @linkTextColor;  }
+	a.current { color: @linkTextColor; border-bottom-color: @linkTextColor; }
+	a:hover { color: @linkTextColor; }*/
 }
-
 
 /*-----------------------------------------------
     Entrance Text
@@ -254,13 +257,11 @@ h2 {
 }
 
 
-/*-----------------------------------------------
+/*---------------------------------------------
     Articles Page
 -----------------------------------------------*/ 
 #article-container{ 
 	#article{
-		a { color: @linkTextColor; }
-		a.current { color: @textColor; }
 		.continued{
 			float:left;
 			clear:left;
@@ -288,13 +289,10 @@ h2 {
 				font-size:1.65em;
 				font-weight:normal;
 				margin: 0 0 1.55em 0;
-
-				a { color: @textColor; }
-				a:hover { color: @linkTextColor; }
 			}
 		}
 		#article-top-sidebar{
-			width:18%;
+			width:28%;
 			float:right;
 			padding: 0 0 0 .10em;
 		}
@@ -318,7 +316,7 @@ h2 {
     clear:left; 
 		
 	.article-sidebar{
-		width:18%;
+		width:28%;
 		float:right;
 		padding: 0 0 0 .10em;
 	}  
@@ -327,7 +325,7 @@ h2 {
 		float:left;
 		display:block;
 		text-align:justify;
-		width:80%;
+		width:70%;
 		margin: 0;
 		padding: 0;
 
@@ -363,13 +361,8 @@ h2 {
 			list-style:none;
 			text-align:right;
 			cursor: pointer;  
-		
-			a{
-				color: @linkTextColor; 
-				text-decoration:none;
-				font-size: 1.15em;
-			}
-			a:hover{}
+			font-size: 1.15em;
+			
 			a.current{
 				color: @textColor;
 				border: 0 none;
@@ -425,50 +418,6 @@ h2 {
 
 
 /*-----------------------------------------------
-    Issue - Index
------------------------------------------------*/
-#issue-index {    
-    width:90%;
-
-	.info {
-		float:left; 
-		min-height:15em;
-
-		.title {
-			font-size: 2.00em;
-			font-weight:bold;
-			margin: .85em 0 1.25em 0;   
-			float:left;
-		}
-		.works{ 
-			ul {
-				list-style-type:none;
-
-				li {
-					clear:both;
-					font-size: 1.35em;
-					display:block;
-					margin: 0.90em 0 0 0.90em;
-					line-height: 1.55em;
-
-					.work-title { margin: 0; }
-					.author { margin: 0; }
-				}
-			}
-		}
-	}
-	.image-container {
-		float: right;
-		width:34%;
-		text-align:left;
-
-		.image { padding-bottom:.25em; }
-	}
-	.issn{ clear: both; padding-top: 2em; }
-}
-
-
-/*-----------------------------------------------
     Contributors Page
 -----------------------------------------------*/
 #contributors-title{
@@ -486,7 +435,7 @@ h2 {
 		width:100%;
 		font-size:1.50em;
 		margin: 2.00em 0 0 0; 
-		border-bottom: .125em solid @textColor; 
+		border-bottom: .125em solid @textColor;
 		
 		.info {
 			display:block;
@@ -545,8 +494,16 @@ h2 {
 			display:block;
 			margin: 1.50em 0 0 2.0em;
 			
-			.work-title { margin: 0; }
-			.author { margin: 0; }
+			.work-title { 
+				margin: 0; 			
+				a { color: @textColor; border-bottom: 0 none; }
+				a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+			}
+			.author { 
+				margin: 0; 			
+				a { color: @textColor; border-bottom: 0 none; }
+				a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+			}
 		}
 	}
 
