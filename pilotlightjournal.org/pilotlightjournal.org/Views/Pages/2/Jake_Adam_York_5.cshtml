@@ -212,7 +212,7 @@
     <div class="article-sidebar">
         <div id="article-footnotes">
             <ol start="9">
-                <li id="foot9" style="top:1640px; position:relative;">
+                <li id="foot9" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:1640px;"); } position:relative;">
                     <p>
                         “The face of the Other at each moment destroys and overflows the plastic image it leaves me, the idea existing to my own measure and to the measure of its <em>ideatum</em>—the 
 	                    adequate idea… It <em>expresses itself</em>. The face brings a notion of truth which, in contradistinction to contemporary ontology, is not the disclosure of an impersonal Neuter, 
@@ -224,7 +224,7 @@
 	                    p. 50-51.
                     </p>
                 </li>
-                <li id="foot10" style="top:2630px; position:relative;">
+                <li id="foot10" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:2630px;"); } position:relative;">
                     <p>
                         So Tsvetaeva’s taxonomy folds onto itself, where history itself is the flood, producing within in smaller floods, smaller moments of totalizing infinity.
                     </p>

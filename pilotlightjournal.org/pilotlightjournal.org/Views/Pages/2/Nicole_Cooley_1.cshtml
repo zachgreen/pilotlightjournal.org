@@ -80,7 +80,7 @@
     <div class="article-sidebar">
         <div id="article-footnotes">
             <ol start="1">
-                <li id="foot1" style="top:2060px; position:relative;">
+                <li id="foot1" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:2090px;"); } position:relative;">
                     <p>
                         In 1985, in the first years of the epidemic, women and adolescent girls made up only 7 percent of reported AIDS cases in the United States. 
                         (“Women and HIV/AIDS: An Overview, by Elinor Nauen and Bonnie Goldman, “The Body/The Complete HIV/AIDS Resource,” January 9, 2006, 
@@ -88,7 +88,7 @@
                         http://www.thebody.com<br />/Forums/AIDS/SafeSex<br />/Archive/TransmissionNon<br />/Q171082.html</a>.)
                     </p>
                 </li>
-                <li id="foot2" style="top:2170px; position:relative;">
+                <li id="foot2" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:2200px;"); } position:relative;">
                     <p>
                         Disturbingly, I have found that this question frequently arises outside the classroom too. On the website thebody.com, dedicated to providing 
                         information and resources about HIV and AIDS, a reader wrote in to ask the resident doctor, “This may be politically incorrect of me—but I was 

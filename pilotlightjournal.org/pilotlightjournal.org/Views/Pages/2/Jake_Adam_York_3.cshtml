@@ -226,7 +226,7 @@
     <div class="article-sidebar">
         <div id="article-footnotes">
             <ol start="6">
-                <li id="foot6" style="top:2520px; position:relative;">
+                <li id="foot6" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:2520px;"); } position:relative;">
                     <p>
                         Tsvetaeva: All poets can be divided into poets with development and poets without development. Into poets with history and poets without history. 
                         The first could be depicted graphically as an arrow shot into infinity; the second—as a circle.<br /><br />C. D. Wright, <em>Cooling Time</em>, 37:
@@ -236,12 +236,12 @@
                         line of refutation.
                     </p>
                 </li>
-                <li id="foot7" style="top:7610px; position:relative;">
+                <li id="foot7" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:7610px;"); } position:relative;">
                     <p>
                         <em>Absalom, Absalom!</em> The Corrected Text. 1986. p. 243-245
                     </p>
                 </li>
-                <li id="foot8" style="top:8600px; position:relative;">
+                <li id="foot8" style="@if (!Request.Browser.IsMobileDevice) { @Html.Raw("top:8600px;"); } position:relative;">
                     <p>
                         <em>Faulkner, Mississippi, </em> 5.
                     </p>
