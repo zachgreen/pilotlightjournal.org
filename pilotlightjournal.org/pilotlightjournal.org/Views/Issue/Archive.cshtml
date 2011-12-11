@@ -9,21 +9,27 @@
 
 @foreach (Issue i in Model) {
     <div class="archive-issue">
-        <a class="link" href="@i.Url">
-            <span class="name">@i.Name</span>
-        </a>
-        <div class="featuring"><span>Featuring:</span></div>
-        <ul>
-            @foreach (Work w in i.Works.OrderBy(w => w.Order)) {                    
-                <li>
-                    <span class="author">@Html.ActionLink(w.Contributor.FirstName + " " + w.Contributor.LastName,
-                            "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName,
-                            new { area = "", controller = "Home" }, null)</span>
-                    &nbsp;-&nbsp;
-                    <span class="work-title"><a href="@Url.Action("Work", "Issue", new { issueId = i.IssueId, workId = w.WorkId, page = 1 })">@Html.Raw(w.Title)</a></span>
-                </li>
-            }
-        </ul>
+        <div class="archive-issue-image">
+            <img alt="Gina Franco's Blue Trunk" src="@Url.Content("~/Content/" + i.Image)" width="300" /><br />
+            <span class="image-credit">@i.ImageCredit</span>
+        </div>
+        <div class="archive-issue-info">
+            <a class="link" href="@i.Url">
+                <span class="name">@i.Name</span>
+            </a>
+            <div class="featuring"><span>Featuring:</span></div>
+            <ul>
+                @foreach (Work w in i.Works.OrderBy(w => w.Order)) {                    
+                    <li>
+                        <span class="author">@Html.ActionLink(w.Contributor.FirstName + " " + w.Contributor.LastName,
+                                "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName,
+                                new { area = "", controller = "Home" }, null)</span>
+                        &nbsp;-&nbsp;
+                        <span class="work-title"><a href="@Url.Action("Work", "Issue", new { issueId = i.IssueId, workId = w.WorkId, page = 1 })">@Html.Raw(w.Title)</a></span>
+                    </li>
+                }
+            </ul>
+        </div>
     </div>
 }
 <div style="margin: 4em 0 0 0;"></div>

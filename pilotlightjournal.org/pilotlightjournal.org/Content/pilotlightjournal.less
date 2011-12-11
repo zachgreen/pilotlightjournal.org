@@ -233,10 +233,6 @@ h2 {
     padding: .85em 0 1.25em 0;
     text-align:right;
     clear:both;
-	
-	/*a { color: @linkTextColor;  }
-	a.current { color: @linkTextColor; border-bottom-color: @linkTextColor; }
-	a:hover { color: @linkTextColor; }*/
 }
 
 /*-----------------------------------------------
@@ -477,36 +473,53 @@ h2 {
     Archive Page
 -----------------------------------------------*/
 .archive-issue{
-	margin: 3.00em 0 0 0;
-	.name {
-		font-size: 2.00em;
-		font-weight:bold;
-	}
-	.featuring {
-		font-size: 1.25em;
-		margin: 1.0em 0 0 1.0em;
-	}
+	margin: 4.00em 0 0 0;
+	padding: 1.00em 0 1.00em 0;
+	overflow: hidden;
+	height: 1%;
+	line-height: 1.75em;
 
-	ul {
-		li {
-			clear:both;
+	.archive-issue-image {
+		float: left;
+		width: 35%;
+		margin: 1.0em 0 0 0;
+		text-align:left;
+
+		.image { padding-bottom:.25em; }
+	}
+	.archive-issue-info {
+		float: left;
+		width: 64%;
+		margin: 0.00em 0 0 0;
+		.name {
+			font-size: 2.00em;
+			font-weight:bold;
+		}
+		.featuring {
 			font-size: 1.25em;
-			display:block;
-			margin: 1.50em 0 0 2.0em;
+			margin: 1.0em 0 0 1.0em;
+		}
+
+		ul {
+			li {
+				clear:both;
+				font-size: 1.25em;
+				display:block;
+				margin: 1.50em 0 0 2.0em;
 			
-			.work-title { 
-				margin: 0; 			
-				a { color: @textColor; border-bottom: 0 none; }
-				a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
-			}
-			.author { 
-				margin: 0; 			
-				a { color: @textColor; border-bottom: 0 none; }
-				a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+				.work-title { 
+					margin: 0; 			
+					a { color: @textColor; border-bottom: 0 none; }
+					a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+				}
+				.author { 
+					margin: 0; 			
+					a { color: @textColor; border-bottom: 0 none; }
+					a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+				}
 			}
 		}
 	}
-
 }
 
 

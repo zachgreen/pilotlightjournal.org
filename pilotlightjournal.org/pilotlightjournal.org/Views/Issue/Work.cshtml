@@ -19,7 +19,7 @@
                         <li>@Html.NavLink(p.Order.ToString(), "Work",
                              new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = p.Order })</li>
                     }   
-                    <li>@Html.NavLink("View All", "Work", new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = 0 })</li>
+                    @if (!Request.Browser.IsMobileDevice) {<li>@Html.NavLink("View All", "Work", new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = 0 })</li>}
                 </ul>
             </div>
         }
@@ -58,7 +58,7 @@
                         <li>@Html.NavLink(p.Order.ToString(), "Work",
                              new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = p.Order })</li>
                     }   
-                    <li>@Html.NavLink("View All", "Work", new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = 0 })</li>
+                    @if (!Request.Browser.IsMobileDevice) { <li>@Html.NavLink("View All", "Work", new { issueId = Model.Work.Issue.IssueId, workId = Model.Work.WorkId, page = 0 })</li>}
                 </ul>
             </div>
         }            

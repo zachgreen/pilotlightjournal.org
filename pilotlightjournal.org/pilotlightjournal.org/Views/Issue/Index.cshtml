@@ -28,7 +28,10 @@
             </ul>
         </div>
     </div>
-    @Html.Partial("Issue_" + Model.IssueId.ToString() + "_Index")
+    <div class="image-container">
+        <img class="image" alt="" src="@Url.Content("~/Content/" + Model.Image)" width="450" />
+        <span class="image-credit">@Model.ImageCredit</span>
+    </div>
     <div class="issn">ISSN: 2164-1633</div>
 </div>
 

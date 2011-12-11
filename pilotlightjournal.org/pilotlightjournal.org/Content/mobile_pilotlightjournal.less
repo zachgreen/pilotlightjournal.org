@@ -84,13 +84,13 @@ p {
 
 a { 
     text-decoration:none;
-    color: @textColor;
+    color: @linkTextColor;
 }
 a:visited { }
 a.current {
     text-decoration:none;
-    color: @textColor;
-    border-bottom: .10em solid @textColor;
+    color: @linkTextColor;
+    border-bottom: .10em solid @linkTextColor;
 }
 a:hover { 
     color: @linkTextColor;
@@ -103,7 +103,7 @@ h2 {
 }
 #content { 
     margin: 0 1.25em 0 1.25em;
-    min-height:18em; width:100%;
+    min-height:8em; width:100%;
 }
 
 /*-----------------------------------------------
@@ -141,32 +141,31 @@ h2 {
     Entrance Header
 -----------------------------------------------*/
 #entrance-header{
-    text-align: right;
+    text-align: center;
     display: block;
     padding-bottom:1.5em; 
-    margin: 3.10em 1.25em 0 1.25em;
+    margin: 1.50em 0.25em 0 0.25em;
 
 	.title{
-		font-size:5.00em;
+		font-size:3.00em;
 		padding-bottom:.10em;
 		letter-spacing:.15em;
 	}
 	.subtitle{
-		font-size:1.65em;
+		font-size:1.25em;
 		font-variant:small-caps;
 		letter-spacing:.15em;
 	}
 	.line{
-		margin: 0 0 1.5em 0; 
+		margin-left: auto;
+		margin-right: auto;
 		border-bottom: .15em solid @textColor;
-		width:90%; 
-		float:right  
+		width:90%;
 	}
 	.right-nav{
 		padding: .85em 0 1.85em 0;
-		width:90%; 
-		float:right;
-		text-align:right;
+		width:90%;
+		text-align:center;
 		font-size: 1.5em;
 	}
 }
@@ -175,15 +174,17 @@ h2 {
     Article Header
 -----------------------------------------------*/
 #article-header{
-    text-align: left;
+    text-align: center;
     display: block;
-    margin: 3.10em 1.25em 0 1.25em;
+    padding-bottom: 1.0em; 
+    margin: 1.50em 0.25em 0 0.25em;
 
 	.title{
-		font-size:3.50em;
-		padding-bottom:.25em;
+		font-size:3.00em;
+		padding-bottom:.10em;
 		letter-spacing:.15em;
 	
+		a { color: @textColor; }
 		a.current{
 			text-decoration:none;
 			color: @textColor;
@@ -196,18 +197,22 @@ h2 {
 		}
 	}
 	.subtitle{
-		font-size:1.65em;
+		font-size:1.25em;
 		font-variant:small-caps;
 		letter-spacing:.15em;
 	}
 	.line{
+		margin-left: auto;
+		margin-right: auto;
 		border-bottom: .15em solid @textColor;
-		width:90%; 
+		width:90%;
 	}
-	.right-nav{   
-		padding: .85em 0 1.85em 0;
-		text-align:left;
-		font-size: 1.5em;
+	.right-nav{
+		padding: .85em 0 0 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		font-size: 1.25em;
 	}
 }
 
@@ -215,16 +220,14 @@ h2 {
 /*-----------------------------------------------
     Footer Nav Header
 -----------------------------------------------*/
-#footer-right-nav{    
+#footer-right-nav{
     border-top: .15em solid @textColor;
     width:90%; 
-    float:right;
     padding: .85em 0 1.25em 0;
-    margin: 0 1.25em 0 1.25em;   
-    text-align:right;
-    clear:both;
-
-	a { font-size: 1.5em; } 
+	margin-left: auto;
+	margin-right: auto;
+    text-align:center;
+	font-size: 1.25em;
 }
 
 
@@ -232,13 +235,16 @@ h2 {
     Entrance Text
 -----------------------------------------------*/   
 #entrancetext{
-    margin: 6em 1.25em 1em 1.25em;
+    margin: 1.5em .25em 1.5em .25em;
     display:block;
-    font-size:1.65em;
-    text-align:left; 
-    width:100%;
+    font-size:1.35em;
+    text-align:left;
 	
 	.highlighted{
+		color:@linkTextColor;
+		text-shadow: 0 0 .15em @linkTextColor;
+	}
+	.nothighlighted {
 		color:@linkTextColor;
 		text-shadow: 0 0 .15em @linkTextColor;
 	}
@@ -249,12 +255,9 @@ h2 {
     Articles Page
 -----------------------------------------------*/ 
 #article-container{ 
-	#article{  	
-		a { color: @linkTextColor; }
-		a.current { color: @textColor; }
+	width: 95%;
+	#article{
 		.continued{
-			float:left;
-			clear:left;
 			font-size:1.00em;
 			font-weight:normal;
 			font-style:italic;
@@ -262,31 +265,19 @@ h2 {
 		}
 
 		#article-information{
-			width: 80%;
-			float:left;
-
 			.title{
-				float:left;
-				clear: both;
-				font-size:2.15em;
+				font-size: 1.50em;
 				font-weight:bold;
 				line-height: 1.50em;
-				margin: 0 0 .85em 0;    
+				margin: 0 0 1.00em 0;    
 			}
 			.author{
-				float:left;
-				clear: left;
-				font-size:1.65em;
+				font-size: 1.35em;
 				font-weight:normal;
-				margin: 0 0 1.55em 0;
-
-				a { color: @textColor; }
-				a:hover { color: @linkTextColor; }
+				margin: 0 0 1.00em 0;
 			}
 		}
 		#article-top-sidebar{
-			width:18%;
-			float:right;
 			padding: 0 0 0 .10em;
 		}
 	}
@@ -295,6 +286,7 @@ h2 {
 .article-sidelinks {
 	font-size: 1.25em;
 	line-height: 1.35em;
+	margin: 0 0 1.0em 0;
 
 	.heading { font-size: 1.10em; }
 	ul {
@@ -304,17 +296,32 @@ h2 {
 	}
 }
 
-.article-page-container{
-    width:100%;
-    clear:left; 
-		
+.article-page-container{		
 	.article-sidebar{
 		padding: 0 0 0 .10em;
+		
+		#article-footnotes {
+			line-height:1.0em;
+			font-size:.75em;
+			ol {
+				list-style-type:decimal;
+				margin-left:1.3em;
+
+				li { 
+					color: @linkTextColor;
+					position:relative;
+
+					p {
+						margin:0 0 0 0;
+						padding: 0 0 0 0;
+						color: @textColor;
+						text-indent:0;
+					}
+				}
+			}
+		}
 	} 
 	.article-pages{
-		clear:left;
-		float:left;
-		display:block;
 		text-align:justify;
 		width:100%;
 		margin: 0;
@@ -330,17 +337,17 @@ h2 {
 		p.indented { text-indent: 1.75em; }
 		p.not-indented { text-indent: 0em; }
 		p.with-spacing { margin: 2em 0 0 0; }
-		p.excerpt-spacing { margin: 3em 4em 3em 4em; }
-		p.end { margin-bottom: 4em; }
+		p.excerpt-spacing { margin: 1.5em 2em 1.5em 2em; }
+		p.end { margin-bottom: 2em; }
 		p.smaller-font { font-size: 1.10em; }
 		.workscited-links { color: @linkTextColor; }
 	}
 }
 .poem-special{
-    margin-left:5em;   
+    margin-left:3em;
 }
 .article-paging{
-    clear:both;
+	text-align: right;
     margin: 0 0 1.5em 0;   
 	
 	ul{
@@ -368,31 +375,9 @@ h2 {
 	} 
 }
 
-#article-footnotes {
-    line-height:1.0em;
-    font-size:.75em;
-	ol {
-		list-style-type:decimal;
-		margin-left:1.3em;
-
-		li { 
-			color: @linkTextColor; 
-
-			p {
-				margin:0 0 0 0;
-				padding: 0 0 0 0;
-				color: @textColor;
-				text-indent:0;
-			}
-		}
-	}
-}
-
 #article-workscited {
-    border-top: .15em solid @textColor;
+    border-top: .10em solid @textColor;
     padding: 1.0em 0 0 0;
-    display:block;
-    clear:both;
 
 	p {
 		margin: 0 0 1.00em 0;
@@ -407,20 +392,28 @@ h2 {
 
 	.workscited-title {
 		font-size:1.25em;
-		font-weight:bold;   
-		display:block;
+		font-weight:bold;
 		margin: 0 0 1.0em 0;
 	}
 }
 
 
 /*-----------------------------------------------
-    Issue1 - Index
+    Issue - Index
 -----------------------------------------------*/
 #issue-index {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.50em;
+	margin: 1.0em 0 0 0;
+
 	.info {
+		a { color: @textColor; border-bottom: 0 none; }
+		a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+
 		.title {
-			font-size: 2.00em;
+			font-size: 1.50em;
 			font-weight:bold;
 		    margin: 0 0 .55em 0;   
 		}
@@ -429,10 +422,9 @@ h2 {
 				list-style-type:none;
 
 				li {
-					clear:both;
-					font-size: 1.60em;
+					font-size: 1.15em;
 					display:block;
-					margin: 1.50em 0 0 0em;
+					margin: 1.00em 0 0 0;
 
 					.work-title { }
 					.author { }
@@ -442,10 +434,11 @@ h2 {
 	}
 	.image-container {
 		margin: 2em 0 0 0;
-		text-align:left;
+		text-align: center;
 		.image { padding-bottom:.25em; }
+		.image-credit { display: block; }
 	}
-	.issn{ clear: both; padding-top: 2em; }
+	.issn{ padding: 1.25em 0 1.25em 0; }
 }
 
 
@@ -453,48 +446,35 @@ h2 {
     Contributors Page
 -----------------------------------------------*/
 #contributors-title{
-    display:block;
-    clear:both;
-    float:left;
-    font-size:2.15em;
+    display: block;
+    font-size: 1.50em;
     font-weight:bold;
-    margin: 0 0 1.0em 0;    
+    margin: 1.0em 0 0.5em 0;    
 }
 #contributors-container { 
 	.contributor {
-		display:block;
-		clear:both;
-		width:100%;
-		font-size:1.50em;
-		margin: 2.00em 0 0 0; 
-		border-bottom: .15em solid @textColor; 
+		width:95%;
+		font-size:1.20em;
+		margin: 1.00em 0 0 0;
+		padding: 0 0 1.50em 0;
+		border-bottom: .10em solid @textColor; 
 		
 		.info {
-			display:block;
-			width:55%;
-			float:left;
-			margin: .50em 0 1.50em 0;
+			margin: .50em 0 .50em 0;
 
 			.name-and-issues {
-				display:block;
-				margin: 0 0 1em 0; 
-	
+				margin: 0 0 1em 0;	
 				.name { font-size:1.25em; }
-				.issues { font-size:1.00em; }
+				.issues { }
 			}
 			.bio {
-				display:block;
-				font-size:1.00em;
 				line-height:1.30em;
 				margin: 0 0 .50em 1em; 
 				text-align: left;
 			}
 		}
 		.image {
-			display:block;
-			float:right;
-			width:40%;
-			margin: .10em 0em .1em 0em;
+			margin: 1.00em 0em .1em 1.00em;
 
 			.credit{
 				font-style:italic;
@@ -509,28 +489,46 @@ h2 {
     Archive Page
 -----------------------------------------------*/
 .archive-issue{
-	margin: 3.00em 0 0 0;
-	.name {
-		font-size: 2.00em;
-		font-weight:bold;
-	}
-	.featuring {
-		font-size: 1.25em;
-		margin: 1.0em 0 0 1.0em;
-	}
+	margin: 2.50em 0 0 0;
+	overflow: hidden;
+	height: 1%;
+	width:95%;
+	line-height: 1.50em;
 
-	ul {
-		li {
-			clear:both;
+	.archive-issue-image {
+		display:none;
+	}
+	.archive-issue-info {
+		width: 100%;
+		.name {
+			font-size: 1.50em;
+			font-weight: bold;
+		}
+		.featuring {
 			font-size: 1.25em;
-			display:block;
-			margin: 1.50em 0 0 2.0em;
+			margin: 1.0em 0 0 1.0em;
+		}
+
+		ul {
+			li {
+				clear:both;
+				font-size: 1.15em;
+				display:block;
+				margin: 1.00em 0 0 2.0em;
 			
-			.work-title { margin: 0; }
-			.author { margin: 0; }
+				.work-title { 
+					margin: 0; 			
+					a { color: @textColor; border-bottom: 0 none; }
+					a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+				}
+				.author { 
+					margin: 0; 			
+					a { color: @textColor; border-bottom: 0 none; }
+					a:hover{ color: @linkTextColor; border-bottom: .10em solid @linkTextColor; }
+				}
+			}
 		}
 	}
-
 }
 
 
