@@ -1,3 +1,0 @@
-c:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\packages\dotless.1.2.1.0\tool\dotless.compiler.exe -m c:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\Content\mobile_pilotlightjournal.less
-
-c:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\packages\dotless.1.2.1.0\tool\dotless.compiler.exe -m c:\storage\docs\Development\git\pilotlightjournal\pilotlightjournal.org\pilotlightjournal.org\Content\pilotlightjournal.less

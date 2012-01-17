@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 11
-Project("{00000000-0000-0000-0000-000000000000}") = "pilotlightjournal.org", "pilotlightjournal.org\pilotlightjournal.org.csproj", "{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pilotlightjournal.org", "pilotlightjournal.org\pilotlightjournal.org.csproj", "{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

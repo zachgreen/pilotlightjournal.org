@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B033A07B-5E92-405E-B085-A9F7E3CFB2B8}</ProjectGuid>
+    <ProjectGuid>{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}</ProjectGuid>
     <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -16,9 +15,6 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
-    <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\storage\docs\development\git\pilotlightjournal\pilotlightjournal.org\Backup\pilotlightjournal.org\</UpgradeBackupLocation>
-    <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,10 +24,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PublishDatabaseSettings>
-      <Objects>
-      </Objects>
-    </PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,15 +32,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
-    <PublishDatabaseSettings>
-      <Objects>
-      </Objects>
-    </PublishDatabaseSettings>
-    <includesetaclproviderondestination>False</includesetaclproviderondestination>
-  </PropertyGroup>
-  <PropertyGroup>
-    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="dotless.Core">
@@ -57,18 +40,14 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="FiftyOne.Foundation, Version=1.0.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\51Degrees.mobi.1.0.4.1\lib\NET40\FiftyOne.Foundation.dll</HintPath>
+    <Reference Include="FiftyOne.Foundation">
+      <HintPath>..\packages\51Degrees.mobi.2.0.1.2\lib\NET40\FiftyOne.Foundation.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\SqlServerCompact.4.0.8482.1\lib\System.Data.SqlServerCe.dll</HintPath>
-    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.WebPages" />
-    <Reference Include="System.Web.Helpers" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -107,11 +86,11 @@
     <Compile Include="Models\AppConfig.cs" />
     <Compile Include="Models\Contributor.cs" />
     <Compile Include="Models\ContributorViewModel.cs" />
-    <Compile Include="Models\Partial.cs" />
     <Compile Include="Models\FeedResult.cs" />
-    <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\IssueRepository.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\Partial.cs" />
     <Compile Include="Models\PilotLightJournalContext.cs" />
     <Compile Include="Models\ViewEngines\PilotLightRazorViewEngine.cs" />
     <Compile Include="Models\ViewEngines\PilotLightWebFormViewEngine.cs" />
@@ -120,39 +99,26 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\FiftyOne.Foundation.dll" />
-    <Content Include="App_Data\PilotLightJournal.sdf" />
-    <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Content\arrow_down.png" />
+    <Content Include="Content\bkgrd_tile4.jpg" />
+    <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\jake_adam_york.jpg" />
     <Content Include="Content\contributors\jennifer_perrine.jpg" />
+    <Content Include="Content\contributors\marianne_boruch.jpg" />
+    <Content Include="Content\contributors\nancy_eimers.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
     <Content Include="Content\december_2011.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\industrial_texture.jpg" />
     <Content Include="Content\march_2012.css" />
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
-    <Content Include="Content\bkgrd_tile4.jpg" />
-    <Content Include="Content\contributors\bill_olsen.jpg" />
-    <Content Include="Content\contributors\nancy_eimers.jpg" />
-    <None Include="Content\march_2012.less" />
-    <None Include="Content\september_2011.less" />
-    <None Include="Content\december_2011.less" />
-    <None Include="Content\mobile_pilotlightjournal.less" />
-    <None Include="Content\pilotlightjournal.less" />
-    <Content Include="Content\favicon.ico" />
-    <Content Include="Content\industrial_texture.jpg" />
-    <Content Include="Content\contributors\marianne_boruch.jpg" />
     <Content Include="Content\pl_dec_2011_gina_franco.jpg" />
-    <Content Include="Content\rss_orange.png" />
     <Content Include="Content\printer-friendly.css" />
+    <Content Include="Content\rss_orange.png" />
     <Content Include="Content\september_2011.css" />
     <Content Include="Global.asax" />
     <Content Include="Mobile\Default.aspx" />
-    <Content Include="robots.txt" />
-    <Content Include="Scripts\jquery-1.5.2-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.5.2.js" />
-    <Content Include="Scripts\jquery-1.5.2.min.js" />
-    <Content Include="Scripts\jquery.color.js" />
     <Content Include="Scripts\pilotlightjournal.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -163,30 +129,35 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui.js" />
-    <Content Include="Scripts\jquery-ui.min.js" />
-    <Content Include="Scripts\MicrosoftAjax.js" />
-    <Content Include="Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EmailSubscription.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Issue.cshtml" />
+    <Content Include="Views\Shared\_ArticleLayout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_MobileArticleLayout.cshtml" />
+    <Content Include="Views\Shared\_MobileLayout.cshtml" />
+    <Content Include="Views\Shared\_PrintLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Blank.cshtml" />
-    <Content Include="Views\Shared\Issue.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Views\Errors\Exception.cshtml" />
-    <Content Include="Views\Errors\Http404.cshtml" />
     <Content Include="Views\Errors\Http403.cshtml" />
+    <Content Include="Views\Errors\Http404.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Blank.cshtml" />
+    <Content Include="Views\Home\Contributors.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Submissions.cshtml" />
+    <Content Include="Views\Issue\Archive.cshtml" />
     <Content Include="Views\Issue\Index.cshtml" />
     <Content Include="Views\Issue\Work.cshtml" />
     <Content Include="Views\Pages\1\Bill_Olsen_1.cshtml" />
@@ -197,60 +168,29 @@
     <Content Include="Views\Pages\1\Nancy_Eimers_2.cshtml" />
     <Content Include="Views\Pages\1\Nancy_Eimers_3.cshtml" />
     <Content Include="Views\Pages\1\Nancy_Eimers_4.cshtml" />
-    <Content Include="Views\Pages\3\Bruce_Bond_1.cshtml" />
-    <Content Include="Views\Pages\3\Issue_3_Index.cshtml" />
     <Content Include="Views\Pages\2\Jake_Adam_York_1.cshtml" />
-    <Content Include="Views\Pages\2\Jennifer_Perrine_1.cshtml" />
     <Content Include="Views\Pages\2\Jake_Adam_York_2.cshtml" />
     <Content Include="Views\Pages\2\Jake_Adam_York_3.cshtml" />
     <Content Include="Views\Pages\2\Jake_Adam_York_4.cshtml" />
     <Content Include="Views\Pages\2\Jake_Adam_York_5.cshtml" />
+    <Content Include="Views\Pages\2\Jennifer_Perrine_1.cshtml" />
     <Content Include="Views\Pages\2\Jennifer_Perrine_2.cshtml" />
+    <Content Include="Views\Pages\2\Jennifer_Perrine_Partial_1.cshtml" />
     <Content Include="Views\Pages\2\Nicole_Cooley_1.cshtml" />
     <Content Include="Views\Pages\2\Nicole_Cooley_2.cshtml" />
-    <Content Include="Views\Pages\2\Jennifer_Perrine_Partial_1.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\About.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\EmailSubscription.cshtml" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Views\Home\Submissions.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\_MobileArticleLayout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\_MobileLayout.cshtml" />
+    <Content Include="Views\Pages\3\Bruce_Bond_1.cshtml" />
+    <Content Include="Views\Pages\3\Issue_3_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\51Degrees.mobi.config" />
-    <Resource Include="App_Data\wurfl.xml.gz" />
-    <Content Include="Views\Shared\_ArticleLayout.cshtml" />
-    <Content Include="Views\Issue\Archive.cshtml" />
+    <None Include="Content\december_2011.less" />
+    <None Include="Content\march_2012.less" />
+    <None Include="Content\mobile_pilotlightjournal.less" />
+    <None Include="Content\pilotlightjournal.less" />
+    <None Include="Content\september_2011.less" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Contributors.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\_PrintLayout.cshtml" />
-  </ItemGroup>
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -266,7 +206,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63907</DevelopmentServerPort>
+          <DevelopmentServerPort>1045</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://pilotlight.local</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
@@ -278,10 +218,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>$(SolutionDir)\packages\dotless.1.2.1.0\Tool\dotless.Compiler.exe -m "$(ProjectDir)\content\*.less" "$(ProjectDir)\content\*.css"</PreBuildEvent>
   </PropertyGroup>
