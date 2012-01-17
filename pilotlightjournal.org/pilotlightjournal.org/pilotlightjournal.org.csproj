@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>pilotlightjournal.org</RootNamespace>
-    <AssemblyName>pilotlightjournal.org</AssemblyName>
+    <AssemblyName>s</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
@@ -119,6 +119,7 @@
     <Content Include="Content\september_2011.css" />
     <Content Include="Global.asax" />
     <Content Include="Mobile\Default.aspx" />
+    <Content Include="Scripts\jquery.color.js" />
     <Content Include="Scripts\pilotlightjournal.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
