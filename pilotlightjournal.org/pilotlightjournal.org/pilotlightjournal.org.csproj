@@ -102,10 +102,12 @@
     <Content Include="Content\arrow_down.png" />
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
+    <Content Include="Content\contributors\bruce_bond.jpg" />
     <Content Include="Content\contributors\jake_adam_york.jpg" />
     <Content Include="Content\contributors\jennifer_perrine.jpg" />
     <Content Include="Content\contributors\marianne_boruch.jpg" />
     <Content Include="Content\contributors\nancy_eimers.jpg" />
+    <Content Include="Content\contributors\nick_regiacorte.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
     <Content Include="Content\december_2011.css" />
     <Content Include="Content\favicon.ico" />
