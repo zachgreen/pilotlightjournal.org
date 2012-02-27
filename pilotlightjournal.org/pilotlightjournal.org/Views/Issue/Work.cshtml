@@ -24,7 +24,7 @@
             </div>
         }
         <div id="article-information">
-            <div class="title">@Model.Work.Title</div>
+            <div class="title">@Html.Raw(Model.Work.Title)</div>
             <div class="author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
                     "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
                     new { area = "", controller = "Home" }, null)</div>
