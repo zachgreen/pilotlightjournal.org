@@ -103,6 +103,7 @@
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\bruce_bond.jpg" />
+    <Content Include="Content\contributors\erik_anderson.jpg" />
     <Content Include="Content\contributors\jake_adam_york.jpg" />
     <Content Include="Content\contributors\jennifer_perrine.jpg" />
     <Content Include="Content\contributors\marianne_boruch.jpg" />
@@ -116,6 +117,7 @@
     <Content Include="Content\mobile_pilotlightjournal.css" />
     <Content Include="Content\pilotlightjournal.css" />
     <Content Include="Content\pl_dec_2011_gina_franco.jpg" />
+    <Content Include="Content\pl_mar_2012_gina_franco.jpg" />
     <Content Include="Content\printer-friendly.css" />
     <Content Include="Content\rss_orange.png" />
     <Content Include="Content\september_2011.css" />
