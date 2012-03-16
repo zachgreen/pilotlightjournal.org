@@ -198,6 +198,8 @@
     <Content Include="Views\Pages\3\Erik_Anderson_3.cshtml" />
     <Content Include="Views\Pages\3\Erik_Anderson_2.cshtml" />
     <Content Include="Views\Pages\3\Adam_Clay_1.cshtml" />
+    <Content Include="Views\Pages\3\Adam_Clay_3.cshtml" />
+    <Content Include="Views\Pages\3\Adam_Clay_2.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
