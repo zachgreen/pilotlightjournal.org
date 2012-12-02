@@ -121,6 +121,7 @@
     <Content Include="Content\contributors\nancy_eimers.jpg" />
     <Content Include="Content\contributors\nick_regiacorte.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
+    <Content Include="Content\december_2012.css" />
     <Content Include="Content\december_2011.css" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\industrial_texture.jpg" />
@@ -198,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\51Degrees.mobi.config" />
+    <Content Include="Content\december_2012.less" />
     <None Include="Content\december_2011.less" />
     <None Include="Content\march_2012.less" />
     <None Include="Content\mobile_pilotlightjournal.less" />
@@ -214,6 +216,9 @@
     <Content Include="Views\Pages\4\Susan_Briante_2.cshtml" />
     <Content Include="Views\Pages\4\Susan_Briante_3.cshtml" />
     <Content Include="Views\Pages\4\Susan_Briante_4.cshtml" />
+    <Content Include="Views\Pages\4\Andrew_Nurkin_1.cshtml" />
+    <Content Include="Views\Pages\4\Andrew_Nurkin_2.cshtml" />
+    <Content Include="Views\Pages\4\Andrew_Nurkin_3.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
