@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Web Developer Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pilotlightjournal.org", "pilotlightjournal.org\pilotlightjournal.org.csproj", "{C9E00FC5-7DD0-4E20-A096-92D0F62357F2}"
 EndProject
 Global
