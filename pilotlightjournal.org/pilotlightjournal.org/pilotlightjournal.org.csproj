@@ -112,6 +112,7 @@
     <Content Include="Content\arrow_down.png" />
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\adam_clay.jpg" />
+    <Content Include="Content\contributors\andrew_nurkin.jpg" />
     <Content Include="Content\contributors\bill_olsen.jpg" />
     <Content Include="Content\contributors\bruce_bond.jpg" />
     <Content Include="Content\contributors\erik_anderson.jpg" />
@@ -121,6 +122,7 @@
     <Content Include="Content\contributors\nancy_eimers.jpg" />
     <Content Include="Content\contributors\nick_regiacorte.jpg" />
     <Content Include="Content\contributors\nicole_cooley.jpg" />
+    <Content Include="Content\contributors\susan_briante.jpg" />
     <Content Include="Content\december_2012.css" />
     <Content Include="Content\december_2011.css" />
     <Content Include="Content\favicon.ico" />
@@ -219,6 +221,13 @@
     <Content Include="Views\Pages\4\Andrew_Nurkin_1.cshtml" />
     <Content Include="Views\Pages\4\Andrew_Nurkin_2.cshtml" />
     <Content Include="Views\Pages\4\Andrew_Nurkin_3.cshtml" />
+    <Content Include="Views\Pages\4\Andrew_Nurkin_4.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Pages\4\Andrew_Nurkin_5.cshtml" />
+    <Content Include="Views\Pages\4\Susan_Briante_5.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
