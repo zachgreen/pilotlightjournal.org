@@ -1,8 +1,8 @@
 ﻿@using pilotlightjournal.org.Models
 @model WorkViewModel
 @{
-    ViewBag.Title = "Pilot Light Journal - " + Model.Work.Issue.Name + " - " +
-        Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName + " - " + Model.Work.Title;
+    ViewBag.Title = "Pilot Light Journal - " + Model.Work.Issue.Name + 
+        (Model.Work.Contributor != null ? " - " + Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName : string.Empty) + " - " + Model.Work.Title;
     Layout = Request.Browser.IsMobileDevice
         ? "~/Views/Shared/_MobileArticleLayout.cshtml"
         : "~/Views/Shared/_ArticleLayout.cshtml";
@@ -25,9 +25,11 @@
         }
         <div id="article-information">
             <div class="title">@Html.Raw(Model.Work.Title)</div>
-            <div class="author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
-                    "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
-                    new { area = "", controller = "Home" }, null)</div>
+            @if(Model.Work.Contributor != null){
+                <div class="author">@Html.ActionLink(Model.Work.Contributor.FirstName + " " + Model.Work.Contributor.LastName,
+                        "Contributors", null, null, null, Model.Work.Contributor.FirstName + "-" + Model.Work.Contributor.LastName, 
+                        new { area = "", controller = "Home" }, null)</div>
+            }
        
             @* Add continued from link *@
             @if (Model.Page > 1) {
@@ -46,7 +48,7 @@
 
         @* Add continue to link *@
         @if (Model.Page != 0 && Model.Page < Model.Work.Pages.Count) {
-            <div class="continued">(Continue to @Html.NavLink("Page " + (Model.Page + 1).ToString(), "Work", 
+            <div class="continued continued-to">(Continue to @Html.NavLink("Page " + (Model.Page + 1).ToString(), "Work", 
                                                         new { issueId = Model.Work.Issue.IssueId,  workId = Model.Work.WorkId, page = Model.Page + 1 }))</div>
         }
         

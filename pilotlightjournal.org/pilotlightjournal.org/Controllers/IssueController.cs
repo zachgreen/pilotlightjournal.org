@@ -28,7 +28,7 @@ namespace pilotlightjournal.org.Controllers{
                 if (i != null && (i.Completed || AppConfig.InDebug)) return View(i);
             } else {
                 var i = issues.GetAllIssues().FindAll(x => !x.Completed).OrderBy(x => x.ReleaseDate);
-                if(i.Count() > 0) return View(i.ElementAt(0));
+                if (i.Count() > 0) return View("YorkIndex", i.ElementAt(0));
             }
             
             //the issue wasn't found, send the user a 404

@@ -28,6 +28,7 @@ namespace pilotlightjournal.org {
             routes.MapRoute("Http404", "Http404", new { controller = "Errors", action = "Http404" });
             routes.MapRoute("Http403", "Http403", new { controller = "Errors", action = "Http403" });
             routes.MapRoute("Home", "", new { controller = "Home", action = "Index" });
+            routes.MapRoute("Slideshow", "Slideshow", new { controller = "Home", action = "Slideshow" });
             routes.MapRoute("Issue",
                 "{issueId}",
                 new { controller = "Issue", action = "Index"},

@@ -137,10 +137,12 @@ h2 {
 
 .preformatted-spacing { margin: 3em 0em 2em 0em; }
 .preformatted-font{ font-size: 1.25em; }
-.extra-line-height { line-height: 1.45em; }
+.extra-line-height { line-height: 1.45em !important; }
 .top-border { border-top: .15em solid @textColor; padding: .5em 0 0 0; }
 .center { text-align: center; }
 .bold { font-weight: bold; }
+.justified { text-align: justify; }
+.right {text-align:right;}
 
 /*-----------------------------------------------
     Entrance Header
@@ -253,6 +255,37 @@ h2 {
 	}
 }
 
+/*-----------------------------------------------
+    About Page
+-----------------------------------------------*/
+ul.editors {
+    margin-left: 0.00em;
+
+    li {
+        clear: both;
+        padding-top: 2.00em;
+    }
+
+    span.editor-name {
+        font-size: 1.55em;
+        display: block;
+        margin-bottom: .50em;
+    }
+
+    p.bio {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        text-align: justify;
+    }
+
+    div.editor-image {
+        width: 40%;
+        float: right;
+    }
+}
+
+
 
 /*---------------------------------------------
     Articles Page
@@ -269,7 +302,7 @@ h2 {
 		}
 
 		#article-information{
-			width: 80%;
+			width: 90%;
 			float:left;
 
 			.title{
@@ -335,12 +368,20 @@ h2 {
 
 		p.indented { text-indent: 1.75em; }
 		p.not-indented { text-indent: 0em; }
-		p.with-spacing { margin: 2em 0 0 0; }
+		.with-spacing { margin: 2em 0 0 0; }
 		p.excerpt-spacing { margin: 3em 4em 3em 4em; }
 		p.end { margin-bottom: 4em; }
 		p.smaller-font { font-size: 1.10em; }
 		.workscited-links { color: @linkTextColor; }
 	}
+}
+
+.article-page-container.top-margin-5em:not(:first-child) { margin-top: 5em; }
+.article-page-container.top-margin-10em:not(:first-child) { margin-top: 10em; }
+.article-page-container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .article-paging{
@@ -445,7 +486,7 @@ h2 {
 				margin: 0 0 1em 0; 
 	
 				.name { font-size:1.25em; }
-				.issues { font-size:1.00em; }
+				.issues { font-size:1.00em; display:block; margin: .75em 0 0 1.00em; }
 			}
 			.bio {
 				display:block;

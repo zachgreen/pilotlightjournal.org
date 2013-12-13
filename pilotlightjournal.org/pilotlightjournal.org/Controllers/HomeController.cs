@@ -15,6 +15,7 @@ namespace pilotlightjournal.org.Controllers{
 
         public ActionResult Index() { return View(); }
         public ActionResult About() { return View(); }
+        public ActionResult Slideshow() { return View(); }
         public ActionResult Contributors() {
             List<ContributorViewModel> models = new List<ContributorViewModel>();
             ContributorViewModel model = null;

@@ -6,6 +6,8 @@
         @RenderSection("AdditionalHead", false)
         <link href='http://fonts.googleapis.com/css?family=Josefin+Slab&v1' rel='stylesheet' type='text/css' />
         <link href="@Url.Content("~/Content/pilotlightjournal.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/slideshow-style.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/slideshow-animation.css")" rel="stylesheet" type="text/css" />
         <link rel="Shortcut Icon" href="@Url.Content("~/Content/favicon.ico")" />
     </head>
     <body>
@@ -14,7 +16,7 @@
             <div class="subtitle">A Journal of 21<span class="superscript">st</span> Century Poetics and Criticism</div>
             <div class="line">&nbsp;</div>
             <div class="right-nav">
-                @Html.NavLink("Current Issue", "Index", new { controller = "Issue", issueId = "3" })&nbsp;|&nbsp;
+                @Html.NavLink("Current Issue", "Index", new { controller = "Issue", issueId = "4" })&nbsp;|&nbsp;
                 @Html.NavLink("Archive", "Archive", new { controller = "Issue" })&nbsp;|&nbsp;
                 @Html.NavLink("Contributors", "Contributors", new { controller = "Home" })&nbsp;|&nbsp;
                 @Html.NavLink("About", "About", new { controller = "Home" })
@@ -34,7 +36,7 @@
             </div>
         </div>
     </body>
-    <script src="@Url.Content("~/Scripts/jquery-1.5.2.min.js")" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/pilotlightjournal.js")" type="text/javascript"></script>
     <script type="text/javascript">
 

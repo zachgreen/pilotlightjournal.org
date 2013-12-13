@@ -25,6 +25,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -109,6 +110,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\slideshow-animation.css" />
     <Content Include="Content\arrow_down.png" />
     <Content Include="Content\bkgrd_tile4.jpg" />
     <Content Include="Content\contributors\adam_clay.jpg" />
@@ -125,6 +127,7 @@
     <Content Include="Content\contributors\susan_briante.jpg" />
     <Content Include="Content\december_2012.css" />
     <Content Include="Content\december_2011.css" />
+    <Content Include="Content\december_2013.css" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\industrial_texture.jpg" />
     <Content Include="Content\march_2012.css" />
@@ -135,9 +138,79 @@
     <Content Include="Content\printer-friendly.css" />
     <Content Include="Content\rss_orange.png" />
     <Content Include="Content\september_2011.css" />
+    <Content Include="Content\slideshow-style.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\york_1.jpg" />
+    <Content Include="Content\york_2.jpg" />
+    <Content Include="Content\york_4.jpg" />
+    <Content Include="Content\york_5.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Mobile\Default.aspx" />
+    <Content Include="README.jQuery.vsdoc.txt" />
+    <Content Include="Content\december_2013.less" />
+    <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.0.3.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Scripts\jquery.color.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\pilotlightjournal.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -148,6 +221,51 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Views\Pages\5\Hadara_Bar-Nadav_1.cshtml" />
+    <Content Include="Views\Pages\5\David_Keplinger_1.cshtml" />
+    <Content Include="Views\Pages\5\Sarah_Browning_1.cshtml" />
+    <Content Include="Views\Pages\5\Ailish_Hopper_1.cshtml" />
+    <Content Include="Views\Pages\5\Stacey_Lynn_Brown_1.cshtml" />
+    <Content Include="Views\Pages\5\Ali_Rachel_Pearl_1.cshtml" />
+    <Content Include="Views\Pages\5\Ailish_Hopper_3.cshtml" />
+    <Content Include="Views\Pages\5\Ailish_Hopper_2.cshtml" />
+    <Content Include="Views\Pages\5\Stacey_Lynn_Brown_4.cshtml" />
+    <Content Include="Views\Pages\5\Stacey_Lynn_Brown_2.cshtml" />
+    <Content Include="Views\Pages\5\Stacey_Lynn_Brown_3.cshtml" />
+    <Content Include="Views\Pages\5\Ali_Rachel_Pearl_2.cshtml" />
+    <Content Include="Views\Pages\5\Ali_Rachel_Pearl_3.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_1.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_2.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_10.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Pages\5\Joshua_Poteat_11.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_12.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_13.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_14.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_15.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_16.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_17.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_18.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_19.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_3.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Pages\5\Joshua_Poteat_4.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_5.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_6.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_7.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_8.cshtml" />
+    <Content Include="Views\Pages\5\Joshua_Poteat_9.cshtml" />
+    <Content Include="Views\Pages\5\Tarfia_Faizullah_1.cshtml" />
+    <Content Include="Views\Home\Slideshow.cshtml" />
+    <Content Include="Views\Issue\YorkIndex.cshtml" />
+    <Content Include="Views\Pages\5\Brian_Barker_1.cshtml" />
+    <Content Include="Views\Pages\5\Michael_Robins_1.cshtml" />
+    <Content Include="Views\Pages\5\Michael_Robins_2.cshtml" />
+    <Content Include="Views\Pages\5\Michael_Robins_3.cshtml" />
+    <Content Include="Views\Pages\5\Michael_Robins_4.cshtml" />
+    <Content Include="Views\Pages\5\From_The_Editors_1.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -228,6 +346,13 @@
     <Content Include="Views\Pages\4\Susan_Briante_5.cshtml">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Views\Pages\4\Michael_Levan_1.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_7.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_6.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_2.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_3.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_4.cshtml" />
+    <Content Include="Views\Pages\4\Michael_Levan_5.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

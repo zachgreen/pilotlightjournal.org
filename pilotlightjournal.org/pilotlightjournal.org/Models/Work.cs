@@ -12,6 +12,8 @@ namespace pilotlightjournal.org.Models {
         [Required, MaxLength(100)]
         public string Title { get; set; }
 
+        public string TableOfContentsTitle { get; set; }
+
         public int Order { get; set; }
 
         [Required, MaxLength(100)]

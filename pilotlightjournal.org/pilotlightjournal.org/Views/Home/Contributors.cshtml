@@ -15,15 +15,14 @@
             <div class="info">
                 <div class="name-and-issues">
                     <span class="name">@cvm.Contributor.FirstName @cvm.Contributor.LastName</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <span class="issues">
                        @{
-                           var issueText = "( ";
+                           var issueText = "Issue: ";
                            for(int i=0; i < cvm.Issues.Count; i++){
                                if(i != 0) {issueText += ", ";}
                                issueText += Html.NavLink(cvm.Issues[i].Name, "Index", new { controller = "Issue", issueId = cvm.Issues[i].IssueId });
                            }
-                           issueText += " )";
+                           issueText += "";
                        }
                        @Html.Raw(issueText)                       
                     </span>
