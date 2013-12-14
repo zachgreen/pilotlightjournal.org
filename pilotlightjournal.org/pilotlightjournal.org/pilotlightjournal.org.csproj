@@ -110,6 +110,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\contributors\ailish_hopper.jpg" />
+    <Content Include="Content\contributors\ali_rachel_pearl.jpg" />
+    <Content Include="Content\contributors\brian_barker.jpg" />
+    <Content Include="Content\contributors\david_keplinger.jpg" />
+    <Content Include="Content\contributors\hadara_bar-nadav.jpg" />
+    <Content Include="Content\contributors\jon_tribble.jpg" />
+    <Content Include="Content\contributors\joshua_poteat.jpg" />
+    <Content Include="Content\contributors\michael_levan.jpg" />
+    <Content Include="Content\contributors\michael_robins.jpg" />
+    <Content Include="Content\contributors\sarah_browning.jpg" />
+    <Content Include="Content\contributors\stacy_lynn_brown.jpg" />
+    <Content Include="Content\contributors\tarfia_faizullah.jpg" />
     <Content Include="Content\slideshow-animation.css" />
     <Content Include="Content\arrow_down.png" />
     <Content Include="Content\bkgrd_tile4.jpg" />
@@ -266,6 +278,7 @@
     <Content Include="Views\Pages\5\Michael_Robins_3.cshtml" />
     <Content Include="Views\Pages\5\Michael_Robins_4.cshtml" />
     <Content Include="Views\Pages\5\From_The_Editors_1.cshtml" />
+    <Content Include="Views\Pages\5\Jon_Tribble_1.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
