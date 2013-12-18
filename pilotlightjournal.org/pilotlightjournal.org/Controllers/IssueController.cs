@@ -25,7 +25,14 @@ namespace pilotlightjournal.org.Controllers{
             if (issueId != 42) {
                 //verfiy that either the issue is completed or that we are in debug mode to prevent showing a future issue to users.
                 Issue i = issues.GetIssue(issueId);
-                if (i != null && (i.Completed || AppConfig.InDebug)) return View(i);
+                if (i != null && (i.Completed || AppConfig.InDebug))
+                {
+                    if (issueId == 5)
+                    {
+                        return View("YorkIndex", i);
+                    }
+                    return View(i);
+                }
             } else {
                 var i = issues.GetAllIssues().FindAll(x => !x.Completed).OrderBy(x => x.ReleaseDate);
                 if (i.Count() > 0) return View("YorkIndex", i.ElementAt(0));
