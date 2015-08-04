@@ -253,6 +253,7 @@
     <Content Include="README.jQuery.vsdoc.txt" />
     <Content Include="Content\december_2013.less" />
     <None Include="package.json" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
