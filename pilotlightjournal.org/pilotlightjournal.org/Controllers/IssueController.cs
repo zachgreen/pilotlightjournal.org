@@ -35,7 +35,7 @@ namespace pilotlightjournal.org.Controllers{
                 }
             } else {
                 var i = issues.GetAllIssues().FindAll(x => !x.Completed).OrderBy(x => x.ReleaseDate);
-                if (i.Count() > 0) return View("YorkIndex", i.ElementAt(0));
+                if (i.Count() > 0) return View("Index", i.ElementAt(0));
             }
             
             //the issue wasn't found, send the user a 404

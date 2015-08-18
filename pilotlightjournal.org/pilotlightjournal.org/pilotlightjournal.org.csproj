@@ -151,6 +151,7 @@
     <Content Include="Content\contributors\heather_warren.jpg" />
     <Content Include="Content\contributors\jon_tribble.jpg" />
     <Content Include="Content\contributors\joshua_poteat.jpg" />
+    <Content Include="Content\contributors\laura_donnelly.jpg" />
     <Content Include="Content\contributors\michael_lauchlan.jpg" />
     <Content Include="Content\contributors\michael_levan.jpg" />
     <Content Include="Content\contributors\michael_robins.jpg" />
@@ -326,12 +327,13 @@
     <Content Include="Views\Pages\6\Laura_Donnelly_3.cshtml" />
     <Content Include="Views\Pages\6\Laura_Donnelly_4.cshtml" />
     <Content Include="Views\Pages\6\Brandon_Krieg_1.cshtml" />
-    <Content Include="Views\Pages\6\Heather_Warren_b_1.cshtml" />
+    <Content Include="Views\Pages\6\Heather_Warren_c_1.cshtml" />
     <Content Include="Views\Pages\6\Heather_Warren_1.cshtml" />
     <Content Include="Views\Pages\6\Brandon_Krieg_2.cshtml" />
     <Content Include="Views\Pages\6\Brandon_Krieg_5.cshtml" />
     <Content Include="Views\Pages\6\Brandon_Krieg_3.cshtml" />
     <Content Include="Views\Pages\6\Brandon_Krieg_4.cshtml" />
+    <Content Include="Views\Pages\6\Heather_Warren_b_1.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
