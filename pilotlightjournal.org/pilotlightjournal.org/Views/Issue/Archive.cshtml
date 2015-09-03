@@ -19,12 +19,15 @@
             </a>
             <div class="featuring"><span>Featuring:</span></div>
             <ul>
-                @foreach (Work w in i.Works.OrderBy(w => w.Order)) {                    
+                @foreach (Work w in i.Works.OrderBy(w => w.Order)) {
                     <li>
-                        <span class="author">@Html.ActionLink(w.Contributor.FirstName + " " + w.Contributor.LastName,
-                                "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName,
-                                new { area = "", controller = "Home" }, null)</span>
-                        &nbsp;-&nbsp;
+                        @if (w.Contributor != null)
+                        {
+                                <span class="author">@Html.ActionLink(w.Contributor.FirstName + " " + w.Contributor.LastName,
+                            "Contributors", null, null, null, w.Contributor.FirstName + "-" + w.Contributor.LastName,
+                            new { area = "", controller = "Home" }, null)</span>
+                                    <span>&nbsp;-&nbsp;</span>
+                        }
                         <span class="work-title"><a href="@Url.Action("Work", "Issue", new { issueId = i.IssueId, workId = w.WorkId, page = 1 })">@Html.Raw(w.Title)</a></span>
                     </li>
                 }
